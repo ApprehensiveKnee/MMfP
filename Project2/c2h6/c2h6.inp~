@@ -1,0 +1,41 @@
+***, ethane
+print,basis,orbitals
+nosym
+
+angstrom
+geometry{
+C1  
+C2 C1 d1
+H3 C1 d2 C2 a1
+H4 C1 d3 C2 a2 H3 t1
+H5 C1 d4 C2 a3 H3 t2
+H6 C2 d5 C1 a4 H3 t3
+H7 C2 d6 C1 a5 H6 t4
+H8 C2 d7 C1 a6 H6 t5
+}
+
+
+d1=1.54 Ang
+d2=1.09 Ang
+a1=111. Degree
+d3=1.09 Ang
+a2=111. Degree
+t1=108. Degree
+d4=1.09 Ang
+a3=111. Degree
+t2=-108. Degree
+d5=1.09 Ang
+a4=111. Degree
+t3=180. Degree
+d6=1.09 Ang
+a5=111. Degree
+t4=108. Degree
+d7=1.09 Ang
+a6=111. Degree
+t5=-108. Degree
+
+basis=6-31G(d,p)
+hf
+put,molden,molpro.molden
+
+---

@@ -1,4 +1,4 @@
-#p B3LYP/6-31+g(d,p) opt pop=full gfinput
+#p B3LYP/6-31+g(d,p) opt freq pop=full gfinput
 
 ethane
 

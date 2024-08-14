@@ -1,5 +1,6 @@
 import sys
 import re
+import argparse
 import prettytable
 import matplotlib.pyplot as plt
 
@@ -31,9 +32,11 @@ def extract_zpe(filename):
     return zpe
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python opt_energy.py <filename>")
-        sys.exit(1)
+    
+    parser = argparse.ArgumentParser(description='Extract energies from a Gaussian optimization output file \n Usage: python opt_energy.py <filename>')
+    parser.add_argument('filename', type=str, help='The filename to process')
+    args = parser.parse_args()
+    
     
     filename = sys.argv[1]
     energies, final_energy = extract_energies(filename)

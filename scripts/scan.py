@@ -1,5 +1,6 @@
 import sys
 import re
+import argparse
 import prettytable
 import matplotlib.pyplot as plt
 
@@ -46,12 +47,25 @@ def extract_zpe(filename):
     return zpe
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python scan.py <filename> <parameter>")
-        sys.exit(1)
     
-    filename = sys.argv[1]
-    par = sys.argv[2]
+
+    # Parse the command line arguments
+    parser = argparse.ArgumentParser(description='Extract energies from a Gaussian scan output file \n Usage: python scan.py <filename> <parameter> --zpe <filename>')
+    parser.add_argument('filename', type=str, help='The filename to process')
+    parser.add_argument('parameter', type=str, help='The parameter on which the scan was performed')
+    # Add an optional parameter, set with the --zpe flag, used to extract the ZPE from another spcified file
+    parser.add_argument('--zpe', type=str, help='The filename to extract the ZPE')
+    args = parser.parse_args()
+
+    if args.zpe is not None:
+        zpe = extract_zpe(args.zpe) * 627.509  
+        print( "Parameters: <filename> = ", args.filename, " <parameter> = ", args.parameter, " --zpe=", args.zpe)
+    else:
+        zpe = 0.0
+        print( "Parameters: <filename> = ", args.filename, " <parameter> = ", args.parameter)
+
+    filename = args.filename
+    par = args.parameter
     energies = extract_energies(filename)
     values = extract_t_values(filename, par)
     
@@ -62,17 +76,19 @@ if __name__ == "__main__":
     # Convert energies to kcal/mol
     energies = [energy * 627.509 for energy in energies]
     table.add_column("Energy (kcal/mol)", energies)
-    # Extract ZPE
-    zpe = extract_zpe(filename)
     total_energies = [energy + zpe for energy in energies]
+    # Save the minumum energy position for later use
+    min_energy = min(total_energies)
     table.add_column("Total Energy (kcal/mol)", total_energies)
 
-
     print(table)
+    print("ZPE: ", zpe)
 
     # Plot the values
     fig, ax = plt.subplots(figsize=(10, 6))
-    ax.plot(values, energies, marker='x', color='coral')
+    ax.plot(values, total_energies, marker='x', color='coral')
+    # Highlight the minimum energy using a red dot
+    ax.plot(values[total_energies.index(min_energy)], min_energy, marker='o', color='indigo')
     ax.set_xlabel(par+' (°)')
     ax.set_ylabel('Energy (kcal/mol)')
     ax.set_title('Energy scan')

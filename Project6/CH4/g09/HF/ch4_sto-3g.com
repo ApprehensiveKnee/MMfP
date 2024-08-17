@@ -2,7 +2,7 @@
 
 #p hf/STO-3G opt freq symmetry=(follow,pg=Td)  pop=full gfinput
 
-methane with imposed symmetry and hf/STO-3G basis function
+methane with imposed symmetry and STO-3G basis set
 
 0 1
 C1

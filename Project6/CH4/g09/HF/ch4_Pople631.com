@@ -1,9 +1,8 @@
 %mem=100MB
 
 #p hf/6-31G opt freq symmetry=(follow,pg=Td)  pop=full gfinput
-!note that gaussian should be able to infer the symmetry directly from the Z matrix
 
-methane with imposed symmetry Td and hf/6-31G basis function
+methane with imposed symmetry Td and 6-31G basis set
 
 0 1
 C1

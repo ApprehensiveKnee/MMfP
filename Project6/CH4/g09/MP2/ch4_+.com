@@ -2,7 +2,7 @@
 
 #p mp2/6-31+G opt freq symmetry=(follow,pg=Td)  pop=full gfinput
 
-methane with imposed symmetry and hf/6-31+G basis function
+methane with imposed symmetry and 6-31+G basis set
 
 0 1
 C1

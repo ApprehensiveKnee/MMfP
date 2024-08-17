@@ -2,7 +2,7 @@
 
 #p mp2/6-31+G opt freq symmetry=(follow,pg=C3v)  pop=full gfinput
 
-methyl with imposed symmetry and hf/6-31+G basis function
+methyl with imposed symmetry and 6-31+G basis set
 
 0 2
 C1

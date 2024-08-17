@@ -2,7 +2,7 @@
 
 #p mp2/aug-cc-pVDZ opt freq pop=full gfinput
 
-hydrogen (moldecule) with and aug-cc-pVDZ basis function
+hydrogen (moldecule) with and aug-cc-pVDZ basis set
 
 0 1
 H1

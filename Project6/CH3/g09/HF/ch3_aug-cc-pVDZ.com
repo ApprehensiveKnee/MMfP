@@ -2,7 +2,7 @@
 
 #p hf/aug-cc-pVDZ opt freq symmetry=(follow,pg=C3v)  pop=full gfinput
 
-methyl with imposed symmetry and hf/aug-cc-pVDZ basis function
+methyl with imposed symmetry and aug-cc-pVDZ basis set
 
 0 2
 C1

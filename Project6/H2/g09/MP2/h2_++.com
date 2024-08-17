@@ -2,7 +2,7 @@
 
 #p mp2/6-31++G opt freq  pop=full gfinput
 
-hydrogen(molecule) with  hf/6-31++G basis function
+hydrogen(molecule) with  6-31++G basis set
 
 0 1
 H1

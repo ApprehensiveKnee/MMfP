@@ -2,7 +2,7 @@
 
 #p mp2/STO-3G opt freq  pop=full gfinput
 
-hydrogen (molecule) with hf/STO-3G basis function
+hydrogen (molecule) with STO-3G basis set
 
 0 1
 H1

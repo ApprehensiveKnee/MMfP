@@ -2,7 +2,7 @@
 
 #p hf/6-31G opt freq  pop=full gfinput
 
-hydogen (molecule) with hf/6-31G basis function
+hydogen (molecule) with 6-31G basis set
 
 0 1
 H1

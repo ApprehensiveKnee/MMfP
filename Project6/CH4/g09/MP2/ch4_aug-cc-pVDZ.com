@@ -2,7 +2,7 @@
 
 #p mp2/aug-cc-pVDZ opt freq symmetry=(follow,pg=Td)  pop=full gfinput
 
-methane with imposed symmetry and hf/aug-cc-pVDZ basis function
+methane with imposed symmetry and aug-cc-pVDZ basis set
 
 0 1
 C1

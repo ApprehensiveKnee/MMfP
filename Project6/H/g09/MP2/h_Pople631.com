@@ -1,8 +1,8 @@
 %mem=100MB
 
-#p hf/6-31G opt pop=full gfinput
+#p mp2/6-31G opt pop=full gfinput
 
-hydogen (atom) with hf/6-31G basis function
+hydogen (atom) with 6-31G basis set
 
 0 2
 H

@@ -1,9 +1,8 @@
 %mem=100MB
 
 #p mp2/6-31G opt freq symmetry=(follow,pg=C3v)  pop=full gfinput
-!note that gaussian should be able to infer the symmetry directly from the Z matrix
 
-methyl with imposed symmetry and hf/6-31G basis function
+methyl with imposed symmetry and 6-31G basis set
 
 0 2
 C1

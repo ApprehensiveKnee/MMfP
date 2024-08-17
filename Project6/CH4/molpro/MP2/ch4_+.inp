@@ -1,0 +1,23 @@
+***, methane with imposed symmetry and 6-31+G basis set
+memory,100,m
+
+basis=6-31+G
+symmetry,y
+
+geometry={angstrom
+C
+H1, C, d
+H2, C, d, H1, a
+H3, C, d, H1, a, H2, t
+H4, C, d, H1, a, H2, -t 
+}
+
+d=1.09 Ang
+a=109.47 Deg
+t=120.0 Deg
+
+hf
+mp2
+optg
+frequencies
+put,molden,ch4_6-31+G.molpro

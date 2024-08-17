@@ -1,0 +1,1683 @@
+<?xml version="1.0"?>
+<molpro xmlns="http://www.molpro.net/schema/molpro-output"
+  xmlns:xsd="http://www.w3.org/1999/XMLSchema"
+  xmlns:cml="http://www.xml-cml.org/schema"
+  xmlns:stm="http://www.xml-cml.org/schema"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <!--
+
+ Primary working directories    : /data/scratch
+ Secondary working directories  : /data/scratch
+ Wavefunction directory         : /home/ospite/wfu/
+ Main file repository           : /data/scratch/
+
+ ARCHNAME  : Linux/x86_64
+ FC        : /usr/bin/gfortran
+ FCVERSION : 4.8.5
+ BLASLIB   : 
+ id        : polimi
+
+ Nodes     nprocs
+ molmod       1
+
+ Using default tuning parameters: mindgm=1; mindgv=20; mindgc=4; mindgr=1; noblas=0; mincuda=1000; minvec=7
+ default implementation of scratch files=df  
+
+ --><job>
+  <!--
+ ***,methane with imposed symmetry and sto-g3 basis set
+ memory,100,m
+ 
+ basis=sto-3g
+ symmetry,y
+ 
+ geometry={angstrom
+ C
+ H1, C, d
+ H2, C, d, H1, a
+ H3, C, d, H1, a, H2, t
+ H4, C, d, H1, a, H2, -t
+ }
+ 
+ d=1.09 Ang
+ a=109.47 Deg
+ t=120.0 Deg
+ 
+ {dfunc,b3lyp}
+ ks
+ optg
+ frequencies
+ put,molden,ch4_sto-3g.molpro
+
+ Variables initialized (661), CPU time= 0.01 sec
+ Commands  initialized (458), CPU time= 0.05 sec, 486 directives.
+ Default parameters read. Elapsed time= 0.19 sec
+
+ Checking input...
+ Passed
+1
+
+
+                                         ***  PROGRAM SYSTEM MOLPRO  ***
+                         Copyright, University College Cardiff Consultants Limited, 2008
+
+                                    Version 2010.1 linked Mar  6 2018 16:01:50
+
+
+ **********************************************************************************************************************************
+ LABEL *   methane with imposed symmetry and sto-g3 basis set                            
+ Linux-3.10.0-1160.108.1.el7.x86_64/molmod(x86_64) 64 bit serial version                 DATE: 17-Aug-24          TIME: 17:12:14  
+ **********************************************************************************************************************************
+
+ SHA1:             d90fb18d49a3be29a79769f900c595ef3b8176e2
+ **********************************************************************************************************************************
+  -->
+  <!--
+
+ Variable memory set to  100000000 words,  buffer space   230000 words
+
+ SETTING BASIS          =    STO-3G
+ ZSYMEL=Y  
+
+ SETTING D              =         1.09000000  ANG                             
+ SETTING A              =       109.47000000  DEG                             
+ SETTING T              =       120.00000000  DEG                             
+  --><jobstep command="KS-SCF" commandset="SCFPRO">
+   <!--
+
+
+ Recomputing integrals since basis changed
+
+
+ Using spherical harmonics
+
+ Library entry C      S STO-3G               selected for orbital group  1
+ Library entry C      P STO-3G               selected for orbital group  1
+ Library entry H      S STO-3G               selected for orbital group  2
+
+1PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 700
+
+ Orientation using atomic masses  
+ Molecule type: Symmetric top,     Order of principal axis = 3
+ User-specified symmetry elements: Y
+ Symmetry elements: Y
+ Rotational constants:     158.2574080    158.2574080    158.2538321 GHz  (calculated with average atomic masses)
+
+ Point group  Cs  
+
+
+   --><cml:symmetry pointGroup="Cs"/><!--
+   --><cml:atomArray>
+    <cml:atom id="a1" elementType="C" x3="-0.293752360769339E-16" y3="0.0"
+      z3="-0.412659384369652E-05"/>
+    <cml:atom id="a2" elementType="H" x3="-0.293752360769339E-16" y3="0.0"
+      z3="1.08999587340616"/>
+    <cml:atom id="a3" elementType="H" x3="1.02766959557757" y3="0.0" z3="-0.363315566443222"/>
+    <cml:atom id="a4" elementType="H" x3="-0.513834797788786" y3="-0.889987976467058"
+      z3="-0.363315566443222"/>
+    <cml:atom id="a5" elementType="H" x3="-0.513834797788786" y3="0.889987976467058"
+      z3="-0.363315566443222"/>
+   </cml:atomArray><!--
+   --><cml:bondArray>
+    <cml:bond atomRefs2="a1 a2"/>
+    <cml:bond atomRefs2="a1 a3"/>
+    <cml:bond atomRefs2="a1 a4"/>
+    <cml:bond atomRefs2="a1 a5"/>
+   </cml:bondArray><!--
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  C       6.00   -0.000000000    0.000000000   -0.000007798
+   2  H1      1.00   -0.000000000    0.000000000    2.059793685
+   3  H2      1.00    1.942014089    0.000000000   -0.686566920
+   4  H3      1.00   -0.971007045   -1.681833536   -0.686566920
+   5  H4      1.00   -0.971007045    1.681833536   -0.686566920
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  2.059801483  1-3  2.059801483  1-4  2.059801483  1-5  2.059801483
+     ( 1.090000000)     ( 1.090000000)     ( 1.090000000)     ( 1.090000000)
+
+ Bond angles
+
+  2-1-3  109.47000000   2-1-4  109.47000000   2-1-5  109.47000000   3-1-4  109.47244124
+
+  3-1-5  109.47244124   4-1-5  109.47244124
+
+ NUCLEAR CHARGE:                   10
+ NUMBER OF PRIMITIVE AOS:          27
+ NUMBER OF SYMMETRY AOS:           27
+ NUMBER OF CONTRACTIONS:            9   (   7A'  +   2A"  )
+ NUMBER OF CORE ORBITALS:           1   (   1A'  +   0A"  )
+ NUMBER OF VALENCE ORBITALS:        8   (   6A'  +   2A"  )
+
+
+ NUCLEAR REPULSION ENERGY   13.43538921
+
+
+ Eigenvalues of metric
+
+         1 0.221E+00 0.369E+00 0.369E+00 0.971E+00 0.146E+01 0.146E+01 0.232E+01
+         2 0.369E+00 0.146E+01
+
+
+ Contracted 2-electron integrals neglected if value below      1.0D-11
+ AO integral compression algorithm  1   Integral accuracy      1.0D-11
+
+     0.262 MB (compressed) written to integral file (100.0%)
+
+
+ NUMBER OF SORTED TWO-ELECTRON INTEGRALS:        664.     BUFFER LENGTH:  32768
+ NUMBER OF SEGMENTS:   1  SEGMENT LENGTH:        664      RECORD LENGTH: 524288
+
+ Memory used in sort:       0.56 MW
+
+ SORT1 READ         796. AND WROTE         590. INTEGRALS IN      1 RECORDS. CPU TIME:     0.00 SEC, REAL TIME:     0.00 SEC
+ SORT2 READ         590. AND WROTE         664. INTEGRALS IN      1 RECORDS. CPU TIME:     0.00 SEC, REAL TIME:     0.01 SEC
+
+ FILE SIZES:   FILE 1:     2.8 MBYTE,  FILE 4:     4.2 MBYTE,   TOTAL:      7.1 MBYTE
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19        2.58       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+
+ PROGRAMS   *        TOTAL       INT
+ CPU TIMES  *         0.68      0.18
+ REAL TIME  *         0.89 SEC
+ DISK USED  *         7.58 MB      
+ **********************************************************************************************************************************
+
+ Density functional group B3LYP=B88+DIRAC+LYP+VWN5
+ Functional: B88(Automatically generated B88)                                  Gradient terms: 1
+ Functional: DIRAC(Automatically generated DIRAC)                              Gradient terms: 0
+ Functional: LYP(Lee-Yang-Parr gradient-corrected correlation energy (1988))   Gradient terms: 1
+ Functional: VWN5(Automatically generated VWN5)                                Gradient terms: 0
+ Use grid at  1800.2
+
+
+ Exact exchange will be calculated, factor:  0.2000
+
+ Functional: B88                       Factor:  0.7200
+ Functional: DIRAC                     Factor:  0.0800
+ Functional: LYP                       Factor:  0.8100
+ Functional: VWN5                      Factor:  0.1900
+
+ Generated new metagrid on record  1800.2 with target accuracy 1.0D-06 and 7496 points in CPU time    0.2
+ Computed new grid on record 1800.1 in CPU time    0.3
+   11047 words reserved for DFT integration
+
+ PROGRAM * RKS-SCF (Restricted closed shell Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:       5+    5-
+ CONVERGENCE THRESHOLDS:    1.00E-05 (Density)    1.00E-06 (Energy)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                  0.00 (CLOSED)  0.00 (OPEN) 
+
+
+
+ Use fine grid record 1800.2 for energy threshold 1.0D-06
+ Orbital guess generated from atomic densities. Full valence occupancy:    7   2
+
+ Molecular orbital dump at record        2100.2
+
+ Initial alpha occupancy:   4   1
+ Initial beta  occupancy:   4   1
+ Wave function symmetry:    1
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS
+    1      0.000D+00      0.000D+00       -39.99833631     63.742375    0.00000    0.00000    0.00001    0
+    2      0.000D+00      0.210D-01       -39.99990662     62.619536    0.00000    0.00000   -0.00000    1
+    3      0.476D-01      0.172D-01       -40.00270970     63.115312    0.00000    0.00000    0.00000    2
+    4      0.212D-01      0.113D-03       -40.00270983     63.117870    0.00000    0.00000    0.00000    3
+    5      0.165D-03      0.504D-05       -40.00270983     63.117973    0.00000    0.00000    0.00000    4
+    6      0.843D-05      0.151D-08       -40.00270983     63.117973    0.00000    0.00000    0.00000    0
+
+ Final occupancy:   4   1
+
+ !RKS STATE 1.1 Energy                -40.002709832537
+   --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+     value="-40.0027098325366"/><!--
+ Nuclear energy                        13.43538921
+ One-electron energy                  -79.42811012
+ Two-electron energy                   31.55898651
+ SCF exchange energy                   -6.61516020     Factor=0.2000
+ Density functional                    -5.56897543     B88=-6.58980387 DIRAC=-5.90873124 LYP=-0.29418208 VWN5=-0.59647717
+ Virial quotient                       -1.01486762
+ !RKS STATE 1.1 Dipole moment           0.00000140     0.00000000     0.00000260
+ Dipole moment /Debye                   0.00000356     0.00000000     0.00000660
+   --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+     stateNumber="1" value="0.140116194480289E-05 0.0 0.259777328726063E-05"/><!--
+
+ Orbital energies:
+
+         1.1          2.1          3.1          4.1          5.1          6.1
+     -9.991938    -0.660014    -0.358467    -0.358461     0.464275     0.464288
+
+         1.2          2.2
+     -0.358466     0.464284
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20        2.82       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     GRID   
+
+              2       4        0.29       700     1000     1800     2100   
+                                         GEOM     BASIS    GRID      RKS  
+
+ PROGRAMS   *        TOTAL        KS       INT
+ CPU TIMES  *         1.75      1.07      0.18
+ REAL TIME  *         2.09 SEC
+ DISK USED  *         7.58 MB      
+ **********************************************************************************************************************************
+   -->
+   <time start="17:12:14" end="17:12:16" cpu="1.75" system="0.21" real="2.09"/>
+   <storage units="megabyte" memory="801.84" sf="0.0" df="7.58" eaf="0.0"/>
+  </jobstep><!--
+  --><jobstep command="OPTG" commandset="OPT">
+   <!--
+
+
+ PROGRAM * OPT (Geometry optimization)     Authors: F. Eckert and H.-J. Werner
+
+
+ BFGS update of hessian
+
+ *** Long output written to logfile /home/ospite/Desktop/MMfP/Project6/CH4/molpro/DFT/ch4_sto-3g.log ***
+
+
+ Geometry optimization using default procedure for command KS-SCF
+
+ Geometry written to block  1 of record 700
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.456972701494888E-01">
+     -0.000036766462  -0.000000000000  -0.000000550469
+      0.000002809905  -0.000000000000  -0.005542444436
+     -0.005221241279  -0.000000000000   0.001853781064
+      0.002627598918   0.004528623849   0.001844606921
+      0.002627598918  -0.004528623849   0.001844606921
+   </gradient><!--
+
+ Making model hessian for Z-matrix coordinates
+
+ Quadratic Steepest Descent - Minimum Search
+
+ Optimization point 1
+
+ Variable                      Last           Current        Next           Gradient       Hessian
+
+ E(KS-SCF000) / Hartree      0.00000000   -40.00270983     0.00000000
+ D / ANG                     0.00000000     1.09000000     1.09610034    -0.04192410     6.87242182
+ A / DEG                     0.00000000   109.47000000   109.46929786     0.00000016     0.00023257
+ T / DEG                     0.00000000   120.00000000   120.00508803    -0.00000076     0.00014996
+ Convergence:                0.00000000  (line search)     0.01152832     0.02218532  (total)
+   --><opt energy="-40.00270983" type="KS-SCF000" line="0.0"
+     convergence="0.115283180759378E-01" gradient="0.221853238308464E-01"/><!--
+   --><jobstep command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="Cs"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="0.850828730193496E-05" y3="0.0"
+       z3="-0.837059675146886E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.215265717433467" y3="0.0" z3="1.07474754890376"/>
+     <cml:atom id="a3" elementType="H" x3="0.941564536192166" y3="0.0" z3="-0.56117518973951"/>
+     <cml:atom id="a4" elementType="H" x3="-0.578465820821777" y3="-0.894926907829218"
+       z3="-0.256736305959894"/>
+     <cml:atom id="a5" elementType="H" x3="-0.578465820821777" y3="0.894926907829218"
+       z3="-0.256736305959894"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028558380463"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-0.176948804979649E-04 0.0 0.247751937861307E-04"/><!--
+    -->
+    <time start="17:12:17" end="17:12:18" cpu="2.23" system="0.37" real="2.73"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="7.61" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.590207302789141E-02">
+      0.000034348819  -0.000000000000  -0.000003422128
+     -0.000149678092  -0.000000000000  -0.000700689130
+     -0.000606871309  -0.000000000000   0.000361205705
+      0.000361100291   0.000591135163   0.000171452777
+      0.000361100291  -0.000591135163   0.000171452777
+   </gradient><!--
+
+ Optimization point 2
+
+ Variable                      Last           Current        Next           Gradient       Hessian
+
+ E(KS-SCF000) / Hartree    -40.00270983   -40.00285584     0.00000000
+ D / ANG                     1.09000000     1.09610034     1.09699968    -0.00538461     5.98957346
+ A / DEG                   109.47000000   109.46929786   109.46971683    -0.00000008     0.00022487
+ T / DEG                   120.00000000   120.00508803   119.99525846     0.00000124     0.00014485
+ Convergence:                0.00000000  (line search)     0.00170816     0.00285030  (total)
+   --><opt energy="-40.00285584" type="KS-SCF000" line="0.0"
+     convergence="0.170815566554296E-02" gradient="0.285029893848901E-02"/><!--
+   --><jobstep command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="Cs"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.106258048463203E-04" y3="0.0"
+       z3="0.175130242821911E-06"/>
+     <cml:atom id="a2" elementType="H" x3="0.543919079858835" y3="0.0" z3="0.952653714707741"/>
+     <cml:atom id="a3" elementType="H" x3="0.716871636885457" y3="0.0" z3="-0.830354033995565"/>
+     <cml:atom id="a4" elementType="H" x3="-0.630332047787186" y3="-0.895747589532267"
+       z3="-0.611508838156921E-01"/>
+     <cml:atom id="a5" elementType="H" x3="-0.630332047787186" y3="0.895747589532267"
+       z3="-0.611508838156921E-01"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028574791041"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-0.45891149970112E-05 0.0 -0.50199174105453E-05"/><!--
+    -->
+    <time start="17:12:20" end="17:12:21" cpu="2.23" system="0.1" real="2.45"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="7.61" eaf="0.0"/>
+   </jobstep><!--
+
+ Freezing grid
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.103675896245379E-03">
+      0.000025491401  -0.000000000000  -0.000028890138
+     -0.000011420970  -0.000000000000  -0.000002890113
+     -0.000004051791  -0.000000000000   0.000013572003
+     -0.000005009320   0.000020611120   0.000009104124
+     -0.000005009320  -0.000020611120   0.000009104124
+   </gradient><!--
+
+ Optimization point 3
+
+ Variable                      Last           Current        Next           Gradient       Hessian
+
+ E(KS-SCF000) / Hartree    -40.00285584   -40.00285748     0.00000000
+ D / ANG                     1.09610034     1.09699968     1.09701806    -0.00009451     5.89940021
+ A / DEG                   109.46929786   109.46971683   109.47088737    -0.00000026     0.00022376
+ T / DEG                   120.00508803   119.99525846   119.98652699     0.00000123     0.00014379
+ Convergence:                0.00000000  (line search)     0.00015763     0.00008750  (total)
+   --><opt energy="-40.00285748" type="KS-SCF000" line="0.0"
+     convergence="0.157633441464475E-03" gradient="0.875048005965637E-04"/><!--
+   --><jobstep command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="Cs"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493802E-04" y3="0.0"
+       z3="0.721971425298157E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028572761211"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.510664447739284E-04 0.0 -0.15951644647183E-04"/><!--
+    -->
+    <time start="17:12:22" end="17:12:23" cpu="1.87" system="0.06" real="2.01"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="7.61" eaf="0.0"/>
+   </jobstep><!--
+
+ END OF GEOMETRY OPTIMIZATION.    TOTAL CPU:         6.3 SEC
+
+ ITER.   ENERGY(OLD)    ENERGY(NEW)      DE          GRADMAX     GRADNORM    GRADRMS     STEPMAX     STEPLEN     STEPRMS
+   1   -40.00270983   -40.00285584    -0.00014601  0.02218528  0.02218532  0.00739511  0.01152797  0.01152832  0.00384277
+   2   -40.00285584   -40.00285748    -0.00000164  0.00284941  0.00285030  0.00095010  0.00169950  0.00170816  0.00056939
+   3   -40.00285748   -40.00285728     0.00000020  0.00007029  0.00008750  0.00002917  0.00015239  0.00015763  0.00005254
+
+ Geometry written to block  1 of record 700
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20        2.81       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     GRID   
+
+              2       4        0.29       700     1000     1800     2100   
+                                         GEOM     BASIS    GRID      RKS  
+
+ PROGRAMS   *        TOTAL      OPTG        KS       INT
+ CPU TIMES  *         8.08      6.33      1.07      0.18
+ REAL TIME  *         9.29 SEC
+ DISK USED  *         7.61 MB      
+ **********************************************************************************************************************************
+   --><time start="17:12:16" end="17:12:23" cpu="6.33" system="0.54" real="7.2"/><!--
+   --><storage units="megabyte" memory="801.84" sf="0.0" df="7.61" eaf="0.0"/><!--
+  --></jobstep><!--
+  --><jobstep command="FREQ" commandset="FREQ">
+   <!--
+
+
+ PROGRAM * HESSIAN
+
+ Computing numerical hessian using default procedure for command KS-SCF
+
+ Symmetry elements for unique displacements: Y  
+
+ Using no symmetry in wavefunction calculations
+
+ Running default procedure: KS-SCF000
+
+
+ Recomputing wavefunction at reference geometry
+   --><jobstep command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028595883539"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="0.497004712121107E-04 0.966204893870781E-11 -0.397548307767837E-05"/><!--
+    -->
+    <time start="17:12:23" end="17:12:24" cpu="0.88" system="0.05" real="0.98"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.89" eaf="0.0"/>
+   </jobstep><!--
+
+ Numerically approximating hessian using central gradient differences
+
+ Task list generated. Total number of displacements:     21
+
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="0.526628224045062E-02" y3="0.0"
+       z3="0.721971425298157E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028241967781"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="-0.114570627931498E-02 0.898192631382244E-11 -0.520507144885496E-07"/><!--
+    -->
+    <time start="17:12:24" end="17:12:26" cpu="1.47" system="0.17" real="1.7"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.283243214387888E-05">
+      0.007108096526  -0.000000000000  -0.000036724340
+     -0.000977784801  -0.000000000000  -0.001007261705
+     -0.002809984272  -0.000000000000   0.001671218659
+     -0.001660163727  -0.001551444040  -0.000313616307
+     -0.001660163727   0.001551444040  -0.000313616307
+   </gradient><!--
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.531726193954938E-02" y3="0.0"
+       z3="0.721971425298157E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028238301437"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="0.124005668256322E-02 0.715649761673376E-11 -0.549480483058584E-06"/><!--
+    -->
+    <time start="17:12:27" end="17:12:28" cpu="2.62" system="0.17" real="2.88"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.610222325404542E-06">
+     -0.007121632889  -0.000000000000  -0.000037379899
+      0.000971704431  -0.000000000000   0.001027761641
+      0.002745310100  -0.000000000000  -0.001638592031
+      0.001702309179   0.001531043956   0.000324105144
+      0.001702309179  -0.001531043956   0.000324105144
+   </gradient><!--
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.529177209E-02"
+       z3="0.721971425298157E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028240005715"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="0.604967262988199E-04 -0.119296454095097E-02 -0.269816059866868E-05"/><!--
+    -->
+    <time start="17:12:30" end="17:12:31" cpu="2.63" system="0.17" real="2.87"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.169099410396724E-05">
+     -0.000091845218   0.007117634416  -0.000021655101
+     -0.000002312532  -0.000639710581   0.000017309754
+     -0.000000746701  -0.000639254678  -0.000015063877
+     -0.001493966204  -0.002916988048  -0.000461809447
+      0.001588870655  -0.002921681109   0.000481218670
+   </gradient><!--
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.529899180425298E-02"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028238291571"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="0.425230996107251E-04 0.736921634825194E-11 -0.120843633937107E-02"/><!--
+    -->
+    <time start="17:12:32" end="17:12:34" cpu="2.62" system="0.15" real="2.85"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.175270717254648E-05">
+      0.000026921709  -0.000000000000   0.007171817800
+     -0.001046573337  -0.000000000000  -0.003763958355
+      0.001626524773  -0.000000000000  -0.001926712907
+     -0.000303436573  -0.000499826063  -0.000740573269
+     -0.000303436573   0.000499826063  -0.000740573269
+   </gradient><!--
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="-0.528455237574702E-02"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028241891747"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="0.415384777315841E-04 0.876831940388456E-11 0.117877298647512E-02"/><!--
+    -->
+    <time start="17:12:35" end="17:12:37" cpu="2.62" system="0.17" real="2.86"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.163087998770306E-05">
+      0.000025484244  -0.000000000000  -0.007060096086
+      0.000989094499  -0.000000000000   0.003681830195
+     -0.001683044074  -0.000000000000   0.001911959276
+      0.000334232666   0.000442957408   0.000733153307
+      0.000334232666  -0.000442957408   0.000733153307
+   </gradient><!--
+    5 tasks completed, CPU=    13.97 sec, Elapsed=    14.35 sec
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.721971425298185E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34912611984402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028549601014"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="0.579104772210903E-03 0.142774680966795E-12 -0.301359294246351E-03"/><!--
+    -->
+    <time start="17:12:38" end="17:12:40" cpu="2.67" system="0.13" real="2.87"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="0.273122255699133E-02">
+     -0.001003136962  -0.000000000000  -0.001018856815
+      0.000933660620  -0.000000000000   0.001097955282
+      0.000134194158  -0.000000000000   0.000315327447
+     -0.000032358908   0.000023106795  -0.000197212957
+     -0.000032358908  -0.000023106795  -0.000197212957
+   </gradient><!--
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.721971425298185E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.33854257566402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028548569275"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="-0.479975582371006E-03 0.853428439029358E-11 0.285030804770631E-03"/><!--
+    -->
+    <time start="17:12:41" end="17:12:43" cpu="2.66" system="0.16" real="2.9"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.260634323143444E-02">
+      0.000946377526  -0.000000000000   0.001016172373
+     -0.000938256632  -0.000000000000  -0.001079860696
+     -0.000151268234  -0.000000000000  -0.000338231531
+      0.000071573670  -0.000071786982   0.000200959927
+      0.000071573670   0.000071786982   0.000200959927
+   </gradient><!--
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.721971425298185E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.529177209E-02"
+       z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028567010386"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="0.475933267084505E-04 0.626253402367549E-03 -0.638928787979887E-05"/><!--
+    -->
+    <time start="17:12:44" end="17:12:46" cpu="2.67" system="0.15" real="2.89"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="0.718377385728626E-04">
+     -0.000027151684  -0.000639721555  -0.000008738962
+     -0.000004690583   0.000577482980   0.000016598548
+     -0.000008347733  -0.000015126641  -0.000011264706
+     -0.000057172954   0.000014166545  -0.000331561155
+      0.000097362954   0.000063198670   0.000334966275
+   </gradient><!--
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.721971425298185E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04703266482137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028402662051"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="-0.245093548887576E-03 0.883138007168327E-11 -0.277870534949098E-03"/><!--
+    -->
+    <time start="17:12:47" end="17:12:49" cpu="2.64" system="0.17" real="2.89"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="0.807375786365493E-02">
+     -0.001021338736  -0.000000000000  -0.003675251146
+      0.001062382275  -0.000000000000   0.003838553412
+     -0.000140770334  -0.000000000000  -0.000155987132
+      0.000049863397   0.000019817666  -0.000003657567
+      0.000049863397  -0.000019817666  -0.000003657567
+   </gradient><!--
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.721971425298185E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.03644912064137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.002840143692"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="0.341257995591704E-03 0.857092175010621E-13 0.244279399478603E-03"/><!--
+    -->
+    <time start="17:12:50" end="17:12:51" cpu="2.61" system="0.17" real="2.87"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.810317511487921E-02">
+      0.001014283850  -0.000000000000   0.003770544028
+     -0.001116016259  -0.000000000000  -0.003915173650
+      0.000124523554  -0.000000000000   0.000134629635
+     -0.000011395573  -0.000069212205   0.000004999993
+     -0.000011395573   0.000069212205   0.000004999993
+   </gradient><!--
+   10 tasks completed, CPU=    28.02 sec, Elapsed=    28.78 sec
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.721971425298185E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.872806167629081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028454212043"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="0.530012244799316E-04 0.785704834527223E-11 0.4743282222264E-03"/><!--
+    -->
+    <time start="17:12:53" end="17:12:54" cpu="2.7" system="0.16" real="2.91"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="0.674738599232886E-02">
+     -0.002779135334  -0.000000000000   0.001627830533
+      0.000135318623  -0.000000000000  -0.000121794576
+      0.002834247801  -0.000000000000  -0.001756086628
+     -0.000095215545   0.000039628592   0.000125025335
+     -0.000095215545  -0.000039628592   0.000125025335
+   </gradient><!--
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.721971425298185E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.862222623449081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028451011295"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="0.323163444329033E-04 0.49960036108132E-12 -0.479118877855705E-03"/><!--
+    -->
+    <time start="17:12:56" end="17:12:57" cpu="2.64" system="0.14" real="2.87"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.672376856064887E-02">
+      0.002776187723  -0.000000000000  -0.001682015998
+     -0.000150142321  -0.000000000000   0.000143503555
+     -0.002896665732  -0.000000000000   0.001785771968
+      0.000135310165  -0.000088636776  -0.000123629763
+      0.000135310165   0.000088636776  -0.000123629763
+   </gradient><!--
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.721971425298185E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.529177209E-02"
+       z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028567030166"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="0.477362200438369E-04 0.626390448041692E-03 -0.686357721479958E-05"/><!--
+    -->
+    <time start="17:12:58" end="17:13:00" cpu="2.68" system="0.16" real="2.91"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="0.718367820316169E-04">
+     -0.000030988041  -0.000639271330   0.000003824429
+     -0.000006480959  -0.000015126974   0.000009906939
+     -0.000003121191   0.000577083344  -0.000015807191
+     -0.000230225140   0.000014141402   0.000234143446
+      0.000270815331   0.000063173559  -0.000232067623
+   </gradient><!--
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.721971425298185E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.666134683754519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028499486386"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="0.524612954425963E-03 0.355049323275125E-12 0.257669999250254E-03"/><!--
+    -->
+    <time start="17:13:01" end="17:13:03" cpu="2.62" system="0.16" real="2.86"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.517612029700017E-02">
+      0.001648452293  -0.000000000000  -0.001924962361
+      0.000321500373  -0.000000000000  -0.000136672652
+     -0.001797099099  -0.000000000000   0.001941170332
+     -0.000086426784  -0.000034905556   0.000060232340
+     -0.000086426784   0.000034905556   0.000060232340
+   </gradient><!--
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.721971425298185E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.676718227934519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028497588301"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="-0.42853026085965E-03 0.798161536863518E-11 -0.257398902909045E-03"/><!--
+    -->
+    <time start="17:13:04" end="17:13:06" cpu="2.64" system="0.16" real="2.87"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="0.524793624519667E-02">
+     -0.001661020548  -0.000000000000   0.001913758140
+     -0.000332069983  -0.000000000000   0.000153950199
+      0.001744454903  -0.000000000000  -0.001952606542
+      0.000124317814  -0.000014157940  -0.000057550899
+      0.000124317814   0.000014157940  -0.000057550899
+   </gradient><!--
+   15 tasks completed, CPU=    42.03 sec, Elapsed=    43.18 sec
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.721971425298185E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.600230726140009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028509264274"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="0.380143035788483E-03 -0.440200971125959E-03 -0.98476256933766E-04"/><!--
+    -->
+    <time start="17:13:07" end="17:13:09" cpu="2.6" system="0.16" real="2.85"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.465903934225272E-02">
+     -0.001706731716  -0.001554629201  -0.000322865349
+     -0.000058655795  -0.000077507499   0.000040580192
+     -0.000124402918  -0.000251682458  -0.000116720581
+      0.001713403801   0.001638976124   0.000345107391
+      0.000176386628   0.000244843034   0.000053898347
+   </gradient><!--
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.721971425298185E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.610814270320009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028513298716"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="-0.272792607312944E-03 0.446208787262314E-03 0.85260363895473E-04"/><!--
+    -->
+    <time start="17:13:10" end="17:13:12" cpu="2.66" system="0.14" real="2.91"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="0.474419951878356E-02">
+      0.001655773921   0.001527724030   0.000314871306
+      0.000045282262   0.000077024323  -0.000020677344
+      0.000106126381   0.000249367549   0.000094028100
+     -0.001670587287  -0.001659654385  -0.000337232739
+     -0.000136595277  -0.000194461518  -0.000050989323
+   </gradient><!--
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.721971425298185E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.890543148538231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.002844662938"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="-0.391328434791283E-03 -0.213510661679628E-04 -0.14073581910054E-03"/><!--
+    -->
+    <time start="17:13:13" end="17:13:15" cpu="2.67" system="0.17" real="2.9"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.694689264710373E-02">
+     -0.001591263268  -0.002945294081  -0.000480292278
+      0.000041384276   0.000039143334   0.000054753099
+      0.000056318901   0.000039116828  -0.000021688519
+      0.001694385121   0.003018420468   0.000513418240
+     -0.000200825030  -0.000151386549  -0.000066190542
+   </gradient><!--
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.721971425298185E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.901126692718231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.002844347784"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="0.495634983205151E-03 0.38447924613827E-04 0.130218963514783E-03"/><!--
+    -->
+    <time start="17:13:16" end="17:13:17" cpu="2.63" system="0.15" real="2.87"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="0.696266877915748E-02">
+      0.001491621963   0.002893402927   0.000462708683
+     -0.000053515845  -0.000038222137  -0.000034279186
+     -0.000071952973  -0.000038193590  -0.000000931184
+     -0.001604639103  -0.003014851379  -0.000495599595
+      0.000238485958   0.000197864179   0.000068101283
+   </gradient><!--
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.721971425298185E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.17990846279681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028561792005"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="-0.40225710136732E-04 -0.135461330389663E-03 0.594924188596913E-03"/><!--
+    -->
+    <time start="17:13:19" end="17:13:20" cpu="2.46" system="0.15" real="2.72"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.136906949884858E-02">
+     -0.000339405922  -0.000466670553  -0.000734077028
+     -0.000206532535  -0.000334102392   0.000005215710
+      0.000115626075   0.000233180851   0.000047308895
+      0.000358292505   0.000475938721   0.000679682417
+      0.000072019877   0.000091653372   0.000001870005
+   </gradient><!--
+   20 tasks completed, CPU=    55.86 sec, Elapsed=    57.45 sec
+   --><jobstep displaced="true" command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493806E-04" y3="0.0"
+       z3="0.721971425298185E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="0.0" z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.19049200697681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028561830006"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="0.143680333113849E-03 0.135586288154022E-03 -0.602085828504184E-03"/><!--
+    -->
+    <time start="17:13:21" end="17:13:23" cpu="2.49" system="0.13" real="2.69"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="8.94" eaf="0.0"/>
+   </jobstep><!--
+   --><gradient name="RKS GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="0.150732135672255E-02">
+      0.000298233469   0.000476104965   0.000739672179
+      0.000191644695   0.000332424742   0.000013876726
+     -0.000133023054  -0.000233028926  -0.000070473210
+     -0.000323989240  -0.000532867626  -0.000683228742
+     -0.000032865871  -0.000042633155   0.000000153048
+   </gradient><!--
+
+ Numerical KS-SCF000 hessian completed. CPU-time:    58.51 sec, Elapsed:    60.16 sec
+
+ KS-SCF hessian saved to record  5300.2
+
+ FREQUENCIES * CALCULATION OF HARMONIC VIBRATIONAL SPECTRA FOR KS-SCF
+
+
+ Permanent Dipole Moment [debye]
+   1-  3    0.000130    0.000000   -0.000041
+
+ Dipole Moment Norm    0.0001360 [debye]
+
+ Dipole Moment Derivatives [debye/ang]
+                   1             2             3             4             5             6             7             8
+         1    -0.5729279     0.0000000     0.0002365     0.2543323     0.0000000    -0.1408091     0.0049674     0.0000000
+         2     0.0000000    -0.5729678    -0.0000000    -0.0000000     0.3007826     0.0000000     0.0000000     0.3008485
+         3     0.0001195     0.0000000    -0.5732752    -0.1408184     0.0000000    -0.1253914     0.2289651     0.0000000
+                   9            10            11            12            13            14            15
+         1     0.2288921     0.1567989    -0.2129994    -0.0441640     0.1567989     0.2129994    -0.0441640
+         2    -0.0000000    -0.2128664    -0.0143604    -0.0650906     0.2128664    -0.0143604     0.0650906
+         3     0.1236910    -0.0441233    -0.0650683     0.2874554    -0.0441233     0.0650683     0.2874554
+
+ Projecting out rotations and translations
+
+   Low Vibration      Wavenumber
+        Nr             [1/cm] 
+        1                0.00
+        2                0.00
+        3                0.00
+        4                0.00
+        5                0.00
+        6                0.00
+
+     Vibration        Wavenumber
+        Nr             [1/cm] 
+        1             1535.08
+        2             1535.38
+        3             1535.57
+        4             1761.95
+        5             1762.26
+        6             3281.92
+        7             3519.61
+        8             3519.86
+        9             3519.90
+
+ FREQUENCIES * CALCULATION OF NORMAL MODES FOR KS-SCF
+
+
+ Atomic Coordinates
+
+  Nr  Atom  Charge       X              Y              Z
+
+   1   C     6.00   -0.000048169    0.000000000    0.000013643
+   2   H1    1.00    0.649752752    0.000000000    1.968604987
+   3   H2    1.00    1.639364623    0.000000000   -1.268812119
+   4   H3    1.00   -1.144271688   -1.692882659   -0.349977723
+   5   H4    1.00   -1.144271688    1.692882659   -0.349977723
+
+ Frequencies dumped to record   5400.2
+
+ Gradient norm at reference geometry: 0.94517D-04
+
+ Normal Modes
+
+                              1 A`        2 A`        3 A``       4 A`        5 A``
+ Wavenumbers [cm-1]         1535.08     1535.38     1535.57     1761.95     1762.26
+ Intensities [km/mol]         12.06       12.07       12.05        0.00        0.00
+ Intensities [relative]       99.96      100.00       99.89        0.00        0.00
+           CX1             -0.11255    -0.01344    -0.00000     0.00005    -0.00000
+           CY1              0.00000     0.00000    -0.11334    -0.00000    -0.00006
+           CZ1              0.01344    -0.11255    -0.00000     0.00002    -0.00000
+           H1X2             0.51187    -0.13540    -0.00000     0.47277    -0.00000
+           H1Y2            -0.00000    -0.00000     0.55624     0.00000     0.49832
+           H1Z2            -0.18979    -0.05842    -0.00000    -0.15596     0.00000
+           H2X3             0.10732     0.33276     0.00000     0.30464    -0.00000
+           H2Y3            -0.00000    -0.00000     0.55669    -0.00000    -0.49780
+           H2Z3             0.27876     0.34618     0.00000     0.39372    -0.00000
+           H3X4             0.36099    -0.01859    -0.29599    -0.38900     0.14546
+           H3Y4            -0.28294    -0.12489     0.11883     0.28766     0.00009
+           H3Z4            -0.12459     0.52670    -0.09023    -0.11899    -0.47627
+           H4X5             0.36099    -0.01859     0.29599    -0.38900    -0.14546
+           H4Y5             0.28294     0.12489     0.11883    -0.28766     0.00009
+           H4Z5            -0.12459     0.52670     0.09023    -0.11899     0.47627
+
+                              6 A`        7 A`        8 A`        9 A``
+ Wavenumbers [cm-1]         3281.92     3519.61     3519.86     3519.90
+ Intensities [km/mol]          0.00        0.87        0.86        0.86
+ Intensities [relative]        0.00        7.17        7.15        7.14
+           CX1             -0.00001    -0.08090    -0.03912    -0.00000
+           CY1              0.00000     0.00000     0.00000    -0.08988
+           CZ1              0.00002     0.03912    -0.08090    -0.00000
+           H1X2             0.15605    -0.04145     0.25363     0.00000
+           H1Y2             0.00000     0.00000     0.00000    -0.00824
+           H1Z2             0.47277    -0.09975     0.77202     0.00000
+           H2X3             0.39397     0.63314    -0.13881    -0.00000
+           H2Y3            -0.00000     0.00000     0.00000    -0.00824
+           H2Z3            -0.30488    -0.49206     0.09719    -0.00000
+           H3X4            -0.27497     0.18620     0.17569     0.37308
+           H3Y4            -0.40666     0.28635     0.26513     0.54374
+           H3Z4            -0.08408     0.06282     0.04744     0.11411
+           H4X5            -0.27497     0.18620     0.17569    -0.37308
+           H4Y5             0.40666    -0.28635    -0.26513     0.54374
+           H4Z5            -0.08408     0.06282     0.04744    -0.11411
+
+
+ Normal Modes of low/zero frequencies
+
+                                  1           2           3           4           5
+ Wavenumbers [cm-1]            0.00        0.00        0.00        0.00        0.00
+ Intensities [km/mol]          0.00        0.00        0.00        0.00        0.00
+ Intensities [relative]        0.00        0.00        0.00        0.00        0.00
+           CX1             -0.01078     0.22367    -0.01644    -0.00781    -0.08599
+           CY1             -0.01525     0.07632    -0.09422    -0.09708     0.18830
+           CZ1              0.21013     0.04328     0.07662     0.06700     0.07593
+           H1X2             0.07024     0.31785    -0.06715     0.03996    -0.26048
+           H1Y2            -0.21678     0.14562    -0.21115     0.43623     0.35647
+           H1Z2             0.18339     0.01220     0.09336     0.05124     0.13353
+           H2X3            -0.06300     0.16297     0.01624    -0.03860     0.02648
+           H2Y3            -0.17617     0.16014     0.43090    -0.31312     0.26495
+           H2Z3             0.14266    -0.03515     0.11885     0.02722     0.22124
+           H3X4            -0.26438     0.31260     0.36250     0.08873     0.09723
+           H3Y4             0.16593    -0.00021    -0.29822    -0.25572     0.06592
+           H3Z4             0.16287     0.12273    -0.17551     0.51871     0.06889
+           H4X5             0.21401     0.10125    -0.37735    -0.12133    -0.20716
+           H4Y5             0.16593    -0.00021    -0.29822    -0.25572     0.06592
+           H4Z5             0.35157     0.07331     0.26980    -0.32918    -0.11987
+
+                                  6
+ Wavenumbers [cm-1]            0.00
+ Intensities [km/mol]          0.00
+ Intensities [relative]        0.00
+           CX1             -0.06681
+           CY1              0.05015
+           CZ1             -0.01341
+           H1X2             0.46686
+           H1Y2             0.06466
+           H1Z2            -0.18957
+           H2X3            -0.41078
+           H2Y3             0.15409
+           H2Z3            -0.45785
+           H3X4            -0.06851
+           H3Y4            -0.00905
+           H3Z4             0.27850
+           H4X5            -0.25487
+           H4Y5            -0.00905
+           H4Z5             0.31506
+
+
+ Zero point energy:  0.05005483 [H]    10985.76 [1/CM]      131.42 [KJ/MOL]
+   --><cml:symmetry pointGroup="C1"/><!--
+   --><cml:atomArray>
+    <cml:atom id="a1" elementType="C" x3="0.721971425299286E-05" y3="-0.254898495493806E-04"
+      z3="0.0"/>
+    <cml:atom id="a2" elementType="H" x3="1.04174089273137" y3="0.34383434775402" z3="0.0"/>
+    <cml:atom id="a3" elementType="H" x3="-0.671426455844519" y3="0.867514395539081" z3="0.0"/>
+    <cml:atom id="a4" elementType="H" x3="-0.18520023488681" y3="-0.605522498230009"
+      z3="-0.895834920628231"/>
+    <cml:atom id="a5" elementType="H" x3="-0.18520023488681" y3="-0.605522498230009"
+      z3="0.895834920628231"/>
+   </cml:atomArray><!--
+   --><cml:bondArray>
+    <cml:bond atomRefs2="a1 a2"/>
+    <cml:bond atomRefs2="a1 a3"/>
+    <cml:bond atomRefs2="a1 a4"/>
+    <cml:bond atomRefs2="a1 a5"/>
+   </cml:bondArray><!--
+ Frequency information read from record  5400.2
+   -->
+   <vibrations>
+    <normalCoordinate wavenumber="3519.9" units="inverseCentimetre">
+      0.00000000 -0.08987629  0.00000000
+      0.00000000 -0.00823523  0.00000000
+      0.00000000 -0.00824009  0.00000000
+      0.37308416  0.54373783  0.11411413
+     -0.37308416  0.54373783 -0.11411413
+    </normalCoordinate>
+    <normalCoordinate wavenumber="3519.86" units="inverseCentimetre">
+     -0.03912249  0.00000000 -0.08090498
+      0.25362551  0.00000000  0.77202075
+     -0.13881208  0.00000000  0.09719206
+      0.17569260  0.26513161  0.04744098
+      0.17569260 -0.26513161  0.04744098
+    </normalCoordinate>
+    <normalCoordinate wavenumber="3519.61" units="inverseCentimetre">
+     -0.08090394  0.00000000  0.03911983
+     -0.04144952  0.00000000 -0.09974594
+      0.63314108  0.00000000 -0.49206461
+      0.18619541  0.28635202  0.06282183
+      0.18619541 -0.28635202  0.06282183
+    </normalCoordinate>
+    <normalCoordinate wavenumber="3281.92" units="inverseCentimetre">
+     -0.00000691  0.00000000  0.00002250
+      0.15604807  0.00000000  0.47277486
+      0.39396893  0.00000000 -0.30488434
+     -0.27496733 -0.40665512 -0.08407933
+     -0.27496733  0.40665512 -0.08407933
+    </normalCoordinate>
+    <normalCoordinate wavenumber="1762.26" units="inverseCentimetre">
+      0.00000000 -0.00005866  0.00000000
+      0.00000000  0.49832041  0.00000000
+      0.00000000 -0.49780262  0.00000000
+      0.14546261  0.00009060 -0.47627359
+     -0.14546261  0.00009060  0.47627359
+    </normalCoordinate>
+    <normalCoordinate wavenumber="1761.95" units="inverseCentimetre">
+      0.00004976  0.00000000  0.00001867
+      0.47276914  0.00000000 -0.15595511
+      0.30464309  0.00000000  0.39372174
+     -0.38900263  0.28766313 -0.11899453
+     -0.38900263 -0.28766313 -0.11899453
+    </normalCoordinate>
+    <normalCoordinate wavenumber="1535.57" units="inverseCentimetre">
+      0.00000000 -0.11333953  0.00000000
+      0.00000000  0.55623973  0.00000000
+      0.00000000  0.55668896  0.00000000
+     -0.29598684  0.11883435 -0.09022640
+      0.29598684  0.11883435  0.09022640
+    </normalCoordinate>
+    <normalCoordinate wavenumber="1535.38" units="inverseCentimetre">
+     -0.01344124  0.00000000 -0.11254730
+     -0.13540303  0.00000000 -0.05842290
+      0.33275782  0.00000000  0.34618187
+     -0.01859191 -0.12488859  0.52669894
+     -0.01859191  0.12488859  0.52669894
+    </normalCoordinate>
+    <normalCoordinate wavenumber="1535.08" units="inverseCentimetre">
+     -0.11254739  0.00000000  0.01344351
+      0.51186564  0.00000000 -0.18978721
+      0.10732140  0.00000000  0.27876453
+      0.36098542 -0.28293711 -0.12458769
+      0.36098542  0.28293711 -0.12458769
+    </normalCoordinate>
+    <normalCoordinate wavenumber="0.0" units="inverseCentimetre">
+     -0.06680881  0.05015054 -0.01341322
+      0.46686257  0.06465852 -0.18956972
+     -0.41077862  0.15408624 -0.45784659
+     -0.06851153 -0.00904903  0.27849745
+     -0.25486652 -0.00904903  0.31505814
+    </normalCoordinate>
+    <normalCoordinate wavenumber="0.0" units="inverseCentimetre">
+     -0.08598967  0.18830283  0.07593106
+     -0.26048001  0.35647063  0.13352757
+      0.02647544  0.26495309  0.22124395
+      0.09722700  0.06592221  0.06888862
+     -0.20716185  0.06592221 -0.11986795
+    </normalCoordinate>
+    <normalCoordinate wavenumber="0.0" units="inverseCentimetre">
+     -0.00780894 -0.09708112  0.06700254
+      0.03995642  0.43622576  0.05123595
+     -0.03859538 -0.31312196  0.02722428
+      0.08872649 -0.25571755  0.51871297
+     -0.12132856 -0.25571755 -0.32918164
+    </normalCoordinate>
+    <normalCoordinate wavenumber="0.0" units="inverseCentimetre">
+     -0.01644218 -0.09422339  0.07662066
+     -0.06715313 -0.21114941  0.09335954
+      0.01624280  0.43090104  0.11885197
+      0.36249958 -0.29822456 -0.17551137
+     -0.37735236 -0.29822456  0.26980224
+    </normalCoordinate>
+    <normalCoordinate wavenumber="0.0" units="inverseCentimetre">
+      0.22366999  0.07632168  0.04328323
+      0.31784625  0.14561888  0.01219713
+      0.16297011  0.16013959 -0.03514532
+      0.31260253 -0.00021353  0.12273212
+      0.10125069 -0.00021353  0.07331230
+    </normalCoordinate>
+    <normalCoordinate wavenumber="0.0" units="inverseCentimetre">
+     -0.01077889 -0.01525088  0.21012965
+      0.07024039 -0.21678328  0.18338647
+     -0.06299864 -0.17617071  0.14265804
+     -0.26437616  0.16592713  0.16286810
+      0.21400992  0.16592713  0.35157445
+    </normalCoordinate>
+   </vibrations>
+
+ Recomputing wavefunction at initial geometry
+   <jobstep command="KS-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:symmetry pointGroup="C1"/><!--
+    --><cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="-0.254898495493802E-04" y3="-0.0"
+       z3="0.721971425298157E-05"/>
+     <cml:atom id="a2" elementType="H" x3="0.34383434775402" y3="-0.0" z3="1.04174089273137"/>
+     <cml:atom id="a3" elementType="H" x3="0.867514395539081" y3="-0.0"
+       z3="-0.671426455844519"/>
+     <cml:atom id="a4" elementType="H" x3="-0.605522498230009" y3="-0.895834920628231"
+       z3="-0.18520023488681"/>
+     <cml:atom id="a5" elementType="H" x3="-0.605522498230009" y3="0.895834920628231"
+       z3="-0.18520023488681"/>
+    </cml:atomArray><!--
+    --><cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a1 a5"/>
+    </cml:bondArray><!--
+    --><property name="Energy" method="RKS" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-40.0028595883539"/><!--
+    --><property name="Dipole moment" method="RKS" principal="true" stateSymmetry="1"
+      stateNumber="1"
+      value="0.497004712121107E-04 0.966204893870781E-11 -0.397548307767837E-05"/><!--
+    -->
+    <time start="17:13:24" end="17:13:25" cpu="2.01" system="0.07" real="2.12"/>
+    <storage units="megabyte" memory="801.84" sf="0.0" df="9.18" eaf="0.0"/>
+   </jobstep>
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      22        3.48       500      610      700      702      900      703      950      970     1001      129   
+                                          VAR    BASINP    GEOM     GEOM    SYMINP    GEOM     ZMAT    AOBASIS   BASIS     P2S  
+                                          960     1100     1400     1410     1200     1210     1080     1600     1650     1300   
+                                        ABASIS      S        T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS   
+                                         1700     1800   
+                                         OPER     GRID   
+
+              2      13        0.87       700     1000     1800     2100      701      702     1001     1800(1)  2101     5300   
+                                         GEOM     BASIS    GRID      RKS     GEOM     GEOM     BASIS    GRID      RKS     HESS   
+                                         5400     5450      703   
+                                         FREQ     NMOD     GEOM   
+
+ PROGRAMS   *        TOTAL      FREQ        KS        KS        KS        KS        KS        KS        KS        KS        KS
+ CPU TIMES  *        64.97      0.78      1.29      1.28      1.45      1.48      1.48      1.44      1.45      1.44      1.48
+ REAL TIME  *        71.34 SEC
+ DISK USED  *         9.18 MB      
+ **********************************************************************************************************************************
+   <time start="17:12:23" end="17:13:25" cpu="56.89" system="3.41" real="62.05"/>
+   <storage units="megabyte" memory="801.84" sf="0.0" df="9.18" eaf="0.0"/>
+  </jobstep><!--
+
+ Dump information in style MOLDEN to ch4_sto-3g.molpro                                                               
+
+ Molecular orbitals read from record     2101.2  Type=RKS/CANONICAL (state 1.1)
+ Occupation numbers read from record     2101.2  Type=RKS/RHF (state 1.1)
+ Orbital energies read from record       2101.2  Type=RKS/CANONICAL (state 1.1)
+ Redundancy group numbers read from rec  2101.2  Type=RKS/RHF (state 1.1)
+
+ DUMP ORBITAL  1.1 AS ORBITAL    1  occ=    2.0000  eig=   -9.9924  GROUP=   2
+ DUMP ORBITAL  2.1 AS ORBITAL    2  occ=    2.0000  eig=   -0.6571  GROUP=   2
+ DUMP ORBITAL  3.1 AS ORBITAL    3  occ=    2.0000  eig=   -0.3563  GROUP=   2
+ DUMP ORBITAL  4.1 AS ORBITAL    4  occ=    2.0000  eig=   -0.3563  GROUP=   2
+ DUMP ORBITAL  5.1 AS ORBITAL    5  occ=    2.0000  eig=   -0.3562  GROUP=   2
+
+ Total charge:      10.000000
+ Frequency information read from record  5400.2
+
+ **********************************************************************************************************************************
+
+        KS-SCF          KS-SCF          KS-SCF          KS-SCF          KS-SCF          KS-SCF          KS-SCF          KS-SCF  
+    -40.00285959    -40.00285618    -40.00285618    -40.00284435    -40.00284466    -40.00285133    -40.00285093    -40.00284976
+ **********************************************************************************************************************************
+ Variable memory released
+  --><stm:metadataList>
+   <stm:metadata name="dc:date" content="2024-08-17T17:13:25+02:00"/>
+   <stm:metadata name="dc:creator" content="ospite"/>
+   <stm:metadata name="dc:title" content="methane with imposed symmetry and sto-g3 basis set"/>
+   <stm:metadata name="cmlm:insilico" content="Molpro"/>
+  </stm:metadataList><!--
+  --><platform>
+   <version major="2010" minor="1" integer_bits="64" parallelism="serial">
+    2010.1
+    <date year="2024" month="8" day="17" hour="17" minute="12" second="14">
+     2024-08-17T17:12:14
+    </date>
+   </version>
+   <licence id="polimi"/>
+   <parallel processes="1" nodes="1" all_processes="1" openmp="1"/>
+   <machine hostname="molmod" architecture="x86_64">
+    Linux-3.10.0-1160.108.1.el7.x86_64/molmod(x86_64) 64 bit serial version
+    <sysinfo name="cpu MHz" content="1995.384"/>
+    <sysinfo name="MemTotal" content="2046732 kB"/>
+    <sysinfo name="vendor_id" content="GenuineIntel"/>
+    <sysinfo name="cpu family" content="6"/>
+    <sysinfo name="model name" content="Intel(R) Core(TM) i7-4510U CPU @ 2.00GHz"/>
+    <sysinfo name="flags"
+      content="fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc eagerfpu pni pclmulqdq monitor ssse3 cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx rdrand hypervisor lahf_lm abm invpcid_single rsb_ctxsw fsgsbase bmi1 avx2 bmi2 invpcid arat md_clear flush_l1d"/>
+    <sysinfo name="MemTotal" content="2046732 kB"/>
+    <sysinfo name="cache size" content="4096 KB"/>
+    <sysinfo name="ncpu" content="1"/>
+   </machine>
+  </platform><!--
+  -->
+  <input>
+   <p> ***,methane with imposed symmetry and sto-g3 basis set </p>
+   <p> memory,100,m </p>
+   <p> basis=sto-3g </p>
+   <p> symmetry,y </p>
+   <p> geometry={angstrom </p>
+   <p> C </p>
+   <p> H1, C, d </p>
+   <p> H2, C, d, H1, a </p>
+   <p> H3, C, d, H1, a, H2, t </p>
+   <p> H4, C, d, H1, a, H2, -t </p>
+   <p> } </p>
+   <p> d=1.09 Ang </p>
+   <p> a=109.47 Deg </p>
+   <p> t=120.0 Deg </p>
+   <p> {dfunc,b3lyp} </p>
+   <p> ks </p>
+   <p> optg </p>
+   <p> frequencies </p>
+   <p> put,molden,ch4_sto-3g.molpro </p>
+  </input>
+  <!--
+ --></job><!--
+--></molpro>

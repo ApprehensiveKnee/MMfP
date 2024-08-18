@@ -1,0 +1,23 @@
+***, methane with imposed symmetry and sto-g3 basis set
+memory,100,m
+
+basis=sto-3g
+symmetry,y
+
+geometry={angstrom
+C
+H1, C, d
+H2, C, d, H1, a
+H3, C, d, H1, a, H2, t
+H4, C, d, H1, a, H2, -t 
+}
+
+d=1.09 Ang
+a=109.47 Deg
+t=120.0 Deg
+
+{dfunc,b3lyp3}
+ks
+optg
+frequencies
+put,molden,ch4_sto-3g.molpro

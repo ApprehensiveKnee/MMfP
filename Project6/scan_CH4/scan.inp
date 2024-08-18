@@ -1,0 +1,45 @@
+***, methane to methyl and hydrogen
+memory,300,m
+nosym
+
+
+geometry={angstrom
+C
+H1, C, d
+H2, C, d, H1, a
+H3, C, d, H1, a, H2, t
+H4, C, r, H1, a, H2, -t 
+}
+
+r=1.09 Ang !start from 'standard' bond lenght
+d=1.09 Ang
+a=109.47 Deg
+t=120.0 Deg
+
+!set required basis set
+basis=cc-pVDZ
+
+do i=1,40
+
+!save distance to array
+rch4(i)=r
+!for each value of r, perform both hf and caspt2 calculations and save relative energies
+!hf calculation
+hf
+ehf(i)=energy
+!caspt2 calculation
+{casscf;closed,3;occ,7;wf,10,1,0}
+{rs2,shift=0.2}
+ers2(i)=energy
+!Perform optimization
+!{optg;inactive,r}
+
+
+r=r+0.05
+end do
+
+{table,rch4,ehf,ers2;plot,file='scan.plot'}
+
+---
+
+

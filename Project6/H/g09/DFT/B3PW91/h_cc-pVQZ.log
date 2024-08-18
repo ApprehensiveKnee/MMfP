@@ -1,0 +1,2731 @@
+ Entering Gaussian System, Link 0=/programs/64bit/g09/g09-gfortran/bin/g09
+ Input=h_cc-pVQZ.com
+ Output=h_cc-pVQZ.log
+ Initial command:
+ /programs/64bit/g09/g09-gfortran/bin/l1.exe /home/ospite/Desktop/MMfP/Project6/H/g09/DFT/B3PW91/Gau-7912.inp -scrdir=/home/ospite/Desktop/MMfP/Project6/H/g09/DFT/B3PW91/
+ Entering Link 1 = /programs/64bit/g09/g09-gfortran/bin/l1.exe PID=      7913.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009, Gaussian, Inc.
+                  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 09 program.  It is based on
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 09, Revision A.02,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, B. Mennucci, 
+ G. A. Petersson, H. Nakatsuji, M. Caricato, X. Li, H. P. Hratchian, 
+ A. F. Izmaylov, J. Bloino, G. Zheng, J. L. Sonnenberg, M. Hada, 
+ M. Ehara, K. Toyota, R. Fukuda, J. Hasegawa, M. Ishida, T. Nakajima, 
+ Y. Honda, O. Kitao, H. Nakai, T. Vreven, J. A. Montgomery, Jr., 
+ J. E. Peralta, F. Ogliaro, M. Bearpark, J. J. Heyd, E. Brothers, 
+ K. N. Kudin, V. N. Staroverov, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. Rendell, J. C. Burant, S. S. Iyengar, J. Tomasi, 
+ M. Cossi, N. Rega, J. M. Millam, M. Klene, J. E. Knox, J. B. Cross, 
+ V. Bakken, C. Adamo, J. Jaramillo, R. Gomperts, R. E. Stratmann, 
+ O. Yazyev, A. J. Austin, R. Cammi, C. Pomelli, J. W. Ochterski, 
+ R. L. Martin, K. Morokuma, V. G. Zakrzewski, G. A. Voth, 
+ P. Salvador, J. J. Dannenberg, S. Dapprich, A. D. Daniels, 
+ O. Farkas, J. B. Foresman, J. V. Ortiz, J. Cioslowski, 
+ and D. J. Fox, Gaussian, Inc., Wallingford CT, 2009.
+ 
+ ******************************************
+ Gaussian 09:  EM64L-G09RevA.02 11-Jun-2009
+                18-Aug-2024 
+ ******************************************
+ %mem=100MB
+ -------------------------------------------
+ #p b3pw91/cc-pVQZ opt freq pop=full gfinput
+ -------------------------------------------
+ 1/14=-1,18=20,19=15,26=3,38=1/1,3;
+ 2/9=110,12=2,17=6,18=5,40=1/2;
+ 3/5=16,6=2,11=2,16=1,24=10,25=1,30=1,71=1,74=-6/1,2,3;
+ 4//1;
+ 5/5=2,38=5/2;
+ 6/7=3,28=1/1;
+ 7//1,2,3,16;
+ 1/14=-1,18=20,19=15/3(2);
+ 2/9=110/2;
+ 99//99;
+ 2/9=110/2;
+ 3/5=16,6=2,11=2,16=1,25=1,30=1,71=1,74=-6/1,2,3;
+ 4/5=5,16=3/1;
+ 5/5=2,38=5/2;
+ 7//1,2,3,16;
+ 1/14=-1,18=20,19=15/3(-5);
+ 2/9=110/2;
+ 6/7=3,19=2,28=1/1;
+ 99/9=1/99;
+ Leave Link    1 at Sun Aug 18 15:09:51 2024, MaxMem=   13107200 cpu:       0.1
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l101.exe)
+ -------------------------------------
+ hydogen (atom) with cc-pVQZ basis set
+ -------------------------------------
+ Symbolic Z-matrix:
+ Charge =  0 Multiplicity = 2
+ H
+ 
+ NAtoms=      1 NQM=      1 NQMF=      0 NMic=      0 NMicF=      0 NTot=      1.
+                    Isotopes and Nuclear Properties:
+ (Nuclear quadrupole moments (NQMom) in fm**2, nuclear magnetic moments (NMagM)
+  in nuclear magnetons)
+
+  Atom         1
+ IAtWgt=           1
+ AtmWgt=   1.0078250
+ NucSpn=           1
+ AtZEff=   0.0000000
+ NQMom=    0.0000000
+ NMagM=    2.7928460
+ Leave Link  101 at Sun Aug 18 15:09:51 2024, MaxMem=   13107200 cpu:       0.1
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l103.exe)
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ Berny optimization.
+ Initialization pass.
+ No Z-matrix variables, so optimization will use Cartesian coordinates.
+ Trust Radius=1.00D-01 FncErr=1.00D-07 GrdErr=1.00D-06
+ Number of steps in this run=  20 maximum allowed number of steps= 100.
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+
+ Leave Link  103 at Sun Aug 18 15:09:51 2024, MaxMem=   13107200 cpu:       0.0
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0        0.000000    0.000000    0.000000
+ ---------------------------------------------------------------------
+ Stoichiometry    H(2)
+ Framework group  OH[O(H)]
+ Deg. of freedom     0
+ Full point group                 OH      NOp  48
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C1      NOp   1
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0        0.000000    0.000000    0.000000
+ ---------------------------------------------------------------------
+ Leave Link  202 at Sun Aug 18 15:09:51 2024, MaxMem=   13107200 cpu:       0.0
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l301.exe)
+ Standard basis: CC-pVQZ (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+ AO basis set in the form of general basis input (Overlap normalization):
+      1 0
+ S   3 1.00       0.000000000000
+      0.8264000000D+02  0.2295075779D-01
+      0.1241000000D+02  0.1755401181D+00
+      0.2824000000D+01  0.8647035510D+00
+ S   1 1.00       0.000000000000
+      0.7977000000D+00  0.1000000000D+01
+ S   1 1.00       0.000000000000
+      0.2581000000D+00  0.1000000000D+01
+ S   1 1.00       0.000000000000
+      0.8989000000D-01  0.1000000000D+01
+ P   1 1.00       0.000000000000
+      0.2292000000D+01  0.1000000000D+01
+ P   1 1.00       0.000000000000
+      0.8380000000D+00  0.1000000000D+01
+ P   1 1.00       0.000000000000
+      0.2920000000D+00  0.1000000000D+01
+ D   1 1.00       0.000000000000
+      0.2062000000D+01  0.1000000000D+01
+ D   1 1.00       0.000000000000
+      0.6620000000D+00  0.1000000000D+01
+ F   1 1.00       0.000000000000
+      0.1397000000D+01  0.1000000000D+01
+ ****
+
+ There are     8 symmetry adapted basis functions of AG  symmetry.
+ There are     2 symmetry adapted basis functions of B1G symmetry.
+ There are     2 symmetry adapted basis functions of B2G symmetry.
+ There are     2 symmetry adapted basis functions of B3G symmetry.
+ There are     1 symmetry adapted basis functions of AU  symmetry.
+ There are     5 symmetry adapted basis functions of B1U symmetry.
+ There are     5 symmetry adapted basis functions of B2U symmetry.
+ There are     5 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 2 integral format.
+ Two-electron integral symmetry is turned on.
+    30 basis functions,    37 primitive gaussians,    35 cartesian basis functions
+     1 alpha electrons        0 beta electrons
+       nuclear repulsion energy         0.0000000000 Hartrees.
+ IExCor=  408 DFT=T Ex+Corr=B3PW91 ExCW=0 ScaHFX=  0.200000
+ ScaDFX=  0.800000  0.720000  1.000000  0.810000 ScalE2=  1.000000  1.000000
+ IRadAn=      0 IRanWt=     -1 IRanGd=            0 ICorTp=0
+ NAtoms=    1 NActive=    1 NUniq=    1 SFac= 7.50D-01 NAtFMM=   80 NAOKFM=F Big=F
+ Leave Link  301 at Sun Aug 18 15:09:51 2024, MaxMem=   13107200 cpu:       0.1
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l302.exe)
+ NPDir=0 NMtPBC=     1 NCelOv=     1 NCel=       1 NClECP=     1 NCelD=      1
+         NCelK=      1 NCelE2=     1 NClLst=     1 CellRange=     0.0.
+ One-electron integrals computed using PRISM.
+ NBasis=    30 RedAO= T  NBF=     8     2     2     2     1     5     5     5
+ NBsUse=    30 1.00D-06 NBFU=     8     2     2     2     1     5     5     5
+ Precomputing XC quadrature grid using
+ IXCGrd= 2 IRadAn=           0 IRanWt=          -1 IRanGd=           0 AccXCQ= 1.00D-10.
+ NRdTot=      62 NPtTot=        7730 NUsed=        8190 NTot=        8222
+ NSgBfM=    35    35    35    35    35 NAtAll=     1     1.
+ Leave Link  302 at Sun Aug 18 15:09:51 2024, MaxMem=   13107200 cpu:       0.2
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l303.exe)
+ DipDrv:  MaxL=1.
+ Leave Link  303 at Sun Aug 18 15:09:52 2024, MaxMem=   13107200 cpu:       0.0
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l401.exe)
+ Harris functional with IExCor=  408 diagonalized for initial guess.
+ ExpMin= 8.99D-02 ExpMax= 8.26D+01 ExpMxC= 8.26D+01 IAcc=2 IRadAn=         0 AccDes= 0.00D+00
+ HarFok:  IExCor=  408 AccDes= 0.00D+00 IRadAn=         0 IDoV= 1
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ FoFCou: FMM=F IPFlag=           0 FMFlag=      100000 FMFlg1=           0
+         NFxFlg=           0 DoJE=T BraDBF=F KetDBF=T FulRan=T
+         Omega=  0.000000  0.000000  1.000000  0.000000  0.000000 ICntrl=     500 IOpCl=  0
+         NMat0=    1 NMatS0=    1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+         I1Cent=           4 NGrid=           0.
+ Petite list used in FoFCou.
+ Harris En=-0.464170439265854    
+ Initial guess orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (A1G)
+       Virtual   (A1G) (T1U) (T1U) (T1U) (A1G) (EG) (EG) (T2G)
+                 (T2G) (T2G) (T1U) (T1U) (T1U) (?A) (?A) (?A) (?A)
+                 (A2U) (?A) (?A) (A1G) (T1U) (T1U) (T1U) (EG) (T2G)
+                 (EG) (T2G) (T2G)
+ Beta  Orbitals:
+       Virtual   (A1G) (A1G) (T1U) (T1U) (T1U) (A1G) (EG) (EG)
+                 (T2G) (T2G) (T2G) (T1U) (T1U) (T1U) (?A) (?A)
+                 (?A) (?A) (A2U) (?A) (?A) (A1G) (T1U) (T1U) (T1U)
+                 (EG) (T2G) (EG) (T2G) (T2G)
+ The electronic state of the initial guess is 2-A1G.
+ Initial guess <Sx>= 0.0000 <Sy>= 0.0000 <Sz>= 0.5000 <S**2>= 0.7500 S= 0.5000
+ Leave Link  401 at Sun Aug 18 15:09:52 2024, MaxMem=   13107200 cpu:       0.3
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l502.exe)
+ UHF open shell SCF:
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Using DIIS extrapolation, IDIIS=  1040.
+ Integral symmetry usage will be decided dynamically.
+         8168 words used for storage of precomputed grid.
+ Keep R1 and R2 ints in memory in canonical form, NReq=2368472.
+ IEnd=       30921 IEndB=       30921 NGot=    13107200 MDV=    12696622
+ LenX=    12696622 LenY=    12694956
+ Symmetry not used in FoFDir.
+ MinBra= 0 MaxBra= 3 Meth= 1.
+ IRaf=       0 NMat=   1 IRICut=       1 DoRegI=T DoRafI=F ISym2E= 0 JSym2E=0.
+ Integral accuracy reduced to 1.0D-05 until final iterations.
+
+ Cycle   1  Pass 0  IDiag  1:
+ E=-0.502550238752740    
+ DIIS: error= 1.49D-02 at cycle   1 NSaved=   1.
+ NSaved= 1 IEnMin= 1 EnMin=-0.502550238752740     IErMin= 1 ErrMin= 1.49D-02
+ ErrMax= 1.49D-02 EMaxC= 1.00D-01 BMatC= 2.05D-03 BMatP= 2.05D-03
+ IDIUse=3 WtCom= 8.51D-01 WtEn= 1.49D-01
+ Coeff-Com:  0.100D+01
+ Coeff-En:   0.100D+01
+ Coeff:      0.100D+01
+ Gap=     0.511 Goal=   None    Shift=    0.000
+ GapD=    0.511 DampG=2.000 DampE=0.500 DampFc=1.0000 IDamp=-1.
+ RMSDP=1.84D-03 MaxDP=5.33D-02              OVMax= 5.23D-02
+
+ Cycle   2  Pass 0  IDiag  1:
+ E=-0.504150886657442     Delta-E=       -0.001600647905 Rises=F Damp=F
+ DIIS: error= 7.91D-04 at cycle   2 NSaved=   2.
+ NSaved= 2 IEnMin= 2 EnMin=-0.504150886657442     IErMin= 2 ErrMin= 7.91D-04
+ ErrMax= 7.91D-04 EMaxC= 1.00D-01 BMatC= 5.98D-06 BMatP= 2.05D-03
+ IDIUse=3 WtCom= 9.92D-01 WtEn= 7.91D-03
+ Coeff-Com: -0.262D-01 0.103D+01
+ Coeff-En:   0.000D+00 0.100D+01
+ Coeff:     -0.260D-01 0.103D+01
+ Gap=     0.510 Goal=   None    Shift=    0.000
+ RMSDP=9.37D-05 MaxDP=2.37D-03 DE=-1.60D-03 OVMax= 2.26D-03
+
+ Cycle   3  Pass 0  IDiag  1:
+ E=-0.504153772021918     Delta-E=       -0.000002885364 Rises=F Damp=F
+ DIIS: error= 6.09D-05 at cycle   3 NSaved=   3.
+ NSaved= 3 IEnMin= 3 EnMin=-0.504153772021918     IErMin= 3 ErrMin= 6.09D-05
+ ErrMax= 6.09D-05 EMaxC= 1.00D-01 BMatC= 3.94D-08 BMatP= 5.98D-06
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.325D-02-0.102D+00 0.110D+01
+ Coeff:      0.325D-02-0.102D+00 0.110D+01
+ Gap=     0.510 Goal=   None    Shift=    0.000
+ RMSDP=5.18D-06 MaxDP=1.64D-04 DE=-2.89D-06 OVMax= 8.85D-05
+
+ Initial convergence to 1.0D-05 achieved.  Increase integral accuracy.
+ Cycle   4  Pass 1  IDiag  1:
+ E=-0.504153779337890     Delta-E=       -0.000000007316 Rises=F Damp=F
+ DIIS: error= 9.10D-07 at cycle   1 NSaved=   1.
+ NSaved= 1 IEnMin= 1 EnMin=-0.504153779337890     IErMin= 1 ErrMin= 9.10D-07
+ ErrMax= 9.10D-07 EMaxC= 1.00D-01 BMatC= 1.14D-11 BMatP= 1.14D-11
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.100D+01
+ Coeff:      0.100D+01
+ Gap=     0.510 Goal=   None    Shift=    0.000
+ RMSDP=5.18D-06 MaxDP=1.64D-04 DE=-7.32D-09 OVMax= 2.33D-06
+
+ Cycle   5  Pass 1  IDiag  1:
+ E=-0.504153779343218     Delta-E=       -0.000000000005 Rises=F Damp=F
+ DIIS: error= 8.80D-08 at cycle   2 NSaved=   2.
+ NSaved= 2 IEnMin= 2 EnMin=-0.504153779343218     IErMin= 2 ErrMin= 8.80D-08
+ ErrMax= 8.80D-08 EMaxC= 1.00D-01 BMatC= 1.54D-13 BMatP= 1.14D-11
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.128D+00 0.113D+01
+ Coeff:     -0.128D+00 0.113D+01
+ Gap=     0.510 Goal=   None    Shift=    0.000
+ RMSDP=2.10D-08 MaxDP=7.02D-07 DE=-5.33D-12 OVMax= 2.76D-07
+
+ Cycle   6  Pass 1  IDiag  1:
+ E=-0.504153779343284     Delta-E=       -0.000000000000 Rises=F Damp=F
+ DIIS: error= 1.07D-09 at cycle   3 NSaved=   3.
+ NSaved= 3 IEnMin= 3 EnMin=-0.504153779343284     IErMin= 3 ErrMin= 1.07D-09
+ ErrMax= 1.07D-09 EMaxC= 1.00D-01 BMatC= 1.74D-17 BMatP= 1.54D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.675D-02-0.576D-01 0.105D+01
+ Coeff:      0.675D-02-0.576D-01 0.105D+01
+ Gap=     0.510 Goal=   None    Shift=    0.000
+ RMSDP=8.97D-11 MaxDP=2.80D-09 DE=-6.57D-14 OVMax= 1.29D-09
+
+ SCF Done:  E(UB3PW91) = -0.504153779343     A.U. after    6 cycles
+             Convg  =    0.8975D-10             -V/T =  2.0120
+ <Sx>= 0.0000 <Sy>= 0.0000 <Sz>= 0.5000 <S**2>= 0.7500 S= 0.5000
+ <L.S>=  0.00000000000    
+ KE= 4.981783311508D-01 PE=-9.979180121865D-01 EE=-4.414098307604D-03
+ Annihilation of the first spin contaminant:
+ S**2 before annihilation     0.7500,   after     0.7500
+ Leave Link  502 at Sun Aug 18 15:09:53 2024, MaxMem=   13107200 cpu:       0.7
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l601.exe)
+ Copying SCF densities to generalized density rwf, IOpCl= 1 IROHF=0.
+
+ **********************************************************************
+
+            Population analysis using the SCF density.
+
+ **********************************************************************
+
+ Orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (A1G)
+       Virtual   (A1G) (T1U) (T1U) (T1U) (A1G) (EG) (T2G) (T2G)
+                 (EG) (T2G) (T1U) (T1U) (T1U) (?A) (?A) (?A) (?A)
+                 (A2U) (?A) (?A) (A1G) (T1U) (T1U) (T1U) (T2G)
+                 (T2G) (T2G) (EG) (EG)
+ Beta  Orbitals:
+       Virtual   (A1G) (A1G) (T1U) (T1U) (T1U) (A1G) (EG) (T2G)
+                 (T2G) (T2G) (EG) (T1U) (T1U) (T1U) (?A) (A2U)
+                 (?A) (?A) (?A) (?A) (?A) (A1G) (T1U) (T1U) (T1U)
+                 (EG) (EG) (T2G) (T2G) (T2G)
+ The electronic state is 2-A1G.
+ Alpha  occ. eigenvalues --   -0.32627
+ Alpha virt. eigenvalues --    0.18361   0.39008   0.39008   0.39008   1.26646
+ Alpha virt. eigenvalues --    1.83839   1.83839   1.83839   1.83839   1.83839
+ Alpha virt. eigenvalues --    2.09163   2.09163   2.09163   5.73617   5.73617
+ Alpha virt. eigenvalues --    5.73617   5.73617   5.73617   5.73617   5.73617
+ Alpha virt. eigenvalues --    6.82522   7.34909   7.34909   7.34909   7.73249
+ Alpha virt. eigenvalues --    7.73249   7.73249   7.73249   7.73249
+  Beta virt. eigenvalues --   -0.03441   0.31253   0.53559   0.53559   0.53559
+  Beta virt. eigenvalues --    1.48947   2.00464   2.00464   2.00464   2.00464
+  Beta virt. eigenvalues --    2.00464   2.29643   2.29643   2.29643   5.93754
+  Beta virt. eigenvalues --    5.93754   5.93754   5.93754   5.93754   5.93754
+  Beta virt. eigenvalues --    5.93754   7.20769   7.64322   7.64322   7.64322
+  Beta virt. eigenvalues --    7.98931   7.98931   7.98931   7.98931   7.98931
+     Alpha Molecular Orbital Coefficients:
+                           1         2         3         4         5
+                       (A1G)--O  (A1G)--V  (T1U)--V  (T1U)--V  (T1U)--V
+     Eigenvalues --    -0.32627   0.18361   0.39008   0.39008   0.39008
+   1 1   H  1S          0.09098  -0.08355   0.00000   0.00000   0.00000
+   2        2S          0.26118  -0.01654   0.00000   0.00000   0.00000
+   3        3S          0.46610  -1.40980   0.00000   0.00000   0.00000
+   4        4S          0.32580   1.69189   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.06602
+   6        5PY         0.00000   0.00000   0.06602   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.06602   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000  -0.21419
+   9        6PY         0.00000   0.00000  -0.21419   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000  -0.21419   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   1.12665
+  12        7PY         0.00000   0.00000   1.12665   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   1.12665   0.00000
+  14        8D 0        0.00000  -0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0       -0.00000  -0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2       -0.00000  -0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000  -0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000  -0.00000   0.00000   0.00000
+                           6         7         8         9        10
+                       (A1G)--V   (EG)--V  (T2G)--V  (T2G)--V   (EG)--V
+     Eigenvalues --     1.26646   1.83839   1.83839   1.83839   1.83839
+   1 1   H  1S         -0.04210  -0.00000   0.00000   0.00000   0.00000
+   2        2S         -1.85686  -0.00000   0.00000   0.00000  -0.00000
+   3        3S          2.62985   0.00000   0.00000   0.00000   0.00000
+   4        4S         -1.14083  -0.00000   0.00000   0.00000  -0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0       -0.00000  -0.13854   0.00000   0.00000  -0.00071
+  15        8D+1        0.00000   0.00000   0.00000  -0.13855   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00071   0.00000   0.00000  -0.13854
+  18        8D-2        0.00000   0.00000  -0.13855   0.00000   0.00000
+  19        9D 0       -0.00000   1.07465   0.00000   0.00000   0.00554
+  20        9D+1        0.00000   0.00000   0.00000   1.07466   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2       -0.00000  -0.00554   0.00000   0.00000   1.07465
+  23        9D-2        0.00000   0.00000   1.07466   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          11        12        13        14        15
+                       (T2G)--V  (T1U)--V  (T1U)--V  (T1U)--V      V
+     Eigenvalues --     1.83839   2.09163   2.09163   2.09163   5.73617
+   1 1   H  1S          0.00000   0.00000   0.00000   0.00000   0.00000
+   2        2S          0.00000   0.00000   0.00000   0.00000   0.00000
+   3        3S          0.00000   0.00000   0.00000   0.00000   0.00000
+   4        4S          0.00000   0.00000   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000  -0.20835   0.00000
+   6        5PY         0.00000  -0.20835   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000  -0.20835   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   1.63410   0.00000
+   9        6PY         0.00000   1.63410   0.00000   0.00000  -0.00000
+  10        6PZ         0.00000   0.00000   1.63410   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000  -1.00029   0.00000
+  12        7PY         0.00000  -1.00029   0.00000   0.00000  -0.00000
+  13        7PZ         0.00000   0.00000  -1.00029   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1       -0.13855   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        1.07466   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000  -0.00000   0.00000
+  26       10F-1        0.00000  -0.00000   0.00000   0.00000   0.90005
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000  -0.00000   0.00000
+  30       10F-3        0.00000  -0.00000   0.00000   0.00000  -0.43579
+                          16        17        18        19        20
+                           V         V         V     (A2U)--V      V
+     Eigenvalues --     5.73617   5.73617   5.73617   5.73617   5.73617
+   1 1   H  1S          0.00000   0.00000  -0.00000   0.00000   0.00000
+   2        2S          0.00000   0.00000  -0.00000   0.00000   0.00000
+   3        3S          0.00000   0.00000  -0.00000   0.00000   0.00000
+   4        4S          0.00000   0.00000  -0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000  -0.00000   0.00000   0.00000
+   7        5PZ        -0.00000   0.00000  -0.00000   0.00000   0.00000
+   8        6PX         0.00000  -0.00000  -0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000  -0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000  -0.00000   0.00000  -0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000  -0.00000   0.00000   0.00000
+  13        7PZ        -0.00000   0.00000  -0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000  -0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000  -0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000  -0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000  -0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000  -0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000  -0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000  -0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000  -0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000  -0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000  -0.00000   0.00000   0.00000
+  24       10F 0        0.99335   0.00000  -0.00000   0.00000  -0.11518
+  25       10F+1        0.00000   0.69268   0.72125   0.00000   0.00000
+  26       10F-1        0.00000   0.00000  -0.00000   0.00000   0.00000
+  27       10F+2        0.11518   0.00000  -0.00000   0.00000   0.99335
+  28       10F-2        0.00000   0.00000  -0.00000   1.00000   0.00000
+  29       10F+3        0.00000   0.72125  -0.69268   0.00000   0.00000
+  30       10F-3        0.00000   0.00000  -0.00000   0.00000   0.00000
+                          21        22        23        24        25
+                           V     (A1G)--V  (T1U)--V  (T1U)--V  (T1U)--V
+     Eigenvalues --     5.73617   6.82522   7.34909   7.34909   7.34909
+   1 1   H  1S          0.00000  -1.63016   0.00000   0.00000   0.00000
+   2        2S          0.00000   2.16628   0.00000   0.00000   0.00000
+   3        3S          0.00000  -1.46465   0.00000   0.00000   0.00000
+   4        4S          0.00000   0.50896   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   1.64219
+   6        5PY         0.00000   0.00000   0.00000   1.64219   0.00000
+   7        5PZ         0.00000   0.00000   1.64219   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000  -1.53648
+   9        6PY         0.00000   0.00000   0.00000  -1.53648   0.00000
+  10        6PZ         0.00000   0.00000  -1.53648   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.55149
+  12        7PY        -0.00000   0.00000   0.00000   0.55149   0.00000
+  13        7PZ         0.00000   0.00000   0.55149   0.00000   0.00000
+  14        8D 0        0.00000  -0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000  -0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000  -0.00000
+  26       10F-1        0.43579   0.00000   0.00000  -0.00000   0.00000
+  27       10F+2        0.00000   0.00000  -0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000  -0.00000
+  30       10F-3        0.90005   0.00000   0.00000   0.00000   0.00000
+                          26        27        28        29        30
+                       (T2G)--V  (T2G)--V  (T2G)--V   (EG)--V   (EG)--V
+     Eigenvalues --     7.73249   7.73249   7.73249   7.73249   7.73249
+   1 1   H  1S          0.00000   0.00000   0.00000   0.00000  -0.00000
+   2        2S          0.00000   0.00000   0.00000  -0.00000   0.00000
+   3        3S          0.00000   0.00000   0.00000   0.00000  -0.00000
+   4        4S          0.00000   0.00000   0.00000  -0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.40666   1.15530
+  15        8D+1        0.00000   1.22479   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   1.22479   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   1.15530  -0.40666
+  18        8D-2        1.22479   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000  -0.20043  -0.56941
+  20        9D+1        0.00000  -0.60365   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000  -0.60365   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000  -0.56941   0.20043
+  23        9D-2       -0.60365   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+     Beta Molecular Orbital Coefficients:
+                           1         2         3         4         5
+                       (A1G)--V  (A1G)--V  (T1U)--V  (T1U)--V  (T1U)--V
+     Eigenvalues --    -0.03441   0.31253   0.53559   0.53559   0.53559
+   1 1   H  1S          0.05582   0.09264   0.00000   0.00000   0.00000
+   2        2S          0.18633  -0.05602   0.00000   0.00000   0.00000
+   3        3S          0.17304   1.68331   0.00000   0.00000   0.00000
+   4        4S          0.71750  -1.63355   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.07029
+   6        5PY         0.00000   0.00000   0.00000   0.07029   0.00000
+   7        5PZ         0.00000   0.00000   0.07029   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000  -0.25847
+   9        6PY         0.00000   0.00000   0.00000  -0.25847   0.00000
+  10        6PZ         0.00000   0.00000  -0.25847   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   1.15373
+  12        7PY         0.00000   0.00000   0.00000   1.15373   0.00000
+  13        7PZ         0.00000   0.00000   1.15373   0.00000   0.00000
+  14        8D 0        0.00000  -0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2       -0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0       -0.00000  -0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000  -0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000  -0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000  -0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000  -0.00000   0.00000
+                           6         7         8         9        10
+                       (A1G)--V   (EG)--V  (T2G)--V  (T2G)--V  (T2G)--V
+     Eigenvalues --     1.48947   2.00464   2.00464   2.00464   2.00464
+   1 1   H  1S         -0.02309  -0.00000   0.00000   0.00000   0.00000
+   2        2S         -1.90512  -0.00000   0.00000   0.00000   0.00000
+   3        3S          2.52266   0.00000   0.00000   0.00000   0.00000
+   4        4S         -1.04960  -0.00000   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000  -0.14477   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000  -0.14477
+  16        8D-1        0.00000   0.00000  -0.14477   0.00000   0.00000
+  17        8D+2       -0.00000   0.00013   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000  -0.14477   0.00000
+  19        9D 0       -0.00000   1.07771   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   1.07771
+  21        9D-1        0.00000   0.00000   1.07771   0.00000   0.00000
+  22        9D+2        0.00000  -0.00098   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   1.07771   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          11        12        13        14        15
+                        (EG)--V  (T1U)--V  (T1U)--V  (T1U)--V      V
+     Eigenvalues --     2.00464   2.29643   2.29643   2.29643   5.93754
+   1 1   H  1S          0.00000   0.00000   0.00000   0.00000   0.00000
+   2        2S         -0.00000   0.00000   0.00000   0.00000   0.00000
+   3        3S          0.00000   0.00000   0.00000   0.00000   0.00000
+   4        4S          0.00000   0.00000   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000  -0.22500   0.00000   0.00000
+   6        5PY         0.00000  -0.22500   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000  -0.22500   0.00000
+   8        6PX         0.00000   0.00000   1.64475   0.00000  -0.00000
+   9        6PY         0.00000   1.64475   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   1.64475   0.00000
+  11        7PX         0.00000   0.00000  -0.97450   0.00000  -0.00000
+  12        7PY         0.00000  -0.97450   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000  -0.97450   0.00000
+  14        8D 0       -0.00013   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2       -0.14477   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00098   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        1.07771   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000  -0.00000   0.00000   0.93194
+  26       10F-1        0.00000  -0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000  -0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000  -0.00000   0.00000   0.36260
+  30       10F-3        0.00000  -0.00000   0.00000   0.00000   0.00000
+                          16        17        18        19        20
+                       (A2U)--V      V         V         V         V
+     Eigenvalues --     5.93754   5.93754   5.93754   5.93754   5.93754
+   1 1   H  1S          0.00000   0.00000   0.00000   0.00000   0.00000
+   2        2S          0.00000   0.00000   0.00000   0.00000   0.00000
+   3        3S          0.00000   0.00000   0.00000   0.00000   0.00000
+   4        4S          0.00000   0.00000   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000  -0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000  -0.00000  -0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000  -0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000  -0.00000   0.00000
+  13        7PZ         0.00000  -0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.12329   0.99237   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000  -0.36260
+  26       10F-1        0.00000   0.00000   0.00000   0.91733   0.00000
+  27       10F+2        0.00000   0.99237  -0.12329   0.00000   0.00000
+  28       10F-2        1.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.93194
+  30       10F-3        0.00000   0.00000   0.00000  -0.39812   0.00000
+                          21        22        23        24        25
+                           V     (A1G)--V  (T1U)--V  (T1U)--V  (T1U)--V
+     Eigenvalues --     5.93754   7.20769   7.64322   7.64322   7.64322
+   1 1   H  1S          0.00000  -1.63163   0.00000   0.00000   0.00000
+   2        2S          0.00000   2.13116   0.00000   0.00000   0.00000
+   3        3S          0.00000  -1.42787   0.00000   0.00000   0.00000
+   4        4S          0.00000   0.49419   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   1.63982
+   6        5PY         0.00000   0.00000   0.00000   1.63982   0.00000
+   7        5PZ         0.00000   0.00000   1.63982   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000  -1.51820
+   9        6PY        -0.00000   0.00000   0.00000  -1.51820   0.00000
+  10        6PZ         0.00000   0.00000  -1.51820   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.54158
+  12        7PY        -0.00000   0.00000   0.00000   0.54158   0.00000
+  13        7PZ         0.00000   0.00000   0.54158   0.00000   0.00000
+  14        8D 0        0.00000  -0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000  -0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000  -0.00000
+  26       10F-1        0.39812   0.00000   0.00000  -0.00000   0.00000
+  27       10F+2        0.00000   0.00000  -0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000  -0.00000
+  30       10F-3        0.91733   0.00000   0.00000   0.00000   0.00000
+                          26        27        28        29        30
+                        (EG)--V   (EG)--V  (T2G)--V  (T2G)--V  (T2G)--V
+     Eigenvalues --     7.98931   7.98931   7.98931   7.98931   7.98931
+   1 1   H  1S          0.00000   0.00000   0.00000   0.00000   0.00000
+   2        2S         -0.00000  -0.00000   0.00000   0.00000   0.00000
+   3        3S          0.00000   0.00000   0.00000   0.00000   0.00000
+   4        4S         -0.00000   0.00000   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0       -0.78006   0.94332   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   1.22407
+  16        8D-1        0.00000   0.00000   1.22407   0.00000   0.00000
+  17        8D+2        0.94332   0.78006   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   1.22407   0.00000
+  19        9D 0        0.38120  -0.46099   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000  -0.59819
+  21        9D-1        0.00000   0.00000  -0.59819   0.00000   0.00000
+  22        9D+2       -0.46099  -0.38120   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000  -0.59819   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+     Alpha Density Matrix:
+                           1         2         3         4         5
+   1 1   H  1S          0.00828
+   2        2S          0.02376   0.06822
+   3        3S          0.04241   0.12174   0.21725
+   4        4S          0.02964   0.08509   0.15186   0.10615
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0       -0.00000   0.00000  -0.00000  -0.00000   0.00000
+  15        8D+1       -0.00000  -0.00000  -0.00000  -0.00000   0.00000
+  16        8D-1       -0.00000  -0.00000  -0.00000  -0.00000   0.00000
+  17        8D+2       -0.00000   0.00000   0.00000  -0.00000   0.00000
+  18        8D-2       -0.00000  -0.00000  -0.00000  -0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2       -0.00000  -0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                           6         7         8         9        10
+   6        5PY         0.00000
+   7        5PZ         0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          11        12        13        14        15
+  11        7PX         0.00000
+  12        7PY         0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000  -0.00000  -0.00000
+  17        8D+2        0.00000   0.00000   0.00000  -0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000  -0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000  -0.00000  -0.00000
+  20        9D+1        0.00000   0.00000   0.00000  -0.00000  -0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000  -0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000  -0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          16        17        18        19        20
+  16        8D-1        0.00000
+  17        8D+2       -0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000  -0.00000  -0.00000   0.00000   0.00000
+  21        9D-1       -0.00000   0.00000  -0.00000  -0.00000  -0.00000
+  22        9D+2        0.00000  -0.00000  -0.00000  -0.00000   0.00000
+  23        9D-2        0.00000  -0.00000  -0.00000  -0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          21        22        23        24        25
+  21        9D-1        0.00000
+  22        9D+2       -0.00000   0.00000
+  23        9D-2       -0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          26        27        28        29        30
+  26       10F-1        0.00000
+  27       10F+2        0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+     Beta Density Matrix:
+                           1         2         3         4         5
+   1 1   H  1S          0.00000
+   2        2S          0.00000   0.00000
+   3        3S          0.00000   0.00000   0.00000
+   4        4S          0.00000   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                           6         7         8         9        10
+   6        5PY         0.00000
+   7        5PZ         0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          11        12        13        14        15
+  11        7PX         0.00000
+  12        7PY         0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          16        17        18        19        20
+  16        8D-1        0.00000
+  17        8D+2        0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          21        22        23        24        25
+  21        9D-1        0.00000
+  22        9D+2        0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          26        27        28        29        30
+  26       10F-1        0.00000
+  27       10F+2        0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+    Full Mulliken population analysis:
+                           1         2         3         4         5
+   1 1   H  1S          0.00828
+   2        2S          0.01692   0.06822
+   3        3S          0.01627   0.09701   0.21725
+   4        4S          0.00559   0.03988   0.12438   0.10615
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                           6         7         8         9        10
+   6        5PY         0.00000
+   7        5PZ         0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          11        12        13        14        15
+  11        7PX         0.00000
+  12        7PY         0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000  -0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000  -0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          16        17        18        19        20
+  16        8D-1        0.00000
+  17        8D+2        0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1       -0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000  -0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000  -0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          21        22        23        24        25
+  21        9D-1        0.00000
+  22        9D+2        0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          26        27        28        29        30
+  26       10F-1        0.00000
+  27       10F+2        0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+     Gross orbital populations:
+                         Total     Alpha     Beta      Spin
+   1 1   H  1S          0.04706   0.04706   0.00000   0.04706
+   2        2S          0.22203   0.22203   0.00000   0.22203
+   3        3S          0.45491   0.45491   0.00000   0.45491
+   4        4S          0.27599   0.27599   0.00000   0.27599
+   5        5PX         0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000
+  14        8D 0       -0.00000  -0.00000   0.00000  -0.00000
+  15        8D+1       -0.00000  -0.00000   0.00000  -0.00000
+  16        8D-1       -0.00000  -0.00000   0.00000  -0.00000
+  17        8D+2       -0.00000  -0.00000   0.00000  -0.00000
+  18        8D-2       -0.00000  -0.00000   0.00000  -0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000
+          Condensed to atoms (all electrons):
+              1
+     1  H    1.000000
+ Mulliken atomic charges:
+              1
+     1  H   -0.000000
+ Sum of Mulliken atomic charges =  -0.00000
+ Mulliken charges with hydrogens summed into heavy atoms:
+              1
+ Sum of Mulliken charges with hydrogens summed into heavy atoms =  -0.00000
+          Atomic-Atomic Spin Densities.
+              1
+     1  H    1.000000
+ Mulliken atomic spin densities:
+              1
+     1  H    1.000000
+ Sum of Mulliken atomic spin densities =   1.00000
+ Electronic spatial extent (au):  <R**2>=              3.0992
+ Charge=             -0.0000 electrons
+ Dipole moment (field-independent basis, Debye):
+    X=              0.0000    Y=              0.0000    Z=              0.0000  Tot=              0.0000
+ Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=             -1.3895   YY=             -1.3895   ZZ=             -1.3895
+   XY=             -0.0000   XZ=             -0.0000   YZ=             -0.0000
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=              0.0000   YY=              0.0000   ZZ=              0.0000
+   XY=             -0.0000   XZ=             -0.0000   YZ=             -0.0000
+ Octapole moment (field-independent basis, Debye-Ang**2):
+  XXX=              0.0000  YYY=              0.0000  ZZZ=              0.0000  XYY=              0.0000
+  XXY=              0.0000  XXZ=              0.0000  XZZ=              0.0000  YZZ=              0.0000
+  YYZ=              0.0000  XYZ=              0.0000
+ Hexadecapole moment (field-independent basis, Debye-Ang**3):
+ XXXX=             -1.8256 YYYY=             -1.8256 ZZZZ=             -1.8256 XXXY=             -0.0000
+ XXXZ=             -0.0000 YYYX=             -0.0000 YYYZ=             -0.0000 ZZZX=             -0.0000
+ ZZZY=             -0.0000 XXYY=             -0.6085 XXZZ=             -0.6085 YYZZ=             -0.6085
+ XXYZ=             -0.0000 YYXZ=             -0.0000 ZZXY=             -0.0000
+ N-N= 0.000000000000D+00 E-N=-9.979180121814D-01  KE= 4.981783311508D-01
+ Symmetry AG   KE= 4.981783311508D-01
+ Symmetry B1G  KE= 1.310403589255D-63
+ Symmetry B2G  KE= 1.712300509722D-63
+ Symmetry B3G  KE= 1.092279383299D-63
+ Symmetry AU   KE= 0.000000000000D+00
+ Symmetry B1U  KE= 0.000000000000D+00
+ Symmetry B2U  KE= 0.000000000000D+00
+ Symmetry B3U  KE= 0.000000000000D+00
+ Orbital energies and kinetic energies (alpha):
+                                 1                 2
+   1         (A1G)--O         -0.326272          0.498178
+   2         (A1G)--V          0.183607          0.481978
+   3         (T1U)--V          0.390082          0.670332
+   4         (T1U)--V          0.390082          0.670332
+   5         (T1U)--V          0.390082          0.670332
+   6         (A1G)--V          1.266463          2.089119
+   7         (EG)--V           1.838386          2.203741
+   8         (T2G)--V          1.838386          2.203741
+   9         (T2G)--V          1.838386          2.203741
+  10         (EG)--V           1.838386          2.203741
+  11         (T2G)--V          1.838386          2.203741
+  12         (T1U)--V          2.091628          2.665118
+  13         (T1U)--V          2.091628          2.665118
+  14         (T1U)--V          2.091628          2.665118
+  15         V                 5.736174          6.286500
+  16         V                 5.736174          6.286500
+  17         V                 5.736174          6.286500
+  18         V                 5.736174          6.286500
+  19         (A2U)--V          5.736174          6.286500
+  20         V                 5.736174          6.286500
+  21         V                 5.736174          6.286500
+  22         (A1G)--V          6.825218          9.701927
+  23         (T1U)--V          7.349090          8.626550
+  24         (T1U)--V          7.349090          8.626550
+  25         (T1U)--V          7.349090          8.626550
+  26         (T2G)--V          7.732493          8.638035
+  27         (T2G)--V          7.732493          8.638035
+  28         (T2G)--V          7.732493          8.638035
+  29         (EG)--V           7.732493          8.638035
+  30         (EG)--V           7.732493          8.638035
+ Orbital energies and kinetic energies (beta):
+                                 1                 2
+   1         (A1G)--V         -0.034414          0.278024
+   2         (A1G)--V          0.312526          0.595668
+   3         (T1U)--V          0.535594          0.661549
+   4         (T1U)--V          0.535594          0.661549
+   5         (T1U)--V          0.535594          0.661549
+   6         (A1G)--V          1.489473          2.153327
+   7         (EG)--V           2.004644          2.202453
+   8         (T2G)--V          2.004644          2.202453
+   9         (T2G)--V          2.004644          2.202453
+  10         (T2G)--V          2.004644          2.202453
+  11         (EG)--V           2.004644          2.202453
+  12         (T1U)--V          2.296434          2.666674
+  13         (T1U)--V          2.296434          2.666674
+  14         (T1U)--V          2.296434          2.666674
+  15         V                 5.937539          6.286500
+  16         (A2U)--V          5.937539          6.286500
+  17         V                 5.937539          6.286500
+  18         V                 5.937539          6.286500
+  19         V                 5.937539          6.286500
+  20         V                 5.937539          6.286500
+  21         V                 5.937539          6.286500
+  22         (A1G)--V          7.207691          9.744184
+  23         (T1U)--V          7.643225          8.633777
+  24         (T1U)--V          7.643225          8.633777
+  25         (T1U)--V          7.643225          8.633777
+  26         (EG)--V           7.989309          8.639323
+  27         (EG)--V           7.989309          8.639323
+  28         (T2G)--V          7.989309          8.639323
+  29         (T2G)--V          7.989309          8.639323
+  30         (T2G)--V          7.989309          8.639323
+ Total kinetic energy from orbitals= 4.981783311508D-01
+                          Isotropic Fermi Contact Couplings
+        Atom                 a.u.       MegaHertz       Gauss      10(-4) cm-1
+     1  H(1)               0.30661    1370.50852     489.03150     457.15243
+ --------------------------------------------------------
+       Center         ----  Spin Dipole Couplings  ----
+                      3XX-RR        3YY-RR        3ZZ-RR
+ --------------------------------------------------------
+     1   Atom        0.000000      0.000000      0.000000
+ --------------------------------------------------------
+                        XY            XZ            YZ
+ --------------------------------------------------------
+     1   Atom        0.000000      0.000000      0.000000
+ --------------------------------------------------------
+
+
+ ---------------------------------------------------------------------------------
+              Anisotropic Spin Dipole Couplings in Principal Axis System
+ ---------------------------------------------------------------------------------
+
+       Atom             a.u.   MegaHertz   Gauss  10(-4) cm-1        Axes
+
+              Baa     0.0000     0.000     0.000     0.000  1.0000  0.0000  0.0000
+     1 H(1)   Bbb     0.0000     0.000     0.000     0.000 -0.0000  1.0000  0.0000
+              Bcc     0.0000     0.000     0.000     0.000  0.0000  0.0000  1.0000
+ 
+
+ ---------------------------------------------------------------------------------
+
+ No NMR shielding tensors so no spin-rotation constants.
+ Leave Link  601 at Sun Aug 18 15:09:53 2024, MaxMem=   13107200 cpu:       0.3
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l701.exe)
+ Compute integral first derivatives.
+ ... and contract with generalized density number  0.
+ Leave Link  701 at Sun Aug 18 15:09:53 2024, MaxMem=   13107200 cpu:       0.2
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l702.exe)
+ L702 exits ... SP integral derivatives will be done elsewhere.
+ Leave Link  702 at Sun Aug 18 15:09:53 2024, MaxMem=   13107200 cpu:       0.0
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l703.exe)
+ Compute integral first derivatives, UseDBF=F ICtDFT=           0.
+ Integral derivatives from FoFDir, PRISM(SPDF).
+ Calling FoFJK, ICntrl=      2127 FMM=F ISym2X=1 I1Cent= 0 IOpClX= 1 NMat=1 NMatS=1 NMatT=0.
+ FoFCou: FMM=F IPFlag=           0 FMFlag=      100000 FMFlg1=         800
+         NFxFlg=           0 DoJE=F BraDBF=F KetDBF=F FulRan=T
+         Omega=  0.000000  0.000000  1.000000  0.000000  0.000000 ICntrl=    2127 IOpCl=  1
+         NMat0=    1 NMatS0=    1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+         I1Cent=           0 NGrid=           0.
+ Petite list used in FoFCou.
+ Leave Link  703 at Sun Aug 18 15:09:54 2024, MaxMem=   13107200 cpu:       0.5
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ ***** Axes restored to original set *****
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1          -0.000000000   -0.000000000   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000000000 RMS     0.000000000
+ Z-matrix is all fixed cartesians, so copy forces.
+ Leave Link  716 at Sun Aug 18 15:09:54 2024, MaxMem=   13107200 cpu:       0.0
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l103.exe)
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ Berny optimization.
+ Search for a local minimum.
+ Step number   1 out of a maximum of   20
+ All quantities printed in internal units (Hartrees-Bohrs-Radians)
+ RMS Force = .00000D+00 SwitMx=.10000D-02 MixMth= 2
+ Mixed Optimization -- En-DIIS/RFO-DIIS
+ Second derivative matrix not updated -- first step.
+ The second derivative matrix:
+                          X1        Y1        Z1
+           X1           0.00000
+           Y1           0.00000   0.00000
+           Z1           0.00000   0.00000   0.00000
+     Eigenvalues --- 
+ RFO step:  Lambda=-5.96046448D-09 EMin= 0.00000000D+00
+ ClnCor:  largest displacement from symmetrization is 0.00D+00 for atom     0.
+ Linear search not attempted -- first point.
+ ClnCor:  largest displacement from symmetrization is 0.00D+00 for atom     0.
+ TrRot=  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+ Variable       Old X    -DE/DX   Delta X   Delta X   Delta X     New X
+                                 (Linear)    (Quad)   (Total)
+    X1        0.00000  -0.00000   0.00000   0.00000   0.00000   0.00000
+    Y1        0.00000  -0.00000   0.00000   0.00000   0.00000   0.00000
+    Z1        0.00000  -0.00000   0.00000   0.00000   0.00000   0.00000
+         Item               Value     Threshold  Converged?
+ Maximum Force            0.000000     0.000450     YES
+ RMS     Force            0.000000     0.000300     YES
+ Maximum Displacement     0.000000     0.001800     YES
+ RMS     Displacement     0.000000     0.001200     YES
+ Predicted change in Energy=-0.000000D+00
+ Optimization completed.
+    -- Stationary point found.
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+
+ Largest change from initial coordinates is atom    0       0.000 Angstoms.
+ Leave Link  103 at Sun Aug 18 15:09:54 2024, MaxMem=   13107200 cpu:       0.0
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0        0.000000    0.000000    0.000000
+ ---------------------------------------------------------------------
+ Stoichiometry    H(2)
+ Framework group  OH[O(H)]
+ Deg. of freedom     0
+ Full point group                 OH      NOp  48
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C1      NOp   1
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0        0.000000    0.000000    0.000000
+ ---------------------------------------------------------------------
+ Leave Link  202 at Sun Aug 18 15:09:54 2024, MaxMem=   13107200 cpu:       0.0
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l9999.exe)
+ 1\1\GINC-MOLMOD\FOpt\UB3PW91\CC-pVQZ\H1(2)\OSPITE\18-Aug-2024\0\\#p b3
+ pw91/cc-pVQZ opt freq pop=full gfinput\\hydogen (atom) with cc-pVQZ ba
+ sis set\\0,2\H,0.,0.,0.\\Version=EM64L-G09RevA.02\State=2-A1G\HF=-0.50
+ 41538\S2=0.75\S2-1=0.\S2A=0.75\RMSD=8.975e-11\RMSF=0.000e+00\Dipole=0.
+ ,0.,0.\Quadrupole=0.,0.,0.,0.,0.,0.\PG=OH [O(H1)]\\@
+
+
+ KNOWLEDGE IS OF TWO KINDS:  WE KNOW A SUBJECT OURSELVES OR WE KNOW 
+ WHERE WE CAN FIND INFORMATION UPON IT.
+
+                                    -- SAMUEL JOHNSON
+ Leave Link 9999 at Sun Aug 18 15:09:54 2024, MaxMem=   13107200 cpu:       0.0
+ Job cpu time:  0 days  0 hours  0 minutes  2.8 seconds.
+ File lengths (MBytes):  RWF=      5 Int=      0 D2E=      0 Chk=      1 Scr=      1
+ Normal termination of Gaussian 09 at Sun Aug 18 15:09:54 2024.
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l1.exe)
+ Link1:  Proceeding to internal job step number  2.
+ --------------------------------------------------------------------
+ #P Geom=AllCheck Guess=TCheck SCRF=Check GenChk UB3PW91/CC-pVQZ Freq
+ --------------------------------------------------------------------
+ 1/10=4,29=7,30=1,38=1,40=1/1,3;
+ 2/12=2,40=1/2;
+ 3/5=16,6=2,11=2,14=-4,16=1,24=10,25=1,30=1,70=2,71=2,74=-6,116=2/1,2,3;
+ 4/5=101/1;
+ 5/5=2,98=1/2;
+ 8/6=4,10=90,11=11/1;
+ 11/6=1,8=1,9=11,15=111,16=1/1,2,10;
+ 10/6=1/2;
+ 6/7=3,18=1,28=1/1;
+ 7/8=1,10=1,25=1/1,2,3,16;
+ 1/10=4,30=1/3;
+ 99//99;
+ Leave Link    1 at Sun Aug 18 15:09:54 2024, MaxMem=   13107200 cpu:       0.1
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l101.exe)
+ -------------------------------------
+ hydogen (atom) with cc-pVQZ basis set
+ -------------------------------------
+ No Z-matrix found on checkpoint file.
+ Cartesian coordinates read from the checkpoint file:
+ /home/ospite/Desktop/MMfP/Project6/H/g09/DFT/B3PW91/Gau-7913.chk
+ Charge =  0 Multiplicity = 2
+  H                                                 0.000000000000      0.000000000000      0.000000000000
+ Recover connectivity data from disk.
+ NAtoms=      1 NQM=      1 NQMF=      0 NMic=      0 NMicF=      0 NTot=      1.
+                    Isotopes and Nuclear Properties:
+ (Nuclear quadrupole moments (NQMom) in fm**2, nuclear magnetic moments (NMagM)
+  in nuclear magnetons)
+
+  Atom         1
+ IAtWgt=           1
+ AtmWgt=   1.0078250
+ NucSpn=           1
+ AtZEff=  -1.0000000
+ NQMom=    0.0000000
+ NMagM=    2.7928460
+ Leave Link  101 at Sun Aug 18 15:09:54 2024, MaxMem=   13107200 cpu:       0.1
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l103.exe)
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ Berny optimization.
+ Initialization pass.
+ Trust Radius=3.00D-01 FncErr=1.00D-07 GrdErr=1.00D-07
+ Number of steps in this run=   2 maximum allowed number of steps=   2.
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+
+ Leave Link  103 at Sun Aug 18 15:09:54 2024, MaxMem=   13107200 cpu:       0.0
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0        0.000000    0.000000    0.000000
+ ---------------------------------------------------------------------
+ Stoichiometry    H(2)
+ Framework group  OH[O(H)]
+ Deg. of freedom     0
+ Full point group                 OH      NOp  48
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C1      NOp   1
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0        0.000000    0.000000    0.000000
+ ---------------------------------------------------------------------
+ Leave Link  202 at Sun Aug 18 15:09:54 2024, MaxMem=   13107200 cpu:       0.0
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l301.exe)
+ Standard basis: CC-pVQZ (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+ AO basis set in the form of general basis input (Overlap normalization):
+      1 0
+ S   3 1.00       0.000000000000
+      0.8264000000D+02  0.2295075779D-01
+      0.1241000000D+02  0.1755401181D+00
+      0.2824000000D+01  0.8647035510D+00
+ S   1 1.00       0.000000000000
+      0.7977000000D+00  0.1000000000D+01
+ S   1 1.00       0.000000000000
+      0.2581000000D+00  0.1000000000D+01
+ S   1 1.00       0.000000000000
+      0.8989000000D-01  0.1000000000D+01
+ P   1 1.00       0.000000000000
+      0.2292000000D+01  0.1000000000D+01
+ P   1 1.00       0.000000000000
+      0.8380000000D+00  0.1000000000D+01
+ P   1 1.00       0.000000000000
+      0.2920000000D+00  0.1000000000D+01
+ D   1 1.00       0.000000000000
+      0.2062000000D+01  0.1000000000D+01
+ D   1 1.00       0.000000000000
+      0.6620000000D+00  0.1000000000D+01
+ F   1 1.00       0.000000000000
+      0.1397000000D+01  0.1000000000D+01
+ ****
+
+ There are     8 symmetry adapted basis functions of AG  symmetry.
+ There are     2 symmetry adapted basis functions of B1G symmetry.
+ There are     2 symmetry adapted basis functions of B2G symmetry.
+ There are     2 symmetry adapted basis functions of B3G symmetry.
+ There are     1 symmetry adapted basis functions of AU  symmetry.
+ There are     5 symmetry adapted basis functions of B1U symmetry.
+ There are     5 symmetry adapted basis functions of B2U symmetry.
+ There are     5 symmetry adapted basis functions of B3U symmetry.
+ Integral buffers will be    131072 words long.
+ Raffenetti 2 integral format.
+ Two-electron integral symmetry is turned on.
+    30 basis functions,    37 primitive gaussians,    35 cartesian basis functions
+     1 alpha electrons        0 beta electrons
+       nuclear repulsion energy         0.0000000000 Hartrees.
+ IExCor=  408 DFT=T Ex+Corr=B3PW91 ExCW=0 ScaHFX=  0.200000
+ ScaDFX=  0.800000  0.720000  1.000000  0.810000 ScalE2=  1.000000  1.000000
+ IRadAn=      0 IRanWt=     -1 IRanGd=            0 ICorTp=0
+ NAtoms=    1 NActive=    1 NUniq=    1 SFac= 7.50D-01 NAtFMM=   80 NAOKFM=F Big=F
+ Leave Link  301 at Sun Aug 18 15:09:54 2024, MaxMem=   13107200 cpu:       0.1
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l302.exe)
+ NPDir=0 NMtPBC=     1 NCelOv=     1 NCel=       1 NClECP=     1 NCelD=      1
+         NCelK=      1 NCelE2=     1 NClLst=     1 CellRange=     0.0.
+ One-electron integrals computed using PRISM.
+ NBasis=    30 RedAO= T  NBF=     8     2     2     2     1     5     5     5
+ NBsUse=    30 1.00D-06 NBFU=     8     2     2     2     1     5     5     5
+ Precomputing XC quadrature grid using
+ IXCGrd= 2 IRadAn=           0 IRanWt=          -1 IRanGd=           0 AccXCQ= 1.00D-10.
+ NRdTot=      62 NPtTot=        7730 NUsed=        8190 NTot=        8222
+ NSgBfM=    35    35    35    35    35 NAtAll=     1     1.
+ Leave Link  302 at Sun Aug 18 15:09:54 2024, MaxMem=   13107200 cpu:       0.1
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l303.exe)
+ DipDrv:  MaxL=1.
+ Leave Link  303 at Sun Aug 18 15:09:54 2024, MaxMem=   13107200 cpu:       0.0
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l401.exe)
+ Initial guess read from the checkpoint file:  /home/ospite/Desktop/MMfP/Project6
+ /H/g09/DFT/B3PW91/Gau-7913.chk
+ B after Tr=     0.000000    0.000000    0.000000
+         Rot=    1.000000    0.000000    0.000000    0.000000 Ang=   0.00 deg.
+ Guess basis will be translated and rotated to current coordinates.
+ Initial guess orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (A1G)
+       Virtual   (A1G) (T1U) (T1U) (T1U) (A1G) (EG) (T2G) (T2G)
+                 (EG) (T2G) (T1U) (T1U) (T1U) (?A) (?A) (?A) (?A)
+                 (A2U) (?A) (?A) (A1G) (T1U) (T1U) (T1U) (T2G)
+                 (T2G) (T2G) (EG) (EG)
+ Beta  Orbitals:
+       Virtual   (A1G) (A1G) (T1U) (T1U) (T1U) (A1G) (EG) (T2G)
+                 (T2G) (T2G) (EG) (T1U) (T1U) (T1U) (?A) (A2U)
+                 (?A) (?A) (?A) (?A) (?A) (A1G) (T1U) (T1U) (T1U)
+                 (EG) (EG) (T2G) (T2G) (T2G)
+ The electronic state of the initial guess is 2-A1G.
+ Initial guess <Sx>= 0.0000 <Sy>= 0.0000 <Sz>= 0.5000 <S**2>= 0.7500 S= 0.5000
+ Leave Link  401 at Sun Aug 18 15:09:54 2024, MaxMem=   13107200 cpu:       0.2
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l502.exe)
+ UHF open shell SCF:
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Using DIIS extrapolation, IDIIS=  1040.
+ Integral symmetry usage will be decided dynamically.
+         8168 words used for storage of precomputed grid.
+ Keep R1 and R2 ints in memory in canonical form, NReq=2368472.
+ IEnd=       30921 IEndB=       30921 NGot=    13107200 MDV=    12696622
+ LenX=    12696622 LenY=    12694956
+ Symmetry not used in FoFDir.
+ MinBra= 0 MaxBra= 3 Meth= 1.
+ IRaf=       0 NMat=   1 IRICut=       1 DoRegI=T DoRafI=F ISym2E= 0 JSym2E=0.
+
+ Cycle   1  Pass 1  IDiag  1:
+ E=-0.504153779343283    
+ DIIS: error= 2.12D-11 at cycle   1 NSaved=   1.
+ NSaved= 1 IEnMin= 1 EnMin=-0.504153779343283     IErMin= 1 ErrMin= 2.12D-11
+ ErrMax= 2.12D-11 EMaxC= 1.00D-01 BMatC= 3.97D-21 BMatP= 3.97D-21
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.100D+01
+ Coeff:      0.100D+01
+ Gap=     0.510 Goal=   None    Shift=    0.000
+ RMSDP=2.16D-12 MaxDP=6.19D-11              OVMax= 4.48D-11
+
+ SCF Done:  E(UB3PW91) = -0.504153779343     A.U. after    1 cycles
+             Convg  =    0.2162D-11             -V/T =  2.0120
+ <Sx>= 0.0000 <Sy>= 0.0000 <Sz>= 0.5000 <S**2>= 0.7500 S= 0.5000
+ <L.S>=  0.00000000000    
+ KE= 4.981783311726D-01 PE=-9.979180122032D-01 EE=-4.414098312678D-03
+ Annihilation of the first spin contaminant:
+ S**2 before annihilation     0.7500,   after     0.7500
+ Leave Link  502 at Sun Aug 18 15:09:55 2024, MaxMem=   13107200 cpu:       0.3
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l801.exe)
+ Range of M.O.s used for correlation:     1    30
+ NBasis=    30 NAE=     1 NBE=     0 NFC=     0 NFV=     0
+ NROrb=     30 NOA=     1 NOB=     0 NVA=    29 NVB=    30
+ *** There is no correlation energy for this system ***
+ Leave Link  801 at Sun Aug 18 15:09:55 2024, MaxMem=   13107200 cpu:       0.0
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l1101.exe)
+ Using compressed storage, NAtomX=     1.
+ Will process   2 centers per pass.
+ Leave Link 1101 at Sun Aug 18 15:09:55 2024, MaxMem=   13107200 cpu:       0.2
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l1102.exe)
+ Symmetrizing basis deriv contribution to polar:
+ IMax=3 JMax=2 DiffMx= 0.00D+00
+ Leave Link 1102 at Sun Aug 18 15:09:55 2024, MaxMem=   13107200 cpu:       0.0
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l1110.exe)
+ Forming Gx(P) for the SCF density, NAtomX=     1.
+ Integral derivatives from FoFDir/FoFCou, PRISM(SPDF).
+ Do as many integral derivatives as possible in FoFDir.
+ G2DrvN: MDV=      13107088.
+ G2DrvN: will do     2 centers at a time, making    1 passes doing MaxLOS=3.
+ Calling FoFCou, ICntrl=  3107 FMM=F I1Cent=   0 AccDes= 0.00D+00.
+ FoFCou: FMM=F IPFlag=           0 FMFlag=      100000 FMFlg1=           0
+         NFxFlg=           0 DoJE=F BraDBF=F KetDBF=F FulRan=T
+         Omega=  0.000000  0.000000  1.000000  0.000000  0.000000 ICntrl=    3107 IOpCl=  1
+         NMat0=    1 NMatS0=    1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+         I1Cent=           0 NGrid=           0.
+ Petite list used in FoFCou.
+ FoFDir/FoFCou used for L=0 through L=3.
+ End of G2Drv Frequency-dependent properties file   721 does not exist.
+ End of G2Drv Frequency-dependent properties file   722 does not exist.
+ Leave Link 1110 at Sun Aug 18 15:09:56 2024, MaxMem=   13107200 cpu:       0.6
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l1002.exe)
+ Minotr:  UHF open shell wavefunction.
+          IDoAtm=1
+          Direct CPHF calculation.
+          Differentiating once with respect to electric field.
+                with respect to dipole field.
+          Differentiating once with respect to nuclear coordinates.
+          Using symmetry in CPHF.
+          Requested convergence is 1.0D-08 RMS, and 1.0D-07 maximum.
+          Secondary convergence is 1.0D-12 RMS, and 1.0D-12 maximum.
+          NewPWx=T KeepS1=F KeepF1=F KeepIn=T MapXYZ=F SortEE=F KeepMc=T.
+          MDV=      13107186 using IRadAn=       2.
+ Generate precomputed XC quadrature information.
+          Keep R1 and R2 ints in memory in canonical form, NReq=2338932.
+ Symmetry not used in FoFDir.
+ MinBra= 0 MaxBra= 3 Meth= 1.
+ IRaf=       0 NMat=   1 IRICut=       1 DoRegI=T DoRafI=F ISym2E= 0 JSym2E=0.
+          Solving linear equations simultaneously, MaxMat=       0.
+ FoF2E skips out because all densities are zero.
+ CalDSu exits because no D1Ps are significant.
+          There are     6 degrees of freedom in the 1st order CPHF.  IDoFFX=5.
+      3 vectors produced by pass  0 Test12= 4.83D-16 1.67D-08 XBig12= 1.71D+00 1.31D+00.
+ AX will form     3 AO Fock derivatives at one time.
+      3 vectors produced by pass  1 Test12= 4.83D-16 1.67D-08 XBig12= 1.39D-04 1.06D-02.
+      3 vectors produced by pass  2 Test12= 4.83D-16 1.67D-08 XBig12= 1.96D-08 1.26D-04.
+ Inverted reduced A of dimension     9 with in-core refinement.
+ FullF1:  Do perturbations    1 to     3.
+ Isotropic polarizability for W=    0.000000        2.85 Bohr**3.
+ End of Minotr Frequency-dependent properties file   721 does not exist.
+ End of Minotr Frequency-dependent properties file   722 does not exist.
+ Leave Link 1002 at Sun Aug 18 15:09:56 2024, MaxMem=   13107200 cpu:       0.6
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l601.exe)
+ Copying SCF densities to generalized density rwf, IOpCl= 1 IROHF=0.
+
+ **********************************************************************
+
+            Population analysis using the SCF density.
+
+ **********************************************************************
+
+ Orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (A1G)
+       Virtual   (A1G) (T1U) (T1U) (T1U) (A1G) (EG) (EG) (T2G)
+                 (T2G) (T2G) (T1U) (T1U) (T1U) (?A) (?A) (?A) (A2U)
+                 (?A) (?A) (?A) (A1G) (T1U) (T1U) (T1U) (EG) (EG)
+                 (T2G) (T2G) (T2G)
+ Beta  Orbitals:
+       Virtual   (A1G) (A1G) (T1U) (T1U) (T1U) (A1G) (EG) (EG)
+                 (T2G) (T2G) (T2G) (T1U) (T1U) (T1U) (?A) (?A)
+                 (?A) (A2U) (?A) (?A) (?A) (A1G) (T1U) (T1U) (T1U)
+                 (EG) (T2G) (EG) (T2G) (T2G)
+ The electronic state is 2-A1G.
+ Alpha  occ. eigenvalues --   -0.32627
+ Alpha virt. eigenvalues --    0.18361   0.39008   0.39008   0.39008   1.26646
+ Alpha virt. eigenvalues --    1.83839   1.83839   1.83839   1.83839   1.83839
+ Alpha virt. eigenvalues --    2.09163   2.09163   2.09163   5.73617   5.73617
+ Alpha virt. eigenvalues --    5.73617   5.73617   5.73617   5.73617   5.73617
+ Alpha virt. eigenvalues --    6.82522   7.34909   7.34909   7.34909   7.73249
+ Alpha virt. eigenvalues --    7.73249   7.73249   7.73249   7.73249
+  Beta virt. eigenvalues --   -0.03441   0.31253   0.53559   0.53559   0.53559
+  Beta virt. eigenvalues --    1.48947   2.00464   2.00464   2.00464   2.00464
+  Beta virt. eigenvalues --    2.00464   2.29643   2.29643   2.29643   5.93754
+  Beta virt. eigenvalues --    5.93754   5.93754   5.93754   5.93754   5.93754
+  Beta virt. eigenvalues --    5.93754   7.20769   7.64322   7.64322   7.64322
+  Beta virt. eigenvalues --    7.98931   7.98931   7.98931   7.98931   7.98931
+     Alpha Molecular Orbital Coefficients:
+                           1         2         3         4         5
+                       (A1G)--O  (A1G)--V  (T1U)--V  (T1U)--V  (T1U)--V
+     Eigenvalues --    -0.32627   0.18361   0.39008   0.39008   0.39008
+   1 1   H  1S          0.09098  -0.08355   0.00000   0.00000   0.00000
+   2        2S          0.26118  -0.01654   0.00000   0.00000   0.00000
+   3        3S          0.46610  -1.40980   0.00000   0.00000   0.00000
+   4        4S          0.32580   1.69189   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.06602   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.06602   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000   0.06602
+   8        6PX         0.00000   0.00000  -0.21419   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000  -0.21419   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000  -0.21419
+  11        7PX         0.00000   0.00000   1.12665   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   1.12665   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   1.12665
+  14        8D 0        0.00000  -0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000  -0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0       -0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2       -0.00000  -0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000  -0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000  -0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000  -0.00000   0.00000
+                           6         7         8         9        10
+                       (A1G)--V   (EG)--V   (EG)--V  (T2G)--V  (T2G)--V
+     Eigenvalues --     1.26646   1.83839   1.83839   1.83839   1.83839
+   1 1   H  1S         -0.04210  -0.00000  -0.00000   0.00000   0.00000
+   2        2S         -1.85686  -0.00000   0.00000   0.00000   0.00000
+   3        3S          2.62985   0.00000  -0.00000   0.00000   0.00000
+   4        4S         -1.14083  -0.00000   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000  -0.09239  -0.10324   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000  -0.13855
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000  -0.10324   0.09239   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000  -0.13855   0.00000
+  19        9D 0       -0.00000   0.71668   0.80080   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   1.07466
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2       -0.00000   0.80080  -0.71668   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   1.07466   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          11        12        13        14        15
+                       (T2G)--V  (T1U)--V  (T1U)--V  (T1U)--V      V
+     Eigenvalues --     1.83839   2.09163   2.09163   2.09163   5.73617
+   1 1   H  1S          0.00000   0.00000   0.00000   0.00000   0.00000
+   2        2S          0.00000   0.00000   0.00000   0.00000   0.00000
+   3        3S          0.00000   0.00000   0.00000   0.00000   0.00000
+   4        4S          0.00000   0.00000   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000  -0.20835   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000  -0.20835   0.00000
+   7        5PZ         0.00000  -0.20835   0.00000   0.00000  -0.00000
+   8        6PX         0.00000   0.00000   1.63410   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   1.63410   0.00000
+  10        6PZ         0.00000   1.63410   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000  -1.00029   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000  -1.00029   0.00000
+  13        7PZ         0.00000  -1.00029   0.00000   0.00000  -0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1       -0.13855   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        1.07466   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.99824
+  25       10F+1        0.00000   0.00000  -0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000  -0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000  -0.05924
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000  -0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          16        17        18        19        20
+                           V         V     (A2U)--V      V         V
+     Eigenvalues --     5.73617   5.73617   5.73617   5.73617   5.73617
+   1 1   H  1S          0.00000   0.00000   0.00000   0.00000   0.00000
+   2        2S          0.00000   0.00000   0.00000   0.00000   0.00000
+   3        3S          0.00000   0.00000   0.00000   0.00000   0.00000
+   4        4S          0.00000   0.00000   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000  -0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000  -0.00000  -0.00000
+   9        6PY        -0.00000   0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.05924   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.99329   0.11565
+  26       10F-1        0.99107   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.99824   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   1.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000  -0.11565   0.99329
+  30       10F-3        0.13338   0.00000   0.00000   0.00000   0.00000
+                          21        22        23        24        25
+                           V     (A1G)--V  (T1U)--V  (T1U)--V  (T1U)--V
+     Eigenvalues --     5.73617   6.82522   7.34909   7.34909   7.34909
+   1 1   H  1S          0.00000  -1.63016   0.00000   0.00000   0.00000
+   2        2S          0.00000   2.16628   0.00000   0.00000   0.00000
+   3        3S          0.00000  -1.46465   0.00000   0.00000   0.00000
+   4        4S          0.00000   0.50896   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   1.64219   0.00000   0.00000
+   6        5PY        -0.00000   0.00000   0.00000   0.00000   1.64219
+   7        5PZ         0.00000   0.00000   0.00000   1.64219   0.00000
+   8        6PX         0.00000   0.00000  -1.53648   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000  -1.53648
+  10        6PZ         0.00000   0.00000   0.00000  -1.53648   0.00000
+  11        7PX         0.00000   0.00000   0.55149   0.00000   0.00000
+  12        7PY        -0.00000   0.00000   0.00000   0.00000   0.55149
+  13        7PZ         0.00000   0.00000   0.00000   0.55149   0.00000
+  14        8D 0        0.00000  -0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000  -0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000  -0.00000   0.00000   0.00000
+  26       10F-1       -0.13338   0.00000   0.00000   0.00000  -0.00000
+  27       10F+2        0.00000   0.00000   0.00000  -0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000  -0.00000   0.00000   0.00000
+  30       10F-3        0.99107   0.00000   0.00000   0.00000   0.00000
+                          26        27        28        29        30
+                        (EG)--V   (EG)--V  (T2G)--V  (T2G)--V  (T2G)--V
+     Eigenvalues --     7.73249   7.73249   7.73249   7.73249   7.73249
+   1 1   H  1S         -0.00000   0.00000   0.00000   0.00000   0.00000
+   2        2S          0.00000  -0.00000   0.00000   0.00000   0.00000
+   3        3S         -0.00000   0.00000   0.00000   0.00000   0.00000
+   4        4S          0.00000  -0.00000   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.46524   1.13298   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   1.22479   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   1.22479   0.00000
+  17        8D+2        1.13298  -0.46524   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   1.22479
+  19        9D 0       -0.22930  -0.55841   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000  -0.60365   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000  -0.60365   0.00000
+  22        9D+2       -0.55841   0.22930   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000  -0.60365
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+     Beta Molecular Orbital Coefficients:
+                           1         2         3         4         5
+                       (A1G)--V  (A1G)--V  (T1U)--V  (T1U)--V  (T1U)--V
+     Eigenvalues --    -0.03441   0.31253   0.53559   0.53559   0.53559
+   1 1   H  1S          0.05582   0.09264   0.00000   0.00000   0.00000
+   2        2S          0.18633  -0.05602   0.00000   0.00000   0.00000
+   3        3S          0.17304   1.68331   0.00000   0.00000   0.00000
+   4        4S          0.71750  -1.63355   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.07029   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.07029
+   7        5PZ         0.00000   0.00000   0.00000   0.07029   0.00000
+   8        6PX         0.00000   0.00000  -0.25847   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000  -0.25847
+  10        6PZ         0.00000   0.00000   0.00000  -0.25847   0.00000
+  11        7PX         0.00000   0.00000   1.15373   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   1.15373
+  13        7PZ         0.00000   0.00000   0.00000   1.15373   0.00000
+  14        8D 0       -0.00000  -0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000  -0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2       -0.00000  -0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000  -0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000  -0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000  -0.00000
+                           6         7         8         9        10
+                       (A1G)--V   (EG)--V   (EG)--V  (T2G)--V  (T2G)--V
+     Eigenvalues --     1.48947   2.00464   2.00464   2.00464   2.00464
+   1 1   H  1S         -0.02309   0.00000   0.00000   0.00000   0.00000
+   2        2S         -1.90512   0.00000   0.00000   0.00000   0.00000
+   3        3S          2.52266  -0.00000  -0.00000   0.00000   0.00000
+   4        4S         -1.04960   0.00000   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000  -0.11100   0.09293   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000  -0.14477
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2       -0.00000  -0.09293  -0.11100   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000  -0.14477   0.00000
+  19        9D 0       -0.00000   0.82635  -0.69182   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   1.07771
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.69182   0.82635   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   1.07771   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          11        12        13        14        15
+                       (T2G)--V  (T1U)--V  (T1U)--V  (T1U)--V      V
+     Eigenvalues --     2.00464   2.29643   2.29643   2.29643   5.93754
+   1 1   H  1S          0.00000   0.00000   0.00000   0.00000   0.00000
+   2        2S          0.00000   0.00000   0.00000   0.00000   0.00000
+   3        3S          0.00000   0.00000   0.00000   0.00000   0.00000
+   4        4S          0.00000   0.00000   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000  -0.22500   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000  -0.22500   0.00000
+   7        5PZ         0.00000  -0.22500   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   1.64475   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   1.64475  -0.00000
+  10        6PZ         0.00000   1.64475   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000  -0.97450   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000  -0.97450  -0.00000
+  13        7PZ         0.00000  -0.97450   0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1       -0.14477   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        1.07771   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000  -0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000  -0.00000   0.96684
+  27       10F+2        0.00000  -0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000  -0.25538
+                          16        17        18        19        20
+                           V         V     (A2U)--V      V         V
+     Eigenvalues --     5.93754   5.93754   5.93754   5.93754   5.93754
+   1 1   H  1S          0.00000   0.00000   0.00000   0.00000   0.00000
+   2        2S          0.00000   0.00000   0.00000   0.00000   0.00000
+   3        3S          0.00000   0.00000   0.00000   0.00000   0.00000
+   4        4S          0.00000   0.00000   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000  -0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000  -0.00000   0.00000   0.00000   0.00000
+   8        6PX        -0.00000   0.00000   0.00000   0.00000  -0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000  -0.00000   0.00000
+  11        7PX        -0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.99980   0.00000  -0.01992   0.00000
+  25       10F+1        0.98812   0.00000   0.00000   0.00000  -0.15367
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.01992   0.00000   0.99980   0.00000
+  28       10F-2        0.00000   0.00000   1.00000   0.00000   0.00000
+  29       10F+3        0.15367   0.00000   0.00000   0.00000   0.98812
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          21        22        23        24        25
+                           V     (A1G)--V  (T1U)--V  (T1U)--V  (T1U)--V
+     Eigenvalues --     5.93754   7.20769   7.64322   7.64322   7.64322
+   1 1   H  1S          0.00000  -1.63163   0.00000   0.00000   0.00000
+   2        2S          0.00000   2.13116   0.00000   0.00000   0.00000
+   3        3S          0.00000  -1.42787   0.00000   0.00000   0.00000
+   4        4S          0.00000   0.49419   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   1.63982
+   6        5PY         0.00000   0.00000   1.63982   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   1.63982   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000  -1.51820
+   9        6PY        -0.00000   0.00000  -1.51820   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000  -1.51820   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.54158
+  12        7PY        -0.00000   0.00000   0.54158   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.54158   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000  -0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000  -0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000  -0.00000
+  26       10F-1        0.25538   0.00000  -0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000  -0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000  -0.00000
+  30       10F-3        0.96684   0.00000   0.00000   0.00000   0.00000
+                          26        27        28        29        30
+                        (EG)--V  (T2G)--V   (EG)--V  (T2G)--V  (T2G)--V
+     Eigenvalues --     7.98931   7.98931   7.98931   7.98931   7.98931
+   1 1   H  1S         -0.00000   0.00000  -0.00000   0.00000   0.00000
+   2        2S          0.00000   0.00000   0.00000   0.00000   0.00000
+   3        3S         -0.00000   0.00000  -0.00000   0.00000   0.00000
+   4        4S          0.00000   0.00000   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.94332   0.00000  -0.78006   0.00000   0.00000
+  15        8D+1        0.00000   1.22407   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   1.22407
+  17        8D+2        0.78006   0.00000   0.94332   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   1.22407   0.00000
+  19        9D 0       -0.46099   0.00000   0.38120   0.00000   0.00000
+  20        9D+1        0.00000  -0.59819   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000  -0.59819
+  22        9D+2       -0.38120   0.00000  -0.46099   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000  -0.59819   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+     Alpha Density Matrix:
+                           1         2         3         4         5
+   1 1   H  1S          0.00828
+   2        2S          0.02376   0.06822
+   3        3S          0.04241   0.12174   0.21725
+   4        4S          0.02964   0.08509   0.15186   0.10615
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0       -0.00000  -0.00000  -0.00000  -0.00000   0.00000
+  15        8D+1       -0.00000  -0.00000  -0.00000  -0.00000   0.00000
+  16        8D-1       -0.00000  -0.00000  -0.00000  -0.00000   0.00000
+  17        8D+2       -0.00000  -0.00000  -0.00000  -0.00000   0.00000
+  18        8D-2       -0.00000  -0.00000  -0.00000  -0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000  -0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                           6         7         8         9        10
+   6        5PY         0.00000
+   7        5PZ         0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          11        12        13        14        15
+  11        7PX         0.00000
+  12        7PY         0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000  -0.00000  -0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000  -0.00000
+  18        8D-2        0.00000   0.00000   0.00000  -0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000  -0.00000  -0.00000
+  20        9D+1        0.00000   0.00000   0.00000  -0.00000  -0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000  -0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          16        17        18        19        20
+  16        8D-1        0.00000
+  17        8D+2       -0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000  -0.00000   0.00000   0.00000
+  21        9D-1       -0.00000   0.00000  -0.00000  -0.00000  -0.00000
+  22        9D+2        0.00000  -0.00000  -0.00000   0.00000  -0.00000
+  23        9D-2        0.00000  -0.00000  -0.00000  -0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          21        22        23        24        25
+  21        9D-1        0.00000
+  22        9D+2       -0.00000   0.00000
+  23        9D-2       -0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          26        27        28        29        30
+  26       10F-1        0.00000
+  27       10F+2        0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+     Beta Density Matrix:
+                           1         2         3         4         5
+   1 1   H  1S          0.00000
+   2        2S          0.00000   0.00000
+   3        3S          0.00000   0.00000   0.00000
+   4        4S          0.00000   0.00000   0.00000   0.00000
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                           6         7         8         9        10
+   6        5PY         0.00000
+   7        5PZ         0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          11        12        13        14        15
+  11        7PX         0.00000
+  12        7PY         0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          16        17        18        19        20
+  16        8D-1        0.00000
+  17        8D+2        0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          21        22        23        24        25
+  21        9D-1        0.00000
+  22        9D+2        0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          26        27        28        29        30
+  26       10F-1        0.00000
+  27       10F+2        0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+    Full Mulliken population analysis:
+                           1         2         3         4         5
+   1 1   H  1S          0.00828
+   2        2S          0.01692   0.06822
+   3        3S          0.01627   0.09701   0.21725
+   4        4S          0.00559   0.03988   0.12438   0.10615
+   5        5PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                           6         7         8         9        10
+   6        5PY         0.00000
+   7        5PZ         0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          11        12        13        14        15
+  11        7PX         0.00000
+  12        7PY         0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000
+  14        8D 0        0.00000   0.00000   0.00000   0.00000
+  15        8D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  16        8D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  17        8D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000  -0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000  -0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          16        17        18        19        20
+  16        8D-1        0.00000
+  17        8D+2        0.00000   0.00000
+  18        8D-2        0.00000   0.00000   0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  21        9D-1       -0.00000   0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000  -0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000  -0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          21        22        23        24        25
+  21        9D-1        0.00000
+  22        9D+2        0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+                          26        27        28        29        30
+  26       10F-1        0.00000
+  27       10F+2        0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000   0.00000
+     Gross orbital populations:
+                         Total     Alpha     Beta      Spin
+   1 1   H  1S          0.04706   0.04706   0.00000   0.04706
+   2        2S          0.22203   0.22203   0.00000   0.22203
+   3        3S          0.45491   0.45491   0.00000   0.45491
+   4        4S          0.27599   0.27599   0.00000   0.27599
+   5        5PX         0.00000   0.00000   0.00000   0.00000
+   6        5PY         0.00000   0.00000   0.00000   0.00000
+   7        5PZ         0.00000   0.00000   0.00000   0.00000
+   8        6PX         0.00000   0.00000   0.00000   0.00000
+   9        6PY         0.00000   0.00000   0.00000   0.00000
+  10        6PZ         0.00000   0.00000   0.00000   0.00000
+  11        7PX         0.00000   0.00000   0.00000   0.00000
+  12        7PY         0.00000   0.00000   0.00000   0.00000
+  13        7PZ         0.00000   0.00000   0.00000   0.00000
+  14        8D 0       -0.00000  -0.00000   0.00000  -0.00000
+  15        8D+1       -0.00000  -0.00000   0.00000  -0.00000
+  16        8D-1       -0.00000  -0.00000   0.00000  -0.00000
+  17        8D+2       -0.00000  -0.00000   0.00000  -0.00000
+  18        8D-2       -0.00000  -0.00000   0.00000  -0.00000
+  19        9D 0        0.00000   0.00000   0.00000   0.00000
+  20        9D+1        0.00000   0.00000   0.00000   0.00000
+  21        9D-1        0.00000   0.00000   0.00000   0.00000
+  22        9D+2        0.00000   0.00000   0.00000   0.00000
+  23        9D-2        0.00000   0.00000   0.00000   0.00000
+  24       10F 0        0.00000   0.00000   0.00000   0.00000
+  25       10F+1        0.00000   0.00000   0.00000   0.00000
+  26       10F-1        0.00000   0.00000   0.00000   0.00000
+  27       10F+2        0.00000   0.00000   0.00000   0.00000
+  28       10F-2        0.00000   0.00000   0.00000   0.00000
+  29       10F+3        0.00000   0.00000   0.00000   0.00000
+  30       10F-3        0.00000   0.00000   0.00000   0.00000
+          Condensed to atoms (all electrons):
+              1
+     1  H    1.000000
+ Mulliken atomic charges:
+              1
+     1  H    0.000000
+ Sum of Mulliken atomic charges =   0.00000
+ Mulliken charges with hydrogens summed into heavy atoms:
+              1
+ Sum of Mulliken charges with hydrogens summed into heavy atoms =   0.00000
+          Atomic-Atomic Spin Densities.
+              1
+     1  H    1.000000
+ Mulliken atomic spin densities:
+              1
+     1  H    1.000000
+ Sum of Mulliken atomic spin densities =   1.00000
+ APT atomic charges:
+              1
+     1  H    0.000000
+ Sum of APT charges=   0.00000
+ APT Atomic charges with hydrogens summed into heavy atoms:
+              1
+     1  H    0.000000
+ Sum of APT charges=   0.00000
+ Electronic spatial extent (au):  <R**2>=              3.0992
+ Charge=              0.0000 electrons
+ Dipole moment (field-independent basis, Debye):
+    X=              0.0000    Y=              0.0000    Z=              0.0000  Tot=              0.0000
+ Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=             -1.3895   YY=             -1.3895   ZZ=             -1.3895
+   XY=             -0.0000   XZ=             -0.0000   YZ=             -0.0000
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=             -0.0000   YY=             -0.0000   ZZ=             -0.0000
+   XY=             -0.0000   XZ=             -0.0000   YZ=             -0.0000
+ Octapole moment (field-independent basis, Debye-Ang**2):
+  XXX=              0.0000  YYY=              0.0000  ZZZ=              0.0000  XYY=              0.0000
+  XXY=              0.0000  XXZ=              0.0000  XZZ=              0.0000  YZZ=              0.0000
+  YYZ=              0.0000  XYZ=              0.0000
+ Hexadecapole moment (field-independent basis, Debye-Ang**3):
+ XXXX=             -1.8256 YYYY=             -1.8256 ZZZZ=             -1.8256 XXXY=             -0.0000
+ XXXZ=             -0.0000 YYYX=             -0.0000 YYYZ=             -0.0000 ZZZX=             -0.0000
+ ZZZY=             -0.0000 XXYY=             -0.6085 XXZZ=             -0.6085 YYZZ=             -0.6085
+ XXYZ=             -0.0000 YYXZ=             -0.0000 ZZXY=             -0.0000
+ N-N= 0.000000000000D+00 E-N=-9.979180122041D-01  KE= 4.981783311726D-01
+ Symmetry AG   KE= 4.981783311726D-01
+ Symmetry B1G  KE= 4.769627167401D-64
+ Symmetry B2G  KE= 6.649824275950D-64
+ Symmetry B3G  KE= 4.624356817221D-64
+ Symmetry AU   KE= 0.000000000000D+00
+ Symmetry B1U  KE= 0.000000000000D+00
+ Symmetry B2U  KE= 0.000000000000D+00
+ Symmetry B3U  KE= 0.000000000000D+00
+ Orbital energies and kinetic energies (alpha):
+                                 1                 2
+   1         (A1G)--O         -0.326272          0.498178
+   2         (A1G)--V          0.183607          0.481978
+   3         (T1U)--V          0.390082          0.670332
+   4         (T1U)--V          0.390082          0.670332
+   5         (T1U)--V          0.390082          0.670332
+   6         (A1G)--V          1.266463          2.089119
+   7         (EG)--V           1.838386          2.203741
+   8         (EG)--V           1.838386          2.203741
+   9         (T2G)--V          1.838386          2.203741
+  10         (T2G)--V          1.838386          2.203741
+  11         (T2G)--V          1.838386          2.203741
+  12         (T1U)--V          2.091628          2.665118
+  13         (T1U)--V          2.091628          2.665118
+  14         (T1U)--V          2.091628          2.665118
+  15         V                 5.736174          6.286500
+  16         V                 5.736174          6.286500
+  17         V                 5.736174          6.286500
+  18         (A2U)--V          5.736174          6.286500
+  19         V                 5.736174          6.286500
+  20         V                 5.736174          6.286500
+  21         V                 5.736174          6.286500
+  22         (A1G)--V          6.825218          9.701927
+  23         (T1U)--V          7.349090          8.626550
+  24         (T1U)--V          7.349090          8.626550
+  25         (T1U)--V          7.349090          8.626550
+  26         (EG)--V           7.732493          8.638035
+  27         (EG)--V           7.732493          8.638035
+  28         (T2G)--V          7.732493          8.638035
+  29         (T2G)--V          7.732493          8.638035
+  30         (T2G)--V          7.732493          8.638035
+ Orbital energies and kinetic energies (beta):
+                                 1                 2
+   1         (A1G)--V         -0.034414          0.278024
+   2         (A1G)--V          0.312526          0.595668
+   3         (T1U)--V          0.535594          0.661549
+   4         (T1U)--V          0.535594          0.661549
+   5         (T1U)--V          0.535594          0.661549
+   6         (A1G)--V          1.489473          2.153327
+   7         (EG)--V           2.004644          2.202453
+   8         (EG)--V           2.004644          2.202453
+   9         (T2G)--V          2.004644          2.202453
+  10         (T2G)--V          2.004644          2.202453
+  11         (T2G)--V          2.004644          2.202453
+  12         (T1U)--V          2.296434          2.666674
+  13         (T1U)--V          2.296434          2.666674
+  14         (T1U)--V          2.296434          2.666674
+  15         V                 5.937539          6.286500
+  16         V                 5.937539          6.286500
+  17         V                 5.937539          6.286500
+  18         (A2U)--V          5.937539          6.286500
+  19         V                 5.937539          6.286500
+  20         V                 5.937539          6.286500
+  21         V                 5.937539          6.286500
+  22         (A1G)--V          7.207691          9.744184
+  23         (T1U)--V          7.643225          8.633777
+  24         (T1U)--V          7.643225          8.633777
+  25         (T1U)--V          7.643225          8.633777
+  26         (EG)--V           7.989309          8.639323
+  27         (T2G)--V          7.989309          8.639323
+  28         (EG)--V           7.989309          8.639323
+  29         (T2G)--V          7.989309          8.639323
+  30         (T2G)--V          7.989309          8.639323
+ Total kinetic energy from orbitals= 4.981783311726D-01
+  Exact polarizability:   2.855   0.000   2.855   0.000  -0.000   2.855
+ Approx polarizability:   2.458  -0.000   2.458  -0.000  -0.000   2.458
+                          Isotropic Fermi Contact Couplings
+        Atom                 a.u.       MegaHertz       Gauss      10(-4) cm-1
+     1  H(1)               0.30661    1370.50852     489.03150     457.15243
+ --------------------------------------------------------
+       Center         ----  Spin Dipole Couplings  ----
+                      3XX-RR        3YY-RR        3ZZ-RR
+ --------------------------------------------------------
+     1   Atom        0.000000      0.000000      0.000000
+ --------------------------------------------------------
+                        XY            XZ            YZ
+ --------------------------------------------------------
+     1   Atom        0.000000      0.000000      0.000000
+ --------------------------------------------------------
+
+
+ ---------------------------------------------------------------------------------
+              Anisotropic Spin Dipole Couplings in Principal Axis System
+ ---------------------------------------------------------------------------------
+
+       Atom             a.u.   MegaHertz   Gauss  10(-4) cm-1        Axes
+
+              Baa     0.0000     0.000     0.000     0.000  1.0000  0.0000  0.0000
+     1 H(1)   Bbb     0.0000     0.000     0.000     0.000 -0.0000  1.0000  0.0000
+              Bcc     0.0000     0.000     0.000     0.000  0.0000  0.0000  1.0000
+ 
+
+ ---------------------------------------------------------------------------------
+
+ No NMR shielding tensors so no spin-rotation constants.
+ Leave Link  601 at Sun Aug 18 15:09:57 2024, MaxMem=   13107200 cpu:       0.3
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l701.exe)
+ Compute integral second derivatives.
+ ... and contract with generalized density number  0.
+ Leave Link  701 at Sun Aug 18 15:09:57 2024, MaxMem=   13107200 cpu:       0.3
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l702.exe)
+ L702 exits ... SP integral derivatives will be done elsewhere.
+ Leave Link  702 at Sun Aug 18 15:09:57 2024, MaxMem=   13107200 cpu:       0.0
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l703.exe)
+ Compute integral second derivatives, UseDBF=F ICtDFT=           0.
+ Integral derivatives from FoFDir, PRISM(SPDF).
+ Calling FoFJK, ICntrl=    100127 FMM=F ISym2X=1 I1Cent= 0 IOpClX= 1 NMat=1 NMatS=1 NMatT=0.
+ FoFCou: FMM=F IPFlag=           0 FMFlag=      100000 FMFlg1=         800
+         NFxFlg=           0 DoJE=F BraDBF=F KetDBF=F FulRan=T
+         Omega=  0.000000  0.000000  1.000000  0.000000  0.000000 ICntrl=  100127 IOpCl=  1
+         NMat0=    1 NMatS0=    1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+         I1Cent=           0 NGrid=           0.
+ Petite list used in FoFCou.
+ Leave Link  703 at Sun Aug 18 15:09:58 2024, MaxMem=   13107200 cpu:       1.1
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ Polarizability= 2.85499694D+00 7.47476895D-13 2.85499694D+00
+                 7.06697374D-12-6.41222223D-21 2.85499694D+00
+ Full mass-weighted force constant matrix:
+ Low frequencies ---   -0.0001   -0.0001   -0.0001
+ Diagonal vibrational polarizability:
+        0.0000000       0.0000000       0.0000000
+ Harmonic frequencies (cm**-1), IR intensities (KM/Mole), Raman scattering
+ activities (A**4/AMU), depolarization ratios for plane and unpolarized
+ incident light, reduced masses (AMU), force constants (mDyne/A),
+ and normal coordinates:
+
+ -------------------
+ - Thermochemistry -
+ -------------------
+ Temperature   298.150 Kelvin.  Pressure   1.00000 Atm.
+ Atom     1 has atomic number  1 and mass   1.00783
+ Molecular mass:     1.00783 amu.
+ Zero-point vibrational energy          0.0 (Joules/Mol)
+                                    0.00000 (Kcal/Mol)
+ Vibrational temperatures: 
+          (Kelvin)
+ 
+ Zero-point correction=                           0.000000 (Hartree/Particle)
+ Thermal correction to Energy=                    0.001416
+ Thermal correction to Enthalpy=                  0.002360
+ Thermal correction to Gibbs Free Energy=        -0.010654
+ Sum of electronic and zero-point Energies=             -0.504154
+ Sum of electronic and thermal Energies=                -0.502738
+ Sum of electronic and thermal Enthalpies=              -0.501793
+ Sum of electronic and thermal Free Energies=           -0.514808
+ 
+                     E (Thermal)             CV                S
+                      KCal/Mol        Cal/Mol-Kelvin    Cal/Mol-Kelvin
+ Total                    0.889              2.981             27.392
+ Electronic               0.000              0.000              1.377
+ Translational            0.889              2.981             26.014
+ Rotational               0.000              0.000              0.000
+ Vibrational              0.000              0.000              0.000
+                       Q            Log10(Q)             Ln(Q)
+ Total Bot       0.795358D+05          4.900563         11.283963
+ Total V=0       0.795358D+05          4.900563         11.283963
+ Vib (Bot)       0.100000D+01          0.000000          0.000000
+ Vib (V=0)       0.100000D+01          0.000000          0.000000
+ Electronic      0.200000D+01          0.301030          0.693147
+ Translational   0.397679D+05          4.599533         10.590816
+ Rotational      0.100000D+01          0.000000          0.000000
+ ***** Axes restored to original set *****
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1          -0.000000000   -0.000000000   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000000000 RMS     0.000000000
+ Force constants in Cartesian coordinates: 
+                1             2             3 
+      1  0.000000D+00
+      2  0.000000D+00  0.000000D+00
+      3  0.000000D+00  0.000000D+00  0.000000D+00
+ Leave Link  716 at Sun Aug 18 15:09:58 2024, MaxMem=   13107200 cpu:       0.0
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l103.exe)
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ Berny optimization.
+ Search for a local minimum.
+ Step number   1 out of a maximum of    2
+ All quantities printed in internal units (Hartrees-Bohrs-Radians)
+ Second derivative matrix not updated -- analytic derivatives used.
+ The second derivative matrix:
+                          X1        Y1        Z1
+           X1          -0.00000
+           Y1           0.00000  -0.00000
+           Z1           0.00000   0.00000  -0.00000
+     Eigenvalues --- 
+ Angle between quadratic step and forces=  90.00 degrees.
+ ClnCor:  largest displacement from symmetrization is 0.00D+00 for atom     0.
+ Linear search not attempted -- first point.
+ ClnCor:  largest displacement from symmetrization is 0.00D+00 for atom     0.
+ TrRot=  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+ Variable       Old X    -DE/DX   Delta X   Delta X   Delta X     New X
+                                 (Linear)    (Quad)   (Total)
+    X1        0.00000  -0.00000   0.00000   0.00000   0.00000   0.00000
+    Y1        0.00000  -0.00000   0.00000   0.00000   0.00000   0.00000
+    Z1        0.00000  -0.00000   0.00000   0.00000   0.00000   0.00000
+         Item               Value     Threshold  Converged?
+ Maximum Force            0.000000     0.000450     YES
+ RMS     Force            0.000000     0.000300     YES
+ Maximum Displacement     0.000000     0.001800     YES
+ RMS     Displacement     0.000000     0.001200     YES
+ Predicted change in Energy=-0.000000D+00
+ Optimization completed.
+    -- Stationary point found.
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+
+ Leave Link  103 at Sun Aug 18 15:09:58 2024, MaxMem=   13107200 cpu:       0.0
+ (Enter /programs/64bit/g09/g09-gfortran/bin/l9999.exe)
+ 1\1\GINC-MOLMOD\Freq\UB3PW91\CC-pVQZ\H1(2)\OSPITE\18-Aug-2024\0\\#P Ge
+ om=AllCheck Guess=TCheck SCRF=Check GenChk UB3PW91/CC-pVQZ Freq\\hydog
+ en (atom) with cc-pVQZ basis set\\0,2\H,0.,0.,0.\\Version=EM64L-G09Rev
+ A.02\State=2-A1G\HF=-0.5041538\S2=0.75\S2-1=0.\S2A=0.75\RMSD=2.162e-12
+ \RMSF=0.000e+00\Thermal=0.0014163\Dipole=0.,0.,0.\DipoleDeriv=0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.\Polar=2.8549969,0.,2.8549969,0.,0.,2.8549969\PG=OH 
+ [O(H1)]\NImag=0\\0.,0.,0.,0.,0.,0.\\0.,0.,0.\\\@
+
+
+ CHILDREN YOU ARE VERY LITTLE,
+ AND YOUR BONES ARE VERY BRITTLE;
+ IF YOU WOULD GROW GREAT AND STATELY
+ YOU MUST TRY TO WALK SEDATELY.
+ YOU MUST STILL BE BRIGHT AND QUIET,
+ AND CONTENT WITH SIMPLE DIET;
+ AND REMAIN, THROUGH ALL BEWILD'RING
+ INNOCENT AND HONEST CHILDREN.
+     -- A CHILD'S GARDEN OF VERSE,
+        ROBERT LOUIS STEVENSON
+ Job cpu time:  0 days  0 hours  0 minutes  4.5 seconds.
+ File lengths (MBytes):  RWF=      5 Int=      0 D2E=      0 Chk=      1 Scr=      1
+ Normal termination of Gaussian 09 at Sun Aug 18 15:09:58 2024.

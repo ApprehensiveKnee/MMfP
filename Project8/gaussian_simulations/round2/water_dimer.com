@@ -1,4 +1,5 @@
 %NProcShared=2
+%chk=water_dimer
 %mem=500MB
 
 #p B3LYP/6-31g(d,p) opt freq pop=full gfinput

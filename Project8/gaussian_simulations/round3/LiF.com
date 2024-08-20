@@ -1,4 +1,5 @@
 %mem=100MB
+%chk=lif
 
 #p B3LYP/6-31g(d,p) opt freq pop=full gfinput
 

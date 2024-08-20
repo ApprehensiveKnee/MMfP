@@ -3,6 +3,8 @@
 
 #p B3LYP/6-31g(d,p) opt freq pop=full gfinput
 
+water dimer
+
 0 1
 o
 h   1 ho2     

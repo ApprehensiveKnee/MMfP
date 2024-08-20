@@ -1,4 +1,4 @@
-%numprocshared=2
+%NProcShared=2
 %mem=500MB
 
 #p B3LYP/6-31g(d,p) opt freq pop=full gfinput

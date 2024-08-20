@@ -2,18 +2,19 @@
 
 ethyne
 
- c
- c   1 cc2     
- h    1 hc3         2 hcc3      
- h    2 hc4         1 hcc4          3 dih4   
- c    1 cc5         2 ccc5          4 dih5   
- h    5 hc6         1 hcc6          3 dih6   
- c    5 cc7         1 ccc7          6 dih7   
- h    7 hc8         5 hcc8          6 dih8   
- c    7 cc9         5 ccc9          8 dih9   
- h    9 hc10        7 hcc10         8 dih10  
- c    9 cc11        7 ccc11        10 dih11  
- h   11 hc12        9 hcc12        10 dih12  
+0 1
+c
+c   1 cc2     
+h    1 hc3         2 hcc3      
+h    2 hc4         1 hcc4          3 dih4   
+c    1 cc5         2 ccc5          4 dih5   
+h    5 hc6         1 hcc6          3 dih6   
+c    5 cc7         1 ccc7          6 dih7   
+h    7 hc8         5 hcc8          6 dih8   
+c    7 cc9         5 ccc9          8 dih9   
+h    9 hc10        7 hcc10         8 dih10  
+c    9 cc11        7 ccc11        10 dih11  
+h   11 hc12        9 hcc12        10 dih12  
  
 cc2         1.400000
 hc3         1.070000

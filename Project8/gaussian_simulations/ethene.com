@@ -2,12 +2,13 @@
 
 ethene
 
- c
- c   1 cc2     
- h    1 hc3         2 hcc3      
- h    2 hc4         1 hcc4          3 dih4   
- h    2 hc5         1 hcc5          3 dih5   
- h    1 hc6         2 hcc6          3 dih6   
+0 1
+c
+c   1 cc2     
+h    1 hc3         2 hcc3      
+h    2 hc4         1 hcc4          3 dih4   
+h    2 hc5         1 hcc5          3 dih5   
+h    1 hc6         2 hcc6          3 dih6   
  
 cc2         1.335000
 hc3         1.089000

@@ -2,8 +2,8 @@
  Input=ethyne.com
  Output=ethyne.log
  Initial command:
- /programs/64bit/g09/g09-gfortran/bin/l1.exe /home/ospite/Desktop/MMfP/Project8/gaussian_simulations/round1/Gau-10947.inp -scrdir=/home/ospite/Desktop/MMfP/Project8/gaussian_simulations/round1/
- Entering Link 1 = /programs/64bit/g09/g09-gfortran/bin/l1.exe PID=     10948.
+ /programs/64bit/g09/g09-gfortran/bin/l1.exe /data/scratch/Gau-15039.inp -scrdir=/data/scratch/
+ Entering Link 1 = /programs/64bit/g09/g09-gfortran/bin/l1.exe PID=     15040.
   
  Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009, Gaussian, Inc.
                   All Rights Reserved.
@@ -80,9 +80,9 @@
  ******************************************
  %mem=100MB
  %chk=ethyne
- ---------------------------------------------
- #p B3LYP/6-31g(d,p) opt freq pop=full gfinput
- ---------------------------------------------
+ --------------------------------------------------------
+ #p B3LYP/6-31g(d,p) opt freq pop=full gfinput output=wfn
+ --------------------------------------------------------
  1/14=-1,18=20,19=15,26=3,38=1/1,3;
  2/9=110,12=2,17=6,18=5,40=1/2;
  3/5=1,6=6,7=101,11=2,16=1,24=10,25=1,30=1,71=1,74=-5/1,2,3;
@@ -92,7 +92,7 @@
  7//1,2,3,16;
  1/14=-1,18=20,19=15/3(2);
  2/9=110/2;
- 99//99;
+ 99/6=100/99;
  2/9=110/2;
  3/5=1,6=6,7=101,11=2,16=1,25=1,30=1,71=1,74=-5/1,2,3;
  4/5=5,16=3/1;
@@ -101,8 +101,8 @@
  1/14=-1,18=20,19=15/3(-5);
  2/9=110/2;
  6/7=3,19=2,28=1/1;
- 99/9=1/99;
- Leave Link    1 at Wed Aug 21 02:08:04 2024, MaxMem=   13107200 cpu:       0.1
+ 99/6=100,9=1/99;
+ Leave Link    1 at Wed Aug 21 04:06:17 2024, MaxMem=   13107200 cpu:       0.1
  (Enter /programs/64bit/g09/g09-gfortran/bin/l101.exe)
  ------
  ethyne
@@ -133,7 +133,7 @@
  AtZEff=   0.0000000   0.0000000   0.0000000   0.0000000
  NQMom=    0.0000000   0.0000000   0.0000000   0.0000000
  NMagM=    0.0000000   0.0000000   2.7928460   2.7928460
- Leave Link  101 at Wed Aug 21 02:08:05 2024, MaxMem=   13107200 cpu:       0.2
+ Leave Link  101 at Wed Aug 21 04:06:17 2024, MaxMem=   13107200 cpu:       0.2
  (Enter /programs/64bit/g09/g09-gfortran/bin/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -157,7 +157,7 @@
  Number of steps in this run=  20 maximum allowed number of steps= 100.
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Wed Aug 21 02:08:05 2024, MaxMem=   13107200 cpu:       0.0
+ Leave Link  103 at Wed Aug 21 04:06:17 2024, MaxMem=   13107200 cpu:       0.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
@@ -192,7 +192,7 @@
       4          1           0        0.000000    0.000000   -1.661500
  ---------------------------------------------------------------------
  Rotational constants (GHZ):      0.0000000     35.4711131     35.4711131
- Leave Link  202 at Wed Aug 21 02:08:05 2024, MaxMem=   13107200 cpu:       0.0
+ Leave Link  202 at Wed Aug 21 04:06:17 2024, MaxMem=   13107200 cpu:       0.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l301.exe)
  Standard basis: 6-31G(d,p) (6D, 7F)
  Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
@@ -270,7 +270,7 @@
  ScaDFX=  0.800000  0.720000  1.000000  0.810000 ScalE2=  1.000000  1.000000
  IRadAn=      0 IRanWt=     -1 IRanGd=            0 ICorTp=0
  NAtoms=    4 NActive=    4 NUniq=    2 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
- Leave Link  301 at Wed Aug 21 02:08:05 2024, MaxMem=   13107200 cpu:       0.1
+ Leave Link  301 at Wed Aug 21 04:06:18 2024, MaxMem=   13107200 cpu:       0.1
  (Enter /programs/64bit/g09/g09-gfortran/bin/l302.exe)
  NPDir=0 NMtPBC=     1 NCelOv=     1 NCel=       1 NClECP=     1 NCelD=      1
          NCelK=      1 NCelE2=     1 NClLst=     1 CellRange=     0.0.
@@ -282,10 +282,10 @@
  IXCGrd= 2 IRadAn=           0 IRanWt=          -1 IRanGd=           0 AccXCQ= 1.00D-10.
  NRdTot=     244 NPtTot=       30968 NUsed=       32741 NTot=       32773
  NSgBfM=    40    40    40    40    40 NAtAll=     4     4.
- Leave Link  302 at Wed Aug 21 02:08:05 2024, MaxMem=   13107200 cpu:       0.2
+ Leave Link  302 at Wed Aug 21 04:06:18 2024, MaxMem=   13107200 cpu:       0.2
  (Enter /programs/64bit/g09/g09-gfortran/bin/l303.exe)
  DipDrv:  MaxL=1.
- Leave Link  303 at Wed Aug 21 02:08:05 2024, MaxMem=   13107200 cpu:       0.1
+ Leave Link  303 at Wed Aug 21 04:06:18 2024, MaxMem=   13107200 cpu:       0.1
  (Enter /programs/64bit/g09/g09-gfortran/bin/l401.exe)
  Harris functional with IExCor=  402 diagonalized for initial guess.
  ExpMin= 1.61D-01 ExpMax= 3.05D+03 ExpMxC= 4.57D+02 IAcc=1 IRadAn=         1 AccDes= 0.00D+00
@@ -306,7 +306,7 @@
                  (SGG) (PIU) (PIU) (SGU) (PIG) (PIG) (SGG) (SGU)
                  (SGG) (SGU)
  The electronic state of the initial guess is 1-SGG.
- Leave Link  401 at Wed Aug 21 02:08:06 2024, MaxMem=   13107200 cpu:       0.3
+ Leave Link  401 at Wed Aug 21 04:06:19 2024, MaxMem=   13107200 cpu:       0.3
  (Enter /programs/64bit/g09/g09-gfortran/bin/l502.exe)
  Closed shell SCF:
  Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
@@ -432,7 +432,7 @@
  SCF Done:  E(RB3LYP) =  -77.3295071311     A.U. after    9 cycles
              Convg  =    0.4253D-08             -V/T =  2.0098
  KE= 7.657716413173D+01 PE=-2.286250027678D+02 EE= 4.992660673440D+01
- Leave Link  502 at Wed Aug 21 02:08:07 2024, MaxMem=   13107200 cpu:       1.0
+ Leave Link  502 at Wed Aug 21 04:06:20 2024, MaxMem=   13107200 cpu:       1.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l601.exe)
  Copying SCF densities to generalized density rwf, IOpCl= 0 IROHF=0.
 
@@ -1314,14 +1314,14 @@
   40 (SGU)--V                  5.364119          9.407873
  Total kinetic energy from orbitals= 7.657716413173D+01
  No NMR shielding tensors so no spin-rotation constants.
- Leave Link  601 at Wed Aug 21 02:08:07 2024, MaxMem=   13107200 cpu:       0.2
+ Leave Link  601 at Wed Aug 21 04:06:20 2024, MaxMem=   13107200 cpu:       0.2
  (Enter /programs/64bit/g09/g09-gfortran/bin/l701.exe)
  Compute integral first derivatives.
  ... and contract with generalized density number  0.
- Leave Link  701 at Wed Aug 21 02:08:07 2024, MaxMem=   13107200 cpu:       0.2
+ Leave Link  701 at Wed Aug 21 04:06:20 2024, MaxMem=   13107200 cpu:       0.2
  (Enter /programs/64bit/g09/g09-gfortran/bin/l702.exe)
  L702 exits ... SP integral derivatives will be done elsewhere.
- Leave Link  702 at Wed Aug 21 02:08:07 2024, MaxMem=   13107200 cpu:       0.0
+ Leave Link  702 at Wed Aug 21 04:06:20 2024, MaxMem=   13107200 cpu:       0.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l703.exe)
  Compute integral first derivatives, UseDBF=F ICtDFT=           0.
  Integral derivatives from FoFDir, PRISM(SPDF).
@@ -1332,7 +1332,7 @@
          NMat0=    1 NMatS0=    1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
          I1Cent=           0 NGrid=           0.
  Petite list used in FoFCou.
- Leave Link  703 at Wed Aug 21 02:08:08 2024, MaxMem=   13107200 cpu:       0.7
+ Leave Link  703 at Wed Aug 21 04:06:21 2024, MaxMem=   13107200 cpu:       0.7
  (Enter /programs/64bit/g09/g09-gfortran/bin/l716.exe)
  Dipole        = 2.72469679D-17 0.00000000D+00 0.00000000D+00
  ***** Axes restored to original set *****
@@ -1346,7 +1346,7 @@
       4        1          -0.000000000   -0.000000000    0.004541690
  -------------------------------------------------------------------
  Cartesian Forces:  Max     0.004541690 RMS     0.001861313
- Leave Link  716 at Wed Aug 21 02:08:08 2024, MaxMem=   13107200 cpu:       0.1
+ Leave Link  716 at Wed Aug 21 04:06:21 2024, MaxMem=   13107200 cpu:       0.1
  (Enter /programs/64bit/g09/g09-gfortran/bin/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -1394,7 +1394,7 @@
  Predicted change in Energy=-6.536077D-05
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Wed Aug 21 02:08:08 2024, MaxMem=   13107200 cpu:       0.0
+ Leave Link  103 at Wed Aug 21 04:06:21 2024, MaxMem=   13107200 cpu:       0.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
@@ -1429,7 +1429,7 @@
       4          1           0        0.000000    0.000000   -1.669002
  ---------------------------------------------------------------------
  Rotational constants (GHZ):      0.0000000     35.2560077     35.2560077
- Leave Link  202 at Wed Aug 21 02:08:08 2024, MaxMem=   13107200 cpu:       0.0
+ Leave Link  202 at Wed Aug 21 04:06:21 2024, MaxMem=   13107200 cpu:       0.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l301.exe)
  Standard basis: 6-31G(d,p) (6D, 7F)
  Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
@@ -1451,7 +1451,7 @@
  ScaDFX=  0.800000  0.720000  1.000000  0.810000 ScalE2=  1.000000  1.000000
  IRadAn=      0 IRanWt=     -1 IRanGd=            0 ICorTp=0
  NAtoms=    4 NActive=    4 NUniq=    2 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
- Leave Link  301 at Wed Aug 21 02:08:09 2024, MaxMem=   13107200 cpu:       0.1
+ Leave Link  301 at Wed Aug 21 04:06:21 2024, MaxMem=   13107200 cpu:       0.1
  (Enter /programs/64bit/g09/g09-gfortran/bin/l302.exe)
  NPDir=0 NMtPBC=     1 NCelOv=     1 NCel=       1 NClECP=     1 NCelD=      1
          NCelK=      1 NCelE2=     1 NClLst=     1 CellRange=     0.0.
@@ -1463,10 +1463,10 @@
  IXCGrd= 2 IRadAn=           0 IRanWt=          -1 IRanGd=           0 AccXCQ= 1.00D-10.
  NRdTot=     244 NPtTot=       30968 NUsed=       32741 NTot=       32773
  NSgBfM=    40    40    40    40    40 NAtAll=     4     4.
- Leave Link  302 at Wed Aug 21 02:08:09 2024, MaxMem=   13107200 cpu:       0.2
+ Leave Link  302 at Wed Aug 21 04:06:22 2024, MaxMem=   13107200 cpu:       0.3
  (Enter /programs/64bit/g09/g09-gfortran/bin/l303.exe)
  DipDrv:  MaxL=1.
- Leave Link  303 at Wed Aug 21 02:08:09 2024, MaxMem=   13107200 cpu:       0.1
+ Leave Link  303 at Wed Aug 21 04:06:22 2024, MaxMem=   13107200 cpu:       0.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l401.exe)
  Initial guess read from the read-write file.
  B after Tr=     0.000000    0.000000    0.000000
@@ -1480,7 +1480,7 @@
                  (SGG) (PIU) (PIU) (SGU) (PIG) (PIG) (SGG) (SGU)
                  (SGG) (SGU)
  The electronic state of the initial guess is 1-SGG.
- Leave Link  401 at Wed Aug 21 02:08:09 2024, MaxMem=   13107200 cpu:       0.2
+ Leave Link  401 at Wed Aug 21 04:06:22 2024, MaxMem=   13107200 cpu:       0.2
  (Enter /programs/64bit/g09/g09-gfortran/bin/l502.exe)
  Closed shell SCF:
  Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
@@ -1568,14 +1568,14 @@
  SCF Done:  E(RB3LYP) =  -77.3295663984     A.U. after    6 cycles
              Convg  =    0.7240D-08             -V/T =  2.0102
  KE= 7.654677668480D+01 PE=-2.284441963065D+02 EE= 4.985595313899D+01
- Leave Link  502 at Wed Aug 21 02:08:10 2024, MaxMem=   13107200 cpu:       0.9
+ Leave Link  502 at Wed Aug 21 04:06:23 2024, MaxMem=   13107200 cpu:       0.9
  (Enter /programs/64bit/g09/g09-gfortran/bin/l701.exe)
  Compute integral first derivatives.
  ... and contract with generalized density number  0.
- Leave Link  701 at Wed Aug 21 02:08:11 2024, MaxMem=   13107200 cpu:       0.2
+ Leave Link  701 at Wed Aug 21 04:06:24 2024, MaxMem=   13107200 cpu:       0.2
  (Enter /programs/64bit/g09/g09-gfortran/bin/l702.exe)
  L702 exits ... SP integral derivatives will be done elsewhere.
- Leave Link  702 at Wed Aug 21 02:08:11 2024, MaxMem=   13107200 cpu:       0.0
+ Leave Link  702 at Wed Aug 21 04:06:24 2024, MaxMem=   13107200 cpu:       0.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l703.exe)
  Compute integral first derivatives, UseDBF=F ICtDFT=           0.
  Integral derivatives from FoFDir, PRISM(SPDF).
@@ -1586,7 +1586,7 @@
          NMat0=    1 NMatS0=    1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
          I1Cent=           0 NGrid=           0.
  Petite list used in FoFCou.
- Leave Link  703 at Wed Aug 21 02:08:11 2024, MaxMem=   13107200 cpu:       0.7
+ Leave Link  703 at Wed Aug 21 04:06:24 2024, MaxMem=   13107200 cpu:       0.7
  (Enter /programs/64bit/g09/g09-gfortran/bin/l716.exe)
  Dipole        = 2.79703922D-17 1.92696438D-33 4.44089210D-16
  ***** Axes restored to original set *****
@@ -1600,7 +1600,7 @@
       4        1          -0.000000000   -0.000000000   -0.000405173
  -------------------------------------------------------------------
  Cartesian Forces:  Max     0.000405173 RMS     0.000165575
- Leave Link  716 at Wed Aug 21 02:08:12 2024, MaxMem=   13107200 cpu:       0.0
+ Leave Link  716 at Wed Aug 21 04:06:25 2024, MaxMem=   13107200 cpu:       0.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -1670,7 +1670,7 @@
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
  Largest change from initial coordinates is atom    3       0.008 Angstoms.
- Leave Link  103 at Wed Aug 21 02:08:12 2024, MaxMem=   13107200 cpu:       0.0
+ Leave Link  103 at Wed Aug 21 04:06:25 2024, MaxMem=   13107200 cpu:       0.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
@@ -1705,7 +1705,7 @@
       4          1           0        0.000000    0.000000   -1.669002
  ---------------------------------------------------------------------
  Rotational constants (GHZ):      0.0000000     35.2560077     35.2560077
- Leave Link  202 at Wed Aug 21 02:08:12 2024, MaxMem=   13107200 cpu:       0.0
+ Leave Link  202 at Wed Aug 21 04:06:25 2024, MaxMem=   13107200 cpu:       0.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l601.exe)
  Copying SCF densities to generalized density rwf, IOpCl= 0 IROHF=0.
 
@@ -2587,7 +2587,7 @@
   40 (SGU)--V                  5.333099          9.384223
  Total kinetic energy from orbitals= 7.654677668480D+01
  No NMR shielding tensors so no spin-rotation constants.
- Leave Link  601 at Wed Aug 21 02:08:12 2024, MaxMem=   13107200 cpu:       0.2
+ Leave Link  601 at Wed Aug 21 04:06:25 2024, MaxMem=   13107200 cpu:       0.2
  (Enter /programs/64bit/g09/g09-gfortran/bin/l9999.exe)
  B after Tr=     0.000000    0.000000    1.136670
          Rot=    0.000000   -0.000000    1.000000   -0.000000 Ang= 180.00 deg.
@@ -2604,19 +2604,22 @@
  hcc4=179.99999879
  dih4=0.
  1\1\GINC-MOLMOD\FOpt\RB3LYP\6-31G(d,p)\C2H2\OSPITE\21-Aug-2024\0\\#p B
- 3LYP/6-31g(d,p) opt freq pop=full gfinput\\ethyne\\0,1\C,0.,0.,-0.0012
- 652053\C,0.,0.,1.2042652053\H,0.,0.,-1.0675018361\H,0.,0.,2.2705018361
- \\Version=EM64L-G09RevA.02\State=1-SGG\HF=-77.3295664\RMSD=7.240e-09\R
- MSF=1.656e-04\Dipole=0.,0.,0.\Quadrupole=-1.5341234,-1.5341234,3.06824
- 69,0.,0.,0.\PG=D*H [C*(H1C1.C1H1)]\\@
+ 3LYP/6-31g(d,p) opt freq pop=full gfinput output=wfn\\ethyne\\0,1\C,0.
+ ,0.,-0.0012652053\C,0.,0.,1.2042652053\H,0.,0.,-1.0675018361\H,0.,0.,2
+ .2705018361\\Version=EM64L-G09RevA.02\State=1-SGG\HF=-77.3295664\RMSD=
+ 7.240e-09\RMSF=1.656e-04\Dipole=0.,0.,0.\Quadrupole=-1.5341234,-1.5341
+ 234,3.0682469,0.,0.,0.\PG=D*H [C*(H1C1.C1H1)]\\@
+
+ Writing a WFN file to ethyne.wfn.
 
 
- If your ship doesn't come in, swim out to it!
-                          -- Jonathan Winters
- Leave Link 9999 at Wed Aug 21 02:08:12 2024, MaxMem=   13107200 cpu:       0.1
- Job cpu time:  0 days  0 hours  0 minutes  6.3 seconds.
+ IF YOU DON'T HAVE THE LAW - ARGUE THE FACTS.
+ IF YOU DON'T HAVE THE FACTS - ARGUE THE LAW.
+ IF YOU DON'T HAVE EITHER - POUND THE TABLE.
+ Leave Link 9999 at Wed Aug 21 04:06:25 2024, MaxMem=   13107200 cpu:       0.1
+ Job cpu time:  0 days  0 hours  0 minutes  6.5 seconds.
  File lengths (MBytes):  RWF=      5 Int=      0 D2E=      0 Chk=      1 Scr=      1
- Normal termination of Gaussian 09 at Wed Aug 21 02:08:12 2024.
+ Normal termination of Gaussian 09 at Wed Aug 21 04:06:25 2024.
  (Enter /programs/64bit/g09/g09-gfortran/bin/l1.exe)
  Link1:  Proceeding to internal job step number  2.
  ----------------------------------------------------------------------
@@ -2634,7 +2637,7 @@
  7/8=1,10=1,25=1/1,2,3,16;
  1/10=4,30=1/3;
  99//99;
- Leave Link    1 at Wed Aug 21 02:08:12 2024, MaxMem=   13107200 cpu:       0.1
+ Leave Link    1 at Wed Aug 21 04:06:25 2024, MaxMem=   13107200 cpu:       0.1
  (Enter /programs/64bit/g09/g09-gfortran/bin/l101.exe)
  ------
  ethyne
@@ -2658,7 +2661,7 @@
  AtZEff=  -3.6000000  -3.6000000  -1.0000000  -1.0000000
  NQMom=    0.0000000   0.0000000   0.0000000   0.0000000
  NMagM=    0.0000000   0.0000000   2.7928460   2.7928460
- Leave Link  101 at Wed Aug 21 02:08:12 2024, MaxMem=   13107200 cpu:       0.1
+ Leave Link  101 at Wed Aug 21 04:06:26 2024, MaxMem=   13107200 cpu:       0.2
  (Enter /programs/64bit/g09/g09-gfortran/bin/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -2682,7 +2685,7 @@
  Number of steps in this run=   2 maximum allowed number of steps=   2.
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Wed Aug 21 02:08:12 2024, MaxMem=   13107200 cpu:       0.0
+ Leave Link  103 at Wed Aug 21 04:06:26 2024, MaxMem=   13107200 cpu:       0.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
@@ -2717,7 +2720,7 @@
       4          1           0        0.000000    0.000000   -1.669002
  ---------------------------------------------------------------------
  Rotational constants (GHZ):      0.0000000     35.2560077     35.2560077
- Leave Link  202 at Wed Aug 21 02:08:12 2024, MaxMem=   13107200 cpu:       0.0
+ Leave Link  202 at Wed Aug 21 04:06:26 2024, MaxMem=   13107200 cpu:       0.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l301.exe)
  Standard basis: 6-31G(d,p) (6D, 7F)
  Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
@@ -2795,7 +2798,7 @@
  ScaDFX=  0.800000  0.720000  1.000000  0.810000 ScalE2=  1.000000  1.000000
  IRadAn=      0 IRanWt=     -1 IRanGd=            0 ICorTp=0
  NAtoms=    4 NActive=    4 NUniq=    2 SFac= 3.00D+00 NAtFMM=   80 NAOKFM=F Big=F
- Leave Link  301 at Wed Aug 21 02:08:13 2024, MaxMem=   13107200 cpu:       0.1
+ Leave Link  301 at Wed Aug 21 04:06:26 2024, MaxMem=   13107200 cpu:       0.1
  (Enter /programs/64bit/g09/g09-gfortran/bin/l302.exe)
  NPDir=0 NMtPBC=     1 NCelOv=     1 NCel=       1 NClECP=     1 NCelD=      1
          NCelK=      1 NCelE2=     1 NClLst=     1 CellRange=     0.0.
@@ -2807,10 +2810,10 @@
  IXCGrd= 2 IRadAn=           0 IRanWt=          -1 IRanGd=           0 AccXCQ= 1.00D-10.
  NRdTot=     244 NPtTot=       30968 NUsed=       32741 NTot=       32773
  NSgBfM=    40    40    40    40    40 NAtAll=     4     4.
- Leave Link  302 at Wed Aug 21 02:08:13 2024, MaxMem=   13107200 cpu:       0.2
+ Leave Link  302 at Wed Aug 21 04:06:26 2024, MaxMem=   13107200 cpu:       0.3
  (Enter /programs/64bit/g09/g09-gfortran/bin/l303.exe)
  DipDrv:  MaxL=1.
- Leave Link  303 at Wed Aug 21 02:08:13 2024, MaxMem=   13107200 cpu:       0.0
+ Leave Link  303 at Wed Aug 21 04:06:26 2024, MaxMem=   13107200 cpu:       0.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l401.exe)
  Initial guess read from the checkpoint file:  ethyne.chk
  B after Tr=     0.000000    0.000000    0.000000
@@ -2824,7 +2827,7 @@
                  (SGG) (PIU) (PIU) (SGU) (PIG) (PIG) (SGG) (SGU)
                  (SGG) (SGU)
  The electronic state of the initial guess is 1-SGG.
- Leave Link  401 at Wed Aug 21 02:08:13 2024, MaxMem=   13107200 cpu:       0.2
+ Leave Link  401 at Wed Aug 21 04:06:27 2024, MaxMem=   13107200 cpu:       0.2
  (Enter /programs/64bit/g09/g09-gfortran/bin/l502.exe)
  Closed shell SCF:
  Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
@@ -2855,7 +2858,7 @@
  SCF Done:  E(RB3LYP) =  -77.3295663984     A.U. after    1 cycles
              Convg  =    0.4958D-09             -V/T =  2.0102
  KE= 7.654677677484D+01 PE=-2.284441949059D+02 EE= 4.985595164844D+01
- Leave Link  502 at Wed Aug 21 02:08:14 2024, MaxMem=   13107200 cpu:       0.3
+ Leave Link  502 at Wed Aug 21 04:06:27 2024, MaxMem=   13107200 cpu:       0.3
  (Enter /programs/64bit/g09/g09-gfortran/bin/l801.exe)
  Range of M.O.s used for correlation:     1    40
  NBasis=    40 NAE=     7 NBE=     7 NFC=     0 NFV=     0
@@ -2863,15 +2866,15 @@
 
  **** Warning!!: The largest alpha MO coefficient is  0.14753859D+02
 
- Leave Link  801 at Wed Aug 21 02:08:14 2024, MaxMem=   13107200 cpu:       0.0
+ Leave Link  801 at Wed Aug 21 04:06:27 2024, MaxMem=   13107200 cpu:       0.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l1101.exe)
  Using compressed storage, NAtomX=     4.
  Will process   5 centers per pass.
- Leave Link 1101 at Wed Aug 21 02:08:14 2024, MaxMem=   13107200 cpu:       0.2
+ Leave Link 1101 at Wed Aug 21 04:06:27 2024, MaxMem=   13107200 cpu:       0.2
  (Enter /programs/64bit/g09/g09-gfortran/bin/l1102.exe)
  Symmetrizing basis deriv contribution to polar:
  IMax=3 JMax=2 DiffMx= 0.00D+00
- Leave Link 1102 at Wed Aug 21 02:08:14 2024, MaxMem=   13107200 cpu:       0.0
+ Leave Link 1102 at Wed Aug 21 04:06:27 2024, MaxMem=   13107200 cpu:       0.1
  (Enter /programs/64bit/g09/g09-gfortran/bin/l1110.exe)
  Forming Gx(P) for the SCF density, NAtomX=     4.
  Integral derivatives from FoFDir/FoFCou, PRISM(SPDF).
@@ -2888,7 +2891,7 @@
  FoFDir/FoFCou used for L=0 through L=2.
  End of G2Drv Frequency-dependent properties file   721 does not exist.
  End of G2Drv Frequency-dependent properties file   722 does not exist.
- Leave Link 1110 at Wed Aug 21 02:08:16 2024, MaxMem=   13107200 cpu:       1.3
+ Leave Link 1110 at Wed Aug 21 04:06:29 2024, MaxMem=   13107200 cpu:       1.3
  (Enter /programs/64bit/g09/g09-gfortran/bin/l1002.exe)
  Minotr:  Closed shell wavefunction.
           IDoAtm=1111
@@ -2921,7 +2924,7 @@
  Isotropic polarizability for W=    0.000000       14.72 Bohr**3.
  End of Minotr Frequency-dependent properties file   721 does not exist.
  End of Minotr Frequency-dependent properties file   722 does not exist.
- Leave Link 1002 at Wed Aug 21 02:08:24 2024, MaxMem=   13107200 cpu:       8.1
+ Leave Link 1002 at Wed Aug 21 04:06:37 2024, MaxMem=   13107200 cpu:       8.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l601.exe)
  Copying SCF densities to generalized density rwf, IOpCl= 0 IROHF=0.
 
@@ -3819,14 +3822,14 @@
   Exact polarizability:   8.000  -0.000   8.000  -0.000   0.000  28.174
  Approx polarizability:   9.973  -0.000   9.973  -0.000  -0.000  51.708
  No NMR shielding tensors so no spin-rotation constants.
- Leave Link  601 at Wed Aug 21 02:08:24 2024, MaxMem=   13107200 cpu:       0.2
+ Leave Link  601 at Wed Aug 21 04:06:37 2024, MaxMem=   13107200 cpu:       0.2
  (Enter /programs/64bit/g09/g09-gfortran/bin/l701.exe)
  Compute integral second derivatives.
  ... and contract with generalized density number  0.
- Leave Link  701 at Wed Aug 21 02:08:24 2024, MaxMem=   13107200 cpu:       0.2
+ Leave Link  701 at Wed Aug 21 04:06:38 2024, MaxMem=   13107200 cpu:       0.3
  (Enter /programs/64bit/g09/g09-gfortran/bin/l702.exe)
  L702 exits ... SP integral derivatives will be done elsewhere.
- Leave Link  702 at Wed Aug 21 02:08:24 2024, MaxMem=   13107200 cpu:       0.0
+ Leave Link  702 at Wed Aug 21 04:06:38 2024, MaxMem=   13107200 cpu:       0.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l703.exe)
  Compute integral second derivatives, UseDBF=F ICtDFT=           0.
  Integral derivatives from FoFDir, PRISM(SPDF).
@@ -3837,7 +3840,7 @@
          NMat0=    1 NMatS0=    1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
          I1Cent=           0 NGrid=           0.
  Petite list used in FoFCou.
- Leave Link  703 at Wed Aug 21 02:08:27 2024, MaxMem=   13107200 cpu:       2.2
+ Leave Link  703 at Wed Aug 21 04:06:40 2024, MaxMem=   13107200 cpu:       2.2
  (Enter /programs/64bit/g09/g09-gfortran/bin/l716.exe)
  Dipole        = 2.79703940D-17 2.69630192D-33 4.41270284D-15
  Polarizability= 8.00026922D+00-4.81042389D-12 8.00026922D+00
@@ -4019,7 +4022,7 @@
                 6             7 
       6  0.575140D-01
       7 -0.277637D-01  0.575140D-01
- Leave Link  716 at Wed Aug 21 02:08:27 2024, MaxMem=   13107200 cpu:       0.1
+ Leave Link  716 at Wed Aug 21 04:06:40 2024, MaxMem=   13107200 cpu:       0.1
  (Enter /programs/64bit/g09/g09-gfortran/bin/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -4081,7 +4084,7 @@
  --------------------------------------------------------------------------------
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Wed Aug 21 02:08:27 2024, MaxMem=   13107200 cpu:       0.0
+ Leave Link  103 at Wed Aug 21 04:06:40 2024, MaxMem=   13107200 cpu:       0.0
  (Enter /programs/64bit/g09/g09-gfortran/bin/l9999.exe)
  1\1\GINC-MOLMOD\Freq\RB3LYP\6-31G(d,p)\C2H2\OSPITE\21-Aug-2024\0\\#P G
  eom=AllCheck Guess=TCheck SCRF=Check GenChk RB3LYP/6-31G(d,p) Freq\\et
@@ -4103,8 +4106,7 @@
  0517,0.,0.,0.00040517\\\@
 
 
- Sacred cows make the best hamburger.
-                               -- Mark Twain
- Job cpu time:  0 days  0 hours  0 minutes 13.8 seconds.
+ EXPERIENCE IS THE FRUIT OF THE TREE OF ERRORS.
+ Job cpu time:  0 days  0 hours  0 minutes 14.0 seconds.
  File lengths (MBytes):  RWF=      5 Int=      0 D2E=      0 Chk=      1 Scr=      1
- Normal termination of Gaussian 09 at Wed Aug 21 02:08:27 2024.
+ Normal termination of Gaussian 09 at Wed Aug 21 04:06:40 2024.

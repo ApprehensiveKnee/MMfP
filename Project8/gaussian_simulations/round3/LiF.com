@@ -8,9 +8,9 @@ H2
 0 1
 li
 f   1 fli2  
-
-lif.wfn
  
 fli2        1.970000
+
+lif.wfn
     
 ---

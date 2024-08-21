@@ -19,8 +19,6 @@ c    7 cc9         5 ccc9          8 dih9
 h    9 hc10        7 hcc10         8 dih10  
 c    9 cc11        7 ccc11        10 dih11  
 h   11 hc12        9 hcc12        10 dih12  
-
-benzene.wfn
  
 cc2         1.400000
 hc3         1.070000
@@ -52,5 +50,8 @@ dih11       180.000
 hc12        1.080000
 hcc12       120.000
 dih12         0.000
+
+
+benzene.wfn
 
 ---

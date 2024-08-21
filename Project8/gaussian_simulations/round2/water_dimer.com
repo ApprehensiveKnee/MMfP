@@ -28,5 +28,4 @@ hoh6        109.471
 dih6       -109.471
 
 water_dimer.wfn
-
 ---

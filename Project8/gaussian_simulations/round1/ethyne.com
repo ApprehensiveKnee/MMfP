@@ -19,5 +19,4 @@ hcc4        180.000
 dih4          0.000
 
 ethyne.wfn
-
 ---

@@ -7,7 +7,9 @@ HF
 
 0 1 !12 electrons, spin multiplicity=1
 f
-h   1 hf2     
+h   1 hf2  
+
+hf.wfn
  
 hf2         0.960000  
 

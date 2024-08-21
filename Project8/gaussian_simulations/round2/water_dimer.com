@@ -12,7 +12,9 @@ h   1 ho2
 h    1 ho3         2 hoh3      
 o    1 oo4         2 ooh4          3 dih4   
 h    4 ho5         3 hoh5          1 dih5   
-h    4 ho6         3 hoh6          5 dih6   
+h    4 ho6         3 hoh6          5 dih6  
+
+water_dimer.wfn
  
 ho2         0.950000
 ho3         0.950000

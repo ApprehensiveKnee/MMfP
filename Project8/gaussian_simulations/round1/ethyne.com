@@ -10,6 +10,8 @@ c
 c   1 cc2     
 h    1 hc3         2 hcc3      
 h    2 hc4         1 hcc4          3 dih4   
+
+ethyne.wfn
  
 cc2         1.203000
 hc3         1.060000

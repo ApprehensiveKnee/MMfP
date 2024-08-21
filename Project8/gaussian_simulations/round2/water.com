@@ -9,7 +9,9 @@ water
 0 1
 o
 h   1 ho2     
-h    1 ho3         2 hoh3      
+h    1 ho3         2 hoh3   
+
+water.wfn
  
 ho2         0.950000
 ho3         0.950000

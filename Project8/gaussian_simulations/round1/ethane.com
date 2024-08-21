@@ -15,6 +15,8 @@ h    1 hc5         2 hch5          3 dih5
 h    3 hc6         1 hcc6          2 dih6   
 h    3 hc7         1 hcc7          6 dih7   
 h    3 hc8         1 hcc8          6 dih8   
+
+ethane.wfn
  
 hc2         1.089000
 cc3         1.500000

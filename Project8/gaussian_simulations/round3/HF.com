@@ -1,7 +1,7 @@
 %mem=100MB
 %chk=hf
 
-#p B3LYP/6-31g(d,p) opt freq pop=full gfinput
+#p B3LYP/6-31g(d,p) opt freq pop=full gfinput output=wfn
 
 HF
 

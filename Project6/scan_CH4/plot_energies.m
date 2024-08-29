@@ -7,21 +7,27 @@ close all;
 data = csvread('energy_comparison.csv',1,0);
 RCH4 = data(:,1);
 EHF = data(:,2);
-ERS2 = data(:,3);
+ERS2_1 = data(:,3);
+ERS2_2 = data(:,4);
+ERS2_3 = data(:,5);
 
 %Mark the minimum energy points
 [minEHF, indexEHF] = min(EHF);
-[minERS2, indexERS2] = min(ERS2);
+[minERS2_1, indexERS2_1] = min(ERS2_1);
+[minERS2_2, indexERS2_2] = min(ERS2_2);
+[minERS2_3, indexERS2_3] = min(ERS2_3);
 
 % Plot the data
 figure
 plot(RCH4, EHF, "Color", "#D95319", 'LineWidth', 1.5)
 hold on
 plot(RCH4(indexEHF), minEHF, 'x', 'MarkerSize', 10, 'MarkerEdgeColor', 'k', 'LineWidth', 2)
-plot(RCH4, ERS2, "Color", "#7E2F8E", 'LineWidth', 1.5)
-plot(RCH4(indexERS2), minERS2, 'o', 'MarkerSize', 10, 'MarkerEdgeColor', 'k', 'LineWidth', 2)
-%plot orizontal line
-plot( RCH4, -40.111*ones(size(RCH4)), 'k--', 'LineWidth', 1.)
+plot(RCH4, ERS2_1, "Color", "#7E2F8E", 'LineWidth', 1.5)
+plot(RCH4(indexERS2_1), minERS2_1, 'diamond', 'MarkerSize', 10, 'MarkerEdgeColor', 'k', 'LineWidth', 2)
+plot(RCH4, ERS2_2, "Color", "#6E2F8E", 'LineWidth', 1.5)
+plot(RCH4(indexERS2_2), minERS2_2, '^', 'MarkerSize', 10, 'MarkerEdgeColor', 'k', 'LineWidth', 2)
+plot(RCH4, ERS2_3, "Color", "#5E2F8E", 'LineWidth', 1.5)
+plot(RCH4(indexERS2_3), minERS2_3, 'v', 'MarkerSize', 10, 'MarkerEdgeColor', 'k', 'LineWidth', 2)
 xlabel('C-H bond length (Angstroms)')
 ylabel('Energy (hartree/mol)')
 title('1D MPE scan of CH4 dissociation')

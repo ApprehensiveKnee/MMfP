@@ -22,16 +22,16 @@ figure
 plot(RCH4, EHF, "Color", "#D95319", 'LineWidth', 1.5)
 hold on
 plot(RCH4(indexEHF), minEHF, 'x', 'MarkerSize', 10, 'MarkerEdgeColor', 'k', 'LineWidth', 2)
-plot(RCH4, ERS2_1, "Color", "#7E2F8E", 'LineWidth', 1.5)
+plot(RCH4, ERS2_1, "Color", "#AE2F8E", 'LineWidth', 1.5)
 plot(RCH4(indexERS2_1), minERS2_1, 'diamond', 'MarkerSize', 10, 'MarkerEdgeColor', 'k', 'LineWidth', 2)
-plot(RCH4, ERS2_2, "Color", "#6E2F8E", 'LineWidth', 1.5)
+plot(RCH4, ERS2_2, "Color", "#852F8E", 'LineWidth', 1.5)
 plot(RCH4(indexERS2_2), minERS2_2, '^', 'MarkerSize', 10, 'MarkerEdgeColor', 'k', 'LineWidth', 2)
-plot(RCH4, ERS2_3, "Color", "#5E2F8E", 'LineWidth', 1.5)
+plot(RCH4, ERS2_3, "Color", "#302F8E", 'LineWidth', 1.5)
 plot(RCH4(indexERS2_3), minERS2_3, 'v', 'MarkerSize', 10, 'MarkerEdgeColor', 'k', 'LineWidth', 2)
 xlabel('C-H bond length (Angstroms)')
 ylabel('Energy (hartree/mol)')
 title('1D MPE scan of CH4 dissociation')
-legend('HF', 'HF min', 'RS2', 'RS2 min')
+legend('HF', '', 'RS2 - 3 closed, 7 occ', '', 'RS2 - 3 closed, 10 occ', '', 'RS2 - 2 closed, 11 occ', '' )
 grid on
 
 

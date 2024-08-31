@@ -1,9 +1,10 @@
 %nproc=12
+%mem=2Gb
 %chk=TMS_opt.chk
 
 #p B3LYP/6-31+g(d,p) opt freq pop=full gfinput
 
-tetramethylsilane
+tetramethylsilane optimization
 
 0 1
 si

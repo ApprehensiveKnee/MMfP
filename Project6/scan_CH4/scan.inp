@@ -19,7 +19,7 @@ t=120.0 Deg
 !set required basis set
 basis=cc-pVDZ
 
-do i=1,70
+do i=1,45
 
 !save distance to array
 rch4(i)=r
@@ -30,8 +30,8 @@ hf
 ehf(i)=energy
 
 !caspt2 calculation (1)
-!active space chosen: 3 closed orbitals, up to 6 occupied orbitals
-{casscf;closed,3;occ,6;wf,10,1,0}
+!active space chosen: 4 closed orbitals, up to 6 occupied orbitals
+{casscf;closed,4;occ,6;wf,10,1,0}
 {rs2,shift=0.2}
 ers2_1(i)=energy
 
@@ -42,8 +42,8 @@ ers2_1(i)=energy
 ers2_2(i)=energy
 
 !caspt2 calculation (2)
-!active space chosen: 2 closed orbitals, up to 7 occupied orbitals
-{casscf;closed,2;occ,7;wf,10,1,0}
+!active space chosen: 2 closed orbitals, up to 8 occupied orbitals
+{casscf;closed,2;occ,8;wf,10,1,0}
 {rs2,shift=0.2}
 ers2_3(i)=energy
 
@@ -53,7 +53,7 @@ ers2_3(i)=energy
 r=r+0.075
 end do
 
-{table,rch4,ehf,ers2_1,ers2_2,ers2_3;plot,file='scan.plot'}
+{table,rch4,ehf,ers2_1,ers2_2,ers2_3}
 
 ---
 

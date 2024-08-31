@@ -19,7 +19,7 @@ t=120.0 Deg
 !set required basis set
 basis=cc-pVDZ
 
-do i=1,45
+do i=1,40
 
 !save distance to array
 rch4(i)=r
@@ -41,11 +41,11 @@ ers2_1(i)=energy
 {rs2,shift=0.2}
 ers2_2(i)=energy
 
-!caspt2 calculation (2)
+!caspt2 calculation (3)
 !active space chosen: 2 closed orbitals, up to 8 occupied orbitals
-{casscf;closed,2;occ,8;wf,10,1,0}
-{rs2,shift=0.2}
-ers2_3(i)=energy
+! {casscf;closed,2;occ,8;wf,10,1,0}
+! {rs2,shift=0.2}
+! ers2_3(i)=energy
 
 !Perform optimization
 !{optg;inactive,r}
@@ -53,7 +53,7 @@ ers2_3(i)=energy
 r=r+0.075
 end do
 
-{table,rch4,ehf,ers2_1,ers2_2,ers2_3}
+{table,rch4,ehf,ers2_1,ers2_2}
 
 ---
 

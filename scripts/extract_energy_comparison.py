@@ -6,7 +6,7 @@ def extract_table_from_file(file_path):
         content = file.read()
     
     # pattern to match the table
-    table_pattern = re.compile(r'RCH4\s+EHF\s+ERS2_1\s+ERS2_2\s+ERS2_3\n((?:\s*\d+\.\d+\s+-?\d+\.\d+\s+-?\d+\.\d+\s+-?\d+\.\d+\s+-?\d+\.\d+\n)+)')
+    table_pattern = re.compile(r'RCH4\s+EHF\s+ERS2_1\s+ERS2_2\n((?:\s*\d+\.\d+\s+-?\d+\.\d+\s+-?\d+\.\d+\s+-?\d+\.\d+\n)+)')
     match = table_pattern.search(content)
     
     if not match:
@@ -19,14 +19,13 @@ def extract_table_from_file(file_path):
     for line in table_data.split('\n'):
         rows.append(line.split())
     
-    df = pd.DataFrame(rows, columns=['RCH4', 'EHF', 'ERS2_1','ERS2_2','ERS2_3'])
+    df = pd.DataFrame(rows, columns=['RCH4', 'EHF', 'ERS2_1','ERS2_2'])
     
     # Convert string columns to float
     df['RCH4'] = df['RCH4'].astype(float)
     df['EHF'] = df['EHF'].astype(float)
     df['ERS2_1'] = df['ERS2_1'].astype(float)
     df['ERS2_2'] = df['ERS2_2'].astype(float)
-    df['ERS2_3'] = df['ERS2_3'].astype(float)
     
     return df
 

@@ -1,10 +1,11 @@
 %nproc=12
+%mem=2Gb
 %chk=TMS_nmr.chk
 
 #pB3LYP/6-31+g(d,p) nmr=giao pop=full gfinput 
 !scrf=(smd,solvent=dmso) additional option considering solvents
 
-tetramethylsilane
+tetramethylsilane nmr
 
 0 1
 si

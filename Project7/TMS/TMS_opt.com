@@ -4,7 +4,7 @@
 
 #p B3LYP/6-31+g(d,p) opt(internal) pop=full gfinput 
 
-tetramethylsilane nmr
+tetramethylsilane opt
 
 0 1
 si

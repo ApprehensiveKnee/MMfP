@@ -3,12 +3,12 @@ clc;
 clear all;
 close all;
 
-% Read the data from the csv file and store the colums values in 3 arrays. 
+% Read the data from the csv file and store the colums values in 4 arrays. 
 data = csvread('energy_comparison.csv',1,0);
-RCH4 = data(:,1);
-EHF = data(:,2);
-ERS2_1 = data(:,3);
-ERS2_2 = data(:,4);
+RCH4 = data(1:35,1);
+EHF = data(1:35,2);
+ERS2_1 = data(1:35,3);
+ERS2_2 = data(1:35,4);
 
 %Mark the minimum energy points
 [minEHF, indexEHF] = min(EHF);

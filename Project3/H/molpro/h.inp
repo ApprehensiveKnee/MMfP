@@ -1,13 +1,13 @@
 ***,hydrogen
 memory,50,m
 
+
 basis=6-31G(d,p)
-geometry={
+geometry={nosym
 H
 }
 
-rhf
-
-rccsd-t !coupled-cluster calculation wih single, double, triple perturbative excitations
+{ks,b3lyp}
+{frequencies;thermo}
 put,molden,molpro.molden.h
 ---

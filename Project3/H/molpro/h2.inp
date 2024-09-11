@@ -1,17 +1,15 @@
 ***,hydrogen_mol
 
 basis=6-31G(d,p)
-geometry={angstrom
+geometry={angstrom,nosym
 H1
 H2, H1, d
 }
 
 d=0.74
 
-{hf;wf,spin=0,charge=0;}
-!{dft,b3lyp} !use b3lyp dft functional
+{ks,b3lyp}
 optg !perform optimization
-{frequencies,analytic
-thermo}
+{frequencies;thermo}
 put,molden,molpro.molden.h2
 ---

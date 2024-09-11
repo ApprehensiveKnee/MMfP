@@ -1,0 +1,25 @@
+***,hydrogen_mol_scan
+
+basis=6-31G(d,p)
+geometry={angstrom,nosym
+H1
+H2, H1, d
+}
+
+d=0.5
+
+
+do i=1.100 ! loop over 100 points
+
+{ks,b3lyp}
+step(i)=i
+eb3lyp(i)=energy !store energy for dft calculation
+rhh(i)=d
+d=d+0.01  !increment d by 0.01
+
+end do
+
+{table,step,rhh,eb3lyp}
+
+put,molden,molpro.molden.h2
+---

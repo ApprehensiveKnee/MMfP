@@ -1,6 +1,5 @@
 %nproc=24
 %mem=2Gb
-%chk=TMS_opt.chk
 
 #p B3LYP/6-31+g(d,p) opt(internal) pop=full gfinput 
 

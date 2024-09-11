@@ -3,11 +3,13 @@ memory,50,m
 
 
 basis=6-31G(d,p)
-geometry={nosym
+geometry={
 H
 }
 
-{ks,b3lyp}
-{frequencies;thermo}
+{ks,b3lyp,
+wf,charge=0,spin=1}
+{frequencies
+thermo}
 put,molden,molpro.molden.h
 ---

@@ -2,12 +2,14 @@
 memory,50,m
 
 
-basis=6-31G(d,p)
+basis=6-31+G(d,p)
 geometry={
 H
 }
 
 {ks,b3lyp,
 wf,charge=0,spin=1}
+optg 
+{frequencies;thermo}
 put,molden,molpro.molden.h
 ---

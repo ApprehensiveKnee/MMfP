@@ -1,12 +1,3 @@
-%nprocshared=2
-%mem=500MB
-%chk=ch4+h.chk
-
-#p B3LYP/6-31+g(d,p) opt=Z-matrix temperature=300 pop=full gfinput
-
-ch4+h
- 
-0 2 !h gives 1 uncopled electron
  c
  h   1 hc2     
  h    1 hc3         2 hch3      
@@ -30,5 +21,5 @@ dih6         90.000
 hh7         2.000000
 hhxx7        90.000
 dih7        180.000
-
+ 
  

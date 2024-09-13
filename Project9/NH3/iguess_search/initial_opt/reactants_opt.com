@@ -1,10 +1,10 @@
 %nproc=24
 %mem=2Gb
-%chk=ch4+h.chk
+%chk=nh3+h.chk
 
 #p B3LYP/6-31+g(d,p) opt=(Z-matrix,maxcycle=50,maxstep=35) temperature=300 pop=full gfinput
 
-ch4+h
+nh3+h
  
 0 2 !h gives 1 uncopled electron
  n

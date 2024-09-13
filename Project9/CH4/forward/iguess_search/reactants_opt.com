@@ -1,8 +1,8 @@
-%nprocshared=2
-%mem=500MB
+%nproc=24
+%mem=2Gb
 %chk=ch4+h.chk
 
-#p B3LYP/6-31+g(d,p) opt=Z-matrix temperature=300 pop=full gfinput
+#p B3LYP/6-31+g(d,p) opt=(Z-matrix,maxcycle=50) temperature=300 pop=full gfinput
 
 ch4+h
  

@@ -2,7 +2,7 @@
 %mem=500MB
 %chk=ch4+h_to_ch3+h2.chk
 
-#p B3LYP/6-31+g(d,p) opt(internal) freq temperature=300 pop=full gfinput
+#p B3LYP/aug-cc-pVTZ opt(internal) freq temperature=300 pop=full gfinput
 
 ch4+h to ch3+h2
  

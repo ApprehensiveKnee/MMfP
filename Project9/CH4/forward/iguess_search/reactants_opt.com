@@ -2,7 +2,7 @@
 %mem=500MB
 %chk=ch4+h_to_ch3+h2.chk
 
-#p B3LYP/aug-cc-pVTZ opt(internal)temperature=300 pop=full gfinput
+#p B3LYP/aug-cc-pVTZ opt(internal) temperature=300 pop=full gfinput
 
 ch4+h to ch3+h2
  
@@ -25,6 +25,5 @@ dih5       -120.000
 hc6         2.570000
 hch6          0.000
 dih6          0.000
-constants:
 hc5         1.089000
  

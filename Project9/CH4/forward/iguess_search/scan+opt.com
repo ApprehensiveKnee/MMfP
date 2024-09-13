@@ -2,9 +2,9 @@
 %mem=500MB
 %chk=ch4+h_to_ch3+h2.chk
 
-#p B3LYP/aug-cc-pVTZ opt(internal) temperature=300 pop=full gfinput
+#p B3LYP/aug-cc-pVTZ opt=Z-Matrix nosym temperature=300 pop=full gfinput
 
-ch4+h
+ch4+h to ch3+h2 pulling hc6
  
 0 2 !h gives 1 uncopled electron
  c
@@ -13,7 +13,7 @@ ch4+h
  h    1 hc4         2 hch4          3 dih4   
  h    1 hc5         2 hch5          3 dih5   
  h    1 hc6         5 hch6          3 dih6   
-variables:
+
 hc2         1.089000
 hc3         1.089000
 hch3        109.471
@@ -23,8 +23,10 @@ dih4        120.000
 hc5         1.089000
 hch5        109.471
 dih5       -120.000
-hc6         2.570000
+hc6         2.570000 S 15 -0.1
 hch6          0.000
 dih6          0.000
+
+
 
  

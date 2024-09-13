@@ -2,7 +2,7 @@
 %mem=2Gb
 %chk=ts.chk
 
-#p B3LYP/6-31g(d,p) opt=(Z-Matrix,ts,calcfc,noeigentest) nosym freq temperature=300 pop=full gfinput
+#p B3LYP/6-31g(d,p) opt=(Z-Matrix,ts,calcfc) nosym freq temperature=300 pop=full gfinput
 
 ch4+h to ch3+h2 ts
  
@@ -15,23 +15,21 @@ ch4+h to ch3+h2 ts
 xx    5 xxh6        1 xxhc6         4 dih6   
  h    5 hh7         6 hhxx7         1 dih7 
 
-hc2         1.0876 
-hc3         1.0877  
-hch3       114.5554 
-hc4         1.0876 
-hch4       114.57    
-dih4       135.4125 
-hc5         1.3929 
-hch5       103.6669  
-dih5      -112.2117  
-xxh6         1.0317 
-xxhc6       89.4183 
-dih6       124.415  
-hh7         0.9098  
-hhxx7       90.6659 
-dih7       180.023  
+hc2         1.088 
+hc3         1.088 
+hch3       114.2253
+hc4         1.088 
+hch4       114.2137
+dih4       134.0938
+hc5         1.3607 
+hch5       104.1445
+dih5      -112.9416
+xxh6         1.0   F
+xxhc6       89.9651 F
+dih6        70.1542 F
+hh7         0.9061
+hhxx7       90.026 
+dih7       179.9285 
 
 
 
-
- 

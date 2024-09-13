@@ -6,7 +6,6 @@
 
 ch4+h to ch3+h2 pulling hh7
  
-
 0 2 !h gives 1 uncopled electron
  c
  h   1 hc2     

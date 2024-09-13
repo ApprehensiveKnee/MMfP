@@ -2,7 +2,7 @@
 %mem=2Gb
 %chk=ts.chk
 
-#p B3LYP/aug-cc-pVTZ opt=(Z-Matrix,ts,calcfc) nosym temperature=300 pop=full gfinput
+#p B3LYP/6-31g(d,p) opt=(Z-Matrix,ts,calcfc,maxcycle=500,maxsteps=50) nosym freq temperature=300 pop=full gfinput
 
 ch4+h to ch3+h2 ts
  

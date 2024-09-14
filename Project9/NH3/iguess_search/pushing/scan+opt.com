@@ -4,7 +4,7 @@
 
 #p wb97xd/6-31g(d,p) opt=Z-Matrix nosym temperature=300 pop=full gfinput
 
-nh3+h to nh2+h2 pulling hh6
+nh3+h to nh2+h2 pushing hn3
  
 0 2 !h gives 1 uncopled electron
  n
@@ -15,7 +15,7 @@ xx    3 xxh5        1 xxhn5         4 dih5
  h    3 hh6         5 hhxx6         1 dih6   
  
 hn2         1.0013 
-hn3         1.0018 
+hn3         1.0018 S 18 +0.1
 hnh3       120.0077 
 hn4         1.0013 
 hnh4       120.0077 
@@ -23,7 +23,7 @@ dih4       180.0
 xxh5         1.0215 F
 xxhn5       76.9226 F
 dih5        77.3649 F
-hh6         2.4653 S 18 -0.1
+hh6         2.4653 
 hhxx6      103.0774 
 dih6       180.0   
  

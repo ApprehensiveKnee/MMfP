@@ -2,7 +2,7 @@
 %mem=2Gb
 %chk=ts.chk
 
-#p B3LYP/6-31g(d,p) opt=(internal,ts,calcfc,noeigentest,maxstep=35) nosym freq temperature=300 pop=full gfinput
+#p wb97xd/6-31g(d,p) opt=(Z-matrix,ts,calcfc,noeigentest,maxstep=35) nosym freq temperature=300 pop=full gfinput
 
 nh3+h to nh2+h2 ts
  
@@ -14,15 +14,15 @@ nh3+h to nh2+h2 ts
 xx    3 xxh5        1 xxhn5         4 dih5   
  h    3 hh6         5 hhxx6         1 dih6   
 
-hn2         1.0013 
-hn3         1.0473 
-hnh3       119.0837 
-hn4         1.0013 
-hnh4       119.085  
-dih4       180.0329 
-xxh5         1.0215
-xxhn5       76.9226
-dih5        77.3649
+hn2         1.0   
+hn3         1.051 
+hnh3       118.9681
+hn4         1.0   
+hnh4       119.0444
+dih4       180.0392
+xxh5         1.0215 F
+xxhn5       76.9226 F
+dih5        77.3649 F
 hh6         1.0653
-hhxx6      103.0753 
-dih6       179.9781 
+hhxx6      103.0712
+dih6       179.9535

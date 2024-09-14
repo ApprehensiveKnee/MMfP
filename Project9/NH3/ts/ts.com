@@ -2,7 +2,7 @@
 %mem=2Gb
 %chk=ts.chk
 
-#p PW6B95/aug-cc- opt=(Z-matrix,ts,calcfc,noeigentest,maxstep=35) nosym freq temperature=300 pop=full gfinput
+#p B3P86/6-31g(d,p) opt=(Z-matrix,ts,calcfc,noeigentest,maxstep=35) nosym freq temperature=300 pop=full gfinput
 
 nh3+h to nh2+h2 ts
  

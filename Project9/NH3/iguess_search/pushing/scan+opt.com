@@ -2,7 +2,7 @@
 %mem=2Gb
 %chk=nh3+h_to_nh2+h2.chk
 
-#p wb97xd/6-31g(d,p) opt=Z-Matrix nosym temperature=300 pop=full gfinput
+#p wb97xd/6-31g(d,p) opt=(Z-Matrix) scf=(Maxconventionalcycles=100,xqc) nosym temperature=300 pop=full gfinput
 
 nh3+h to nh2+h2 pushing hn3
  

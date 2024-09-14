@@ -70,7 +70,7 @@ def extract_other(file_path):
     thermal_energy_pattern = re.compile(r'Thermal correction to Energy=\s+(-?[\d\.]+)')
     thermal_enthalpy_pattern = re.compile(r'Thermal correction to Enthalpy=\s+(-?[\d\.]+)')
     thermal_gibbs_pattern = re.compile(r'Thermal correction to Gibbs Free Energy=\s+(-?[\d\.]+)')
-    vib_pattern = re.compile(r'Frequencies --\s+([\d\.\s]+)\s+Red\. masses --\s+([\d\.\s]+)\s+Frc consts  --\s+([\d\.\s]+)\s+IR Inten    --\s+([\d\.\s]+)')
+    vib_pattern = re.compile(r'Frequencies --\s+(-?[\d\.\s]+)\s+Red\. masses --\s+([\d\.\s]+)\s+Frc consts  --\s+([\d\.\s]+)\s+IR Inten    --\s+([\d\.\s]+)')
 
     vib_matches = vib_pattern.findall(''.join(lines))
 

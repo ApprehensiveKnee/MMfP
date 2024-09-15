@@ -12,18 +12,17 @@ nh3+h to nh2+h2 pushing hn3
  h    1 hn3         2 hnh3      
  h    1 hn4         3 hnh4          2 dih4   
 xx    3 xxh5        1 xxhn5         4 dih5   
- h    3 hh6         5 hhxx6         1 dih6   
+ h    3 hh6         5 hhxx6         1 dih6     
  
-hn2         1.0013 
-hn3         1.0018 S 18 +0.1
-hnh3       120.0077 
-hn4         1.0013 
-hnh4       120.0077 
-dih4       180.0    
-xxh5         1.0215 F
-xxhn5       76.9226 F
-dih5        77.3649 F
-hh6         2.3653 
-hhxx6      103.0774 
-dih6       180.0   
- 
+hn2         1.0159
+hn3         1.0164 S 18 +0.1
+hnh3       108.0326
+hn4         1.0159
+hnh4       108.0322
+dih4       116.6638
+xxh5         1.0   F
+xxhn5       90.0   F
+dih5        90.0   F
+hh6         2.4111
+hhxx6       84.2169
+dih6       176.4105

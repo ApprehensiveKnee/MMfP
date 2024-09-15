@@ -1,8 +1,8 @@
 %mem=100MB
 
-#p b3lyp/6-31+G opt freq pop=full gfinput
+#p b3lyp/6-31+g(d,p) opt freq pop=full gfinput
 
-NH2 with 6-31+G basis set
+NH2 with 6-31+g(d,p) basis set
 
 0 2
  n

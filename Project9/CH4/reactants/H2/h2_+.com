@@ -1,6 +1,6 @@
 %mem=100MB
 
-#p b3lyp/6-31+G opt freq pop=full gfinput
+#p b3lyp/6-31+g(d,p) opt freq pop=full gfinput
 
 hydrogen(molecule) with 6-31+G basis set
 

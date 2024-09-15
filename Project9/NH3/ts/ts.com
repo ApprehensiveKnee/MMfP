@@ -14,15 +14,15 @@ nh3+h to nh2+h2 ts
 xx    3 xxh5        1 xxhn5         4 dih5   
  h    3 hh6         5 hhxx6         1 dih6   
 
-hn2         1.0294 
-hn3         2.5164
-hnh3       128.9643 
-hn4         1.0293 
-hnh4       128.1516 
-dih4       180.2226 
+hn2         1.0254 
+hn3         1.2476 
+hnh3       100.788  
+hn4         1.0254 
+hnh4       100.7829 
+dih4       106.4795 
 xxh5         1.0    F
 xxhn5       90.0    F
 dih5        90.0    F
-hh6         5.1621 
-hhxx6       79.927  
-dih6       176.0252 
+hh6         0.9111 
+hhxx6       71.7624 
+dih6       165.8207 

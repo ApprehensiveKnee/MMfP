@@ -1,6 +1,7 @@
 import re
 import sys
 import matplotlib.pyplot as plt
+import pandas as pd
 
 
 def extract_data(filename):
@@ -83,6 +84,10 @@ if __name__ == "__main__":
         filename = filename.split(".")[0]
         plt.savefig(f"{filename}.png")
 
+        # Save the data to an Excel file
+        data = {scan_variable: variables[scan_variable], 'Eigenvalues (kcal/mol)': eigenvalues}
+        df = pd.DataFrame(data)
+        df.to_excel(f"{filename}.xlsx", index=False)   
 
     if len(sys.argv) == 3:
 
@@ -95,12 +100,13 @@ if __name__ == "__main__":
 
         # Plot the scan_variable1 vs scan_variable2 for both files
         figure,axis = plt.subplots(figsize=(10,6))
-        axis.plot(variables2[scan_variable1], variables1[scan_variable1], marker='d', linestyle='-', color='coral', markerfacecolor='black',label=scan_variable1)
-        axis.plot(variables2[scan_variable2], variables1[scan_variable2], marker='X', linestyle='-', color='slateblue', markerfacecolor='black', label=scan_variable2)
+        axis.plot(variables1[scan_variable1], variables1[scan_variable2], marker='d', linestyle='-', color='coral', markerfacecolor='black',label=scan_variable1)
+        axis.plot(variables2[scan_variable1], variables2[scan_variable2], marker='X', linestyle='-', color='slateblue', markerfacecolor='black', label=scan_variable2)
         axis.set_xlabel(scan_variable1)
         axis.set_ylabel(scan_variable2)
         axis.legend()
         axis.grid()
         # Save the plot to a file
         plt.savefig("PES-2d.png")
+    
 

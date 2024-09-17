@@ -1,7 +1,7 @@
 %nproc=24
 %mem=2Gb
 
-#p B3LYP/6-31+g(d,p) opt
+#p B3LYP/6-31+g(d,p) opt freq
 
 ch3coo- gas
 

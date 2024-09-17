@@ -1,9 +1,9 @@
 %nproc=24
 %mem=2Gb
 
-#p B3LYP/6-31+g(d,p) opt scrf=(smd,solvent=water)
+#p B3LYP/6-31+g(d,p) opt freq
 
-h04s- sol
+h04s- gas
 
 -1 1
  s

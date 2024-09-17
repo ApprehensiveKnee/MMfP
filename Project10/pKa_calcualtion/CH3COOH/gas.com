@@ -1,4 +1,10 @@
- 
+%nproc=24
+%mem=2Gb
+
+#p B3LYP/6-31+g(d,p) opt
+
+ch3cooh gas
+
 0 1
  c
  o   1 oc2     

@@ -1,5 +1,5 @@
-%mem=100Mb
-%nprocshared=2
+%nproc=24
+%mem=2Gb
 
 #p B3LYP/6-31+g(d,p) opt scrf=(smd,solvent=water)
 

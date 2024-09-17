@@ -3,16 +3,15 @@
 
 #p B3LYP/6-31+g(d,p) opt scrf=(smd,solvent=water)
 
-so2(oh)2 sol
+h04s- sol
 
-0 1
+-1 1
  s
  o   1 os2     
  o    1 os3         2 oso3      
  o    1 os4         2 oso4          3 dih4   
  o    1 os5         3 oso5          2 dih5   
  h    2 ho6         1 hos6          5 dih6   
- h    3 ho7         1 hos7          4 dih7   
  
 os2         1.660000
 os3         1.660000
@@ -26,6 +25,5 @@ dih5        120.000
 ho6         0.950000
 hos6        109.471
 dih6        180.000
-ho7         0.950000
-hos7        109.471
-dih7        180.000
+ 
+ 

@@ -1,7 +1,7 @@
 %mem=100Mb
 %nprocshared=2
 
-#p B3LYP/6-31+g(d,p) opt scrf=(smd,solvent=water)
+#p B3LYP/6-31+g(d,p) opt freq scrf=(smd,solvent=water)
 
 h2o solution
 

@@ -1,7 +1,7 @@
 %mem=100Mb
 %nprocshared=2
 
-#p B3LYP/6-31+g(d,p) opt
+#p B3LYP/6-31+g(d,p) opt freq
 
 h3o+ gas
 

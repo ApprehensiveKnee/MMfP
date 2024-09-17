@@ -1,9 +1,9 @@
 %nproc=24
 %mem=2Gb
 
-#p B3LYP/6-31+g(d,p) opt
+#p B3LYP/6-31+g(d,p) opt scrf=(smd,solvent=water)
 
-h04s- gas
+h04s- sol
 
 -1 1
  s
@@ -24,4 +24,7 @@ oso5        110.000
 dih5        120.000
 ho6         0.950000
 hos6        109.471
+dih6        180.000
+
+
 
